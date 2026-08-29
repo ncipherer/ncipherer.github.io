@@ -160,7 +160,7 @@ Declassified: Operation Sindoor (2026) (tt43730117)
 
 I Saw the Devil (2010)
 
-> Recommendation from: The director's quote that the idea of having a revenge without destroying yourself is impossible. Evidently the most honest revenge movie. I thought I should give it a shot. Ys!
+> Recommendation from: The director's quote that the idea of having a revenge without destroying yourself is impossible. Evidently the most honest revenge movie. I thought I should give it a shot. Ysssss!
 
 The Adjustment Bureau (2011)
 
