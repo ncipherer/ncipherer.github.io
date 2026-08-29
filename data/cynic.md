@@ -1,0 +1,1 @@
+Abhimanyu always chooses the harder way because to him the shorter way is done by everyone else.

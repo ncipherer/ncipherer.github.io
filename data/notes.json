@@ -1,0 +1,619 @@
+{
+  "notes": [
+    {
+      "id": "0",
+      "title": "Failure - It's not as bad as it swims to be!",
+      "readingTime": "6 min",
+      "publishDate": "2025-02-09",
+      "blogLink": "fail-hobbies",
+      "githubLink": "",
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://x.com/search?q=%40naval%20%22agency%22%20since%3A2024-02-09%20until%3A2025-02-09&src=typed_query&f=top",
+          "description": "[1] 'Agency' on social media"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=gFmFOmprTt0",
+          "description": "[2] The experiment"
+        }
+      ],
+      "tags": [
+        "hobbies",
+        "swimming",
+        "psychology"
+      ],
+      "contentPath": "fail-hobbies.md"
+    },
+    {
+      "id": "1",
+      "title": "Belief: A question of God and Love!",
+      "readingTime": "8 min",
+      "publishDate": "2025-02-22",
+      "blogLink": "god-belief-love",
+      "githubLink": "",
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=QkhBcLk_8f0",
+          "description": "[1] Feynman on answers"
+        },
+        {
+          "url": "https://plato.stanford.edu/entries/faith/",
+          "description": "[2] Faith"
+        },
+        {
+          "url": "https://www.ramakrishnavivekananda.info/vivekananda/volume_8/writings_prose/four_paths_of_yoga.htm",
+          "description": "[3] Enlightenment"
+        },
+        {
+          "url": "https://quod.lib.umich.edu/p/phimp/3521354.0014.021/1",
+          "description": "[4] No-self"
+        }
+      ],
+      "tags": [
+        "god",
+        "hobbies",
+        "philosophy",
+        "love"
+      ],
+      "contentPath": "god-belief-love.md"
+    },
+    {
+      "id": "2",
+      "title": "Equations and evil",
+      "readingTime": "8 min",
+      "publishDate": "2025-03-09",
+      "blogLink": "review-cease-world",
+      "githubLink": "",
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Rat_Park",
+          "description": "[1] Rat park studies"
+        },
+        {
+          "url": "https://www.amazon.in/When-We-Cease-Understand-World/dp/1782276122",
+          "description": "[2] Purchase book"
+        },
+        {
+          "url": "https://youtu.be/-icD_KmvnnM?t=137",
+          "description": "[3] Geoffrey Hinton Nobel reaction"
+        }
+      ],
+      "tags": [
+        "hobbies",
+        "reading",
+        "psychology",
+        "philosophy",
+        "science"
+      ],
+      "contentPath": "review-cease-world.md"
+    },
+    {
+      "id": "3",
+      "title": "Soul vs Silicon",
+      "readingTime": "8 min",
+      "publishDate": "2025-03-29",
+      "blogLink": "creativity-ai",
+      "githubLink": "",
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://x.com/anime_twits/status/1905182428513050667",
+          "description": "[1] Efforts in Ghibli"
+        },
+        {
+          "url": "https://www.nasa.gov/image-article/astronaut-bruce-mccandless-performs-the-first-untethered-spacewalk/",
+          "description": "[2] The Spacewalk"
+        },
+        {
+          "url": "https://moretothat.com/make-classics-not-content",
+          "description": "[3] Make classics, Not content"
+        },
+        {
+          "url": "https://mckaywilliamson.com/artspeak-simplified/",
+          "description": "Artspeak"
+        },
+        {
+          "url": "https://x.com/DearthOfSid/status/1906339073956135259/",
+          "description": "[5] Story in borrowed art"
+        }
+      ],
+      "tags": [
+        "ai",
+        "art",
+        "philosophy"
+      ],
+      "contentPath": "creativity-ai.md"
+    },
+    {
+      "id": "4",
+      "title": "The problem with F.R.I.E.N.D.S.",
+      "readingTime": "6 min",
+      "publishDate": "2025-05-21",
+      "blogLink": "tv-friends",
+      "githubLink": "",
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=4H6Ux3l75Rc",
+          "description": "[1] Friends: Ross Geller without laugh track = psychopath"
+        }
+      ],
+      "tags": [
+        "cinema"
+      ],
+      "contentPath": "tv-friends.md"
+    },
+    {
+      "id": "5",
+      "title": "Hey there!",
+      "readingTime": "8 min",
+      "publishDate": "2025-07-25",
+      "blogLink": "hey",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=xy42tDw4k5Y",
+          "description": "[1] Milkha's first race"
+        }
+      ],
+      "tags": [
+        "love",
+        "fiction"
+      ],
+      "contentPath": "hey-there.md"
+    },
+    {
+      "id": "6",
+      "title": "[WIP] Be better!",
+      "readingTime": "6 min",
+      "publishDate": "2025-08-05",
+      "blogLink": "vices",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [],
+      "tags": [
+        "psychology"
+      ],
+      "contentPath": "be-better.md"
+    },
+    {
+      "id": "7",
+      "title": "The Rebellion {and/or} Star Wars",
+      "readingTime": "8 min",
+      "publishDate": "2025-08-16",
+      "blogLink": "andor-star-wars",
+      "githubLink": "",
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://en.wikipedia.org/wiki/Star_Wars:_Episode_III_%E2%80%93_Revenge_of_the_Sith#References:_Cinematic_and_literary_allusions",
+          "description": "[1] If you're not with me..."
+        },
+        {
+          "url": "https://screenrant.com/andor-show-star-wars-fan-service-details-response/",
+          "description": "[2] Fans"
+        }
+      ],
+      "tags": [
+        "philosophy",
+        "cinema",
+        "politics"
+      ],
+      "contentPath": "andor-star-wars.md"
+    },
+    {
+      "id": "8",
+      "title": "The first hit!",
+      "readingTime": "5 min",
+      "publishDate": "2025-09-27",
+      "blogLink": "first-hit-mma",
+      "githubLink": "",
+      "pinned": false,
+      "links": [],
+      "tags": [
+        "mma",
+        "hobbies"
+      ],
+      "contentPath": "first-hit-mma.md"
+    },
+    {
+      "id": "9",
+      "title": "From Text to Token: Why I`m Building an LLM Toolkit from Scratch",
+      "readingTime": "4 min",
+      "publishDate": "2025-10-25",
+      "blogLink": "llm-scratch-bpe-micrograd",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=VMj-3S1tku0",
+          "description": "Karpathy's micrograd"
+        }
+      ],
+      "tags": [
+        "ai",
+        "learning"
+      ],
+      "contentPath": "month-one-llm-scratch-bpe-micrograd.md"
+    },
+    {
+      "id": "10",
+      "title": "I just wanna see!",
+      "readingTime": "4 min",
+      "publishDate": "2025-10-03",
+      "blogLink": "i-just-wanna-see",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://www.instagram.com/p/DNRQJGdvvJE/",
+          "description": "Just try art"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=dWexFvaC5n4&t=61s",
+          "description": "There are no abstractions, everything is art"
+        },
+        {
+          "url": "https://sive.rs/kimo",
+          "description": "There's no speedlimit"
+        }
+      ],
+      "tags": [
+        "mma",
+        "swimming",
+        "violin",
+        "hobbies",
+        "psychology",
+        "career"
+      ],
+      "contentPath": "i-just-wanna-see.md"
+    },
+    {
+      "id": "11",
+      "title": "AI doom may rather look like a...?!",
+      "readingTime": "4 min",
+      "publishDate": "2025-10-22",
+      "blogLink": "ai-apocalypse",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [],
+      "tags": [
+        "ai",
+        "politics"
+      ],
+      "contentPath": "ai-apocalypse.md"
+    },
+    {
+      "id": "12",
+      "title": "Why?!",
+      "readingTime": "4 min",
+      "publishDate": "2025-12-10",
+      "blogLink": "why",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [],
+      "tags": [
+        ""
+      ],
+      "contentPath": "whys.md"
+    },
+    {
+      "id": "13",
+      "title": "FIRE has changed?!",
+      "readingTime": "4 min",
+      "publishDate": "2025-12-10",
+      "blogLink": "fire-change",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [],
+      "tags": [
+        "money"
+      ],
+      "contentPath": "fire-change.md"
+    },
+    {
+      "id": "14",
+      "title": "Eureka!",
+      "readingTime": "8 min",
+      "publishDate": "2025-08-30",
+      "blogLink": "eureka",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://www.instagram.com/p/DN0fSSjWqxM/",
+          "description": "How GPS works"
+        },
+        {
+          "url": "https://www.reddit.com/r/explainlikeimfive/comments/1n3fgay/eli5_how_einstein_figured_out_that_time_slows/",
+          "description": "Theory of relativity"
+        },
+        {
+          "url": "https://www.instagram.com/p/DNaTwNaJ-Ss/",
+          "description": "Just one more thing to do"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=6V2eCFsDkK0",
+          "description": "Prince Rupert's drop, strongest substance with a weakness"
+        },
+        {
+          "url": "https://x.com/animalologist/status/2005019340161024315",
+          "description": "There are more factors for you to fail"
+        },
+        {
+          "url": "https://x.com/historyinmemes/status/2029467701286961645",
+          "description": "Leave the leash if you want the child to grow"
+        }
+      ],
+      "tags": [
+        "science"
+      ],
+      "contentPath": "eureka.md"
+    },
+    {
+      "id": "16",
+      "title": "If...",
+      "readingTime": "2 min",
+      "publishDate": "2025-12-25",
+      "blogLink": "if-kipling",
+      "githubLink": "",
+      "hidden": false,
+      "pinned": false,
+      "links": [],
+      "tags": [
+        "poetry",
+        "philosophy"
+      ],
+      "contentPath": "if.md"
+    },
+    {
+      "id": "17",
+      "title": "🎞️ Screens",
+      "readingTime": "∞",
+      "publishDate": "2026-01-01",
+      "blogLink": "screens",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": true,
+      "links": [],
+      "tags": [
+        "cinema"
+      ],
+      "contentPath": "screens.md"
+    },
+    {
+      "id": "18",
+      "title": "♪ Songs",
+      "readingTime": "∞",
+      "publishDate": "2026-01-01",
+      "blogLink": "songs",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": true,
+      "links": [],
+      "tags": [
+        "cinema"
+      ],
+      "contentPath": "songs.md"
+    },
+    {
+      "id": "19",
+      "title": "📜 Purpose",
+      "readingTime": "2 min",
+      "publishDate": "2026-01-01",
+      "blogLink": "purpose",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [],
+      "tags": [
+        "philosophy"
+      ],
+      "contentPath": "purpose.md"
+    },
+    {
+      "id": "20",
+      "title": "📚 Books",
+      "readingTime": "∞",
+      "publishDate": "2026-06-07",
+      "blogLink": "books",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": true,
+      "links": [],
+      "tags": [
+        "reading"
+      ],
+      "contentPath": "books.md"
+    },
+    {
+      "id": "21",
+      "title": "🍳 Recipes",
+      "readingTime": "∞",
+      "publishDate": "2026-06-27",
+      "blogLink": "recipes",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": true,
+      "links": [],
+      "tags": [
+        "cooking"
+      ],
+      "contentPath": "recipe.md"
+    },
+    {
+      "id": "22",
+      "title": "📝 Shelf",
+      "readingTime": "4 min",
+      "publishDate": "2026-01-01",
+      "blogLink": "paper-shelf",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": true,
+      "links": [],
+      "tags": [
+        "ai",
+        "learning"
+      ],
+      "contentPath": "paper-shelf.md"
+    },
+    {
+      "id": "23",
+      "title": "Why travel?",
+      "readingTime": "2 min",
+      "publishDate": "2026-01-01",
+      "blogLink": "why-travel",
+      "githubLink": "",
+      "hidden": false,
+      "pinned": false,
+      "links": [],
+      "tags": [
+        "hobbies",
+        "travel"
+      ],
+      "contentPath": "why-travel.md"
+    },
+    {
+      "id": "24",
+      "title": "Seeing Through the Model`s Eyes: Visualizing Cross-Lingual Attention in Math Reasoning",
+      "readingTime": "4 min",
+      "publishDate": "2026-01-02",
+      "blogLink": "llm-scratch-attention",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
+          "description": "Attention in transformers (3Blue1Brown)"
+        }
+      ],
+      "tags": [
+        "ai",
+        "learning"
+      ],
+      "contentPath": "month-two-llm-scratch-attention.md"
+    },
+    {
+      "id": "25",
+      "title": "Hacker's Manifesto",
+      "readingTime": "1 min",
+      "publishDate": "2026-02-07",
+      "blogLink": "hackers-manifesto",
+      "githubLink": "",
+      "hidden": false,
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://phrack.org/issues/7/3",
+          "description": "The Conscience of a Hacker"
+        },
+        {
+          "url": "https://darknetdiaries.com/episode/170/",
+          "description": "EP 170: Phrack"
+        }
+      ],
+      "tags": [
+        "philosophy"
+      ],
+      "contentPath": "manifesto.md"
+    },
+    {
+      "id": "26",
+      "title": "Programming has changed",
+      "readingTime": "2 min",
+      "publishDate": "2026-02-22",
+      "blogLink": "programming-changed",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [],
+      "tags": [
+        "ai"
+      ],
+      "contentPath": "programming-changed.md"
+    },
+    {
+      "id": "27",
+      "title": "The Trial by Existence",
+      "readingTime": "5 min",
+      "publishDate": "2026-03-15",
+      "blogLink": "the-trial-by-existence",
+      "githubLink": "",
+      "hidden": false,
+      "pinned": false,
+      "links": [],
+      "tags": [
+        "poetry",
+        "philosophy"
+      ],
+      "contentPath": "the-trial-by-existence.md"
+    },
+    {
+      "id": "28",
+      "title": "There is a boat on the mat!",
+      "readingTime": "7 min",
+      "publishDate": "2026-04-21",
+      "blogLink": "shiva-mma",
+      "githubLink": "",
+      "hidden": false,
+      "pinned": false,
+      "links": [
+        {
+          "url": "https://www.youtube.com/watch?v=ER5Z_MyUkJQ",
+          "description": "Lee"
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=kDnCnxCOPHA",
+          "description": "Distractions"
+        }
+      ],
+      "tags": [
+        "mma",
+        "hobbies"
+      ],
+      "contentPath": "shiva-mma.md"
+    },
+    {
+      "id": "29",
+      "title": "Don't be a cynic!",
+      "readingTime": "5 min",
+      "publishDate": "2026-05-02",
+      "blogLink": "cynic",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [],
+      "tags": [],
+      "contentPath": "cynic.md"
+    },
+    {
+      "id": "30",
+      "title": "Dreams that woke me up",
+      "readingTime": "3 min",
+      "publishDate": "2026-08-23",
+      "blogLink": "dreams",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [],
+      "tags": [
+        "dreams",
+        "psychology"
+      ],
+      "contentPath": "dreams.md"
+    }
+  ]
+}
