@@ -153,10 +153,14 @@ Main Vaapas Aaunga (2026) (tt37333137)
 
 > Recommendation from: It's an Imtiaz Ali film, and a colleague from sign language class recommended it.
 
-Declassified: Operation Sindoor (2026) (tt43730117)
+[x] Declassified: Operation Sindoor (2026) (tt43730117)
 
 > This was a really good watch. It's a shame that it was put behind a paywall. The flow, storytelling and the screenplay of the documentary is amazing. Especially the feature of Ajit Doval really tied the story together, basically what was happening in the corridors of power back then. Most of the details were already known at this point for me, so nothing worth declassifying per se. Watched it on Independence Day.
 > Recommendation from: Saw the trailer — it features actual accounts from the DGMO and Doval.
+
+Dekh Tamasha Dekh (2014)
+
+> Recomendation from: Saw the court room drama scene, and was sold!
 
 I Saw the Devil (2010)
 
