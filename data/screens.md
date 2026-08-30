@@ -158,8 +158,9 @@ Main Vaapas Aaunga (2026) (tt37333137)
 > This was a really good watch. It's a shame that it was put behind a paywall. The flow, storytelling and the screenplay of the documentary is amazing. Especially the feature of Ajit Doval really tied the story together, basically what was happening in the corridors of power back then. Most of the details were already known at this point for me, so nothing worth declassifying per se. Watched it on Independence Day.
 > Recommendation from: Saw the trailer — it features actual accounts from the DGMO and Doval.
 
-Dekh Tamasha Dekh (2014)
+[x] Dekh Tamasha Dekh (2014)
 
+> It opens with the rhythm of a black comedy, but the humor quickly dries down and you are left with just darkness for most part of the movie. The ending lands with precision: we're all busy performing in our own little circuses, tearing into each other, while the ringmasters shake hands backstage. Pacing was an issue for me, lots of stretches were deliberately slow.
 > Recomendation from: Saw the court room drama scene, and was sold!
 
 I Saw the Devil (2010)
