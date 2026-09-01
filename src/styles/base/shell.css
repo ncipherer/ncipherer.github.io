@@ -1,0 +1,393 @@
+/* reset, page frame, navbar, nav links, theme selector (imported by styles/main.css) */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  color: var(--text-primary);
+  background-color: var(--bg-primary);
+  transition: background-color var(--transition-duration) var(--transition-timing),
+    color var(--transition-duration) var(--transition-timing);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.container h1 {
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  height: var(--header-height);
+  background-color: var(--bg-primary);
+  border-bottom: 1px solid var(--border-color);
+  backdrop-filter: blur(8px);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-content {
+  max-width: var(--container-width);
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+
+/* on a note page the nav links are redundant; the note has its own back link */
+body.note-open .nav-links {
+  display: none;
+}
+
+/* with the nav links gone, keep search/theme pinned to the right edge */
+body.note-open .nav-actions {
+  margin-left: auto;
+}
+
+.nav-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.9375rem;
+  transition: color var(--transition-duration) var(--transition-timing);
+  position: relative;
+}
+
+/* --- Navbar icon buttons (search, sonar, mute) --- */
+.search-trigger-btn,
+.sonar-toggle-btn,
+.y2k-mute-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4px;
+  border-radius: 6px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.search-trigger-btn:hover,
+.sonar-toggle-btn:hover,
+.y2k-mute-btn:hover {
+  background: rgba(128, 128, 128, 0.1);
+}
+
+/* --- Navbar sonar toggle (site-wide setting, like theme + sound) --- */
+.sonar-nav-group {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+
+
+/* Active: icon arcs glow and pulse */
+.sonar-toggle-btn.active {
+  color: #4ade80;
+  animation: sonar-active-pulse 2s ease-in-out infinite;
+}
+
+@keyframes sonar-active-pulse {
+  0%, 100% { filter: drop-shadow(0 0 3px #4ade80); }
+  50% { filter: drop-shadow(0 0 8px #4ade80) drop-shadow(0 0 16px #4ade80); }
+}
+
+.sonar-toggle-btn.active svg {
+  stroke-width: 2.5;
+}
+
+.sonar-toggle-btn.calibrating svg {
+  animation: sonar-calibrate 0.6s ease-in-out infinite;
+}
+
+/* Info button — small, subtle, next to sonar icon */
+.sonar-info-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--text-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  border-radius: 50%;
+  transition: color 0.2s ease, background 0.2s ease;
+  opacity: 0.5;
+}
+
+.sonar-info-btn:hover {
+  opacity: 1;
+  color: var(--text-primary);
+  background: rgba(128, 128, 128, 0.1);
+}
+
+/* Y2K info button */
+[data-theme="y2k-cyber"] .sonar-info-btn {
+  color: var(--y2k-cyan);
+  opacity: 0.6;
+  border-radius: 0;
+}
+
+[data-theme="y2k-cyber"] .sonar-info-btn:hover {
+  opacity: 1;
+  background: rgba(0, 255, 255, 0.1);
+}
+
+/* Light theme active sonar */
+[data-theme="light"] .sonar-toggle-btn.active {
+  color: #2d5a27;
+  animation: sonar-active-pulse 2s ease-in-out infinite;
+}
+
+/* Popover below the sonar button */
+.sonar-popover {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+  min-width: 150px;
+  z-index: 200;
+  padding: 4px;
+  opacity: 0;
+  transform: translateY(-4px);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  pointer-events: none;
+}
+
+.sonar-popover[hidden] {
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.sonar-popover:not([hidden]) {
+  opacity: 1;
+  transform: translateY(0);
+  pointer-events: auto;
+}
+
+.sonar-popover-action {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 0.82rem;
+  color: var(--text-primary);
+  text-align: left;
+  transition: background 0.12s ease;
+}
+
+.sonar-popover-action:hover {
+  background: rgba(128, 128, 128, 0.1);
+}
+
+.sonar-popover-action[data-action="toggle"] .sonar-popover-label::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-secondary);
+  margin-right: 2px;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sonar-popover-action[data-action="toggle"].is-active .sonar-popover-label::before {
+  background: var(--accent-color);
+  box-shadow: 0 0 6px var(--accent-color);
+}
+
+.sonar-popover-action[data-action="info"] .sonar-popover-label::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  border: 1.5px solid var(--text-secondary);
+  margin-right: 2px;
+}
+
+/* Y2K theme sonar button — matches search + mute border */
+[data-theme="y2k-cyber"] .sonar-toggle-btn {
+  color: var(--y2k-neon-green);
+  border: 1px solid var(--y2k-neon-green);
+  border-radius: 0;
+}
+
+[data-theme="y2k-cyber"] .sonar-toggle-btn:hover {
+  background: rgba(0, 255, 65, 0.1);
+  box-shadow: 0 0 6px rgba(0, 255, 65, 0.3);
+}
+
+[data-theme="y2k-cyber"] .sonar-toggle-btn.active {
+  background: rgba(0, 255, 65, 0.15);
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.45);
+  color: var(--y2k-neon-green);
+  animation: y2k-sonar-pulse 1.8s ease-in-out infinite;
+}
+
+@keyframes y2k-sonar-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 4px var(--y2k-neon-green));
+    text-shadow: none;
+  }
+  50% {
+    filter: drop-shadow(0 0 10px var(--y2k-neon-green)) drop-shadow(0 0 20px var(--y2k-neon-green));
+  }
+}
+
+[data-theme="y2k-cyber"] .sonar-popover {
+  border: 2px solid var(--y2k-neon-green);
+  border-radius: 0;
+  background: #0a0a1a;
+  box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+}
+
+[data-theme="y2k-cyber"] .sonar-popover-action {
+  color: var(--y2k-neon-green);
+  font-family: "Courier New", monospace;
+  border-radius: 0;
+}
+
+[data-theme="y2k-cyber"] .sonar-popover-action:hover {
+  background: rgba(0, 255, 65, 0.1);
+}
+
+[data-theme="y2k-cyber"] .sonar-popover-action[data-action="toggle"] .sonar-popover-label::before {
+  background: var(--y2k-neon-green);
+}
+
+[data-theme="y2k-cyber"] .sonar-popover-action[data-action="toggle"].is-active .sonar-popover-label::before {
+  background: var(--y2k-hot-pink);
+  box-shadow: 0 0 8px var(--y2k-hot-pink);
+}
+
+[data-theme="y2k-cyber"] .sonar-popover-action[data-action="info"] .sonar-popover-label::before {
+  border-color: var(--y2k-cyan);
+}
+
+.nav-link:hover {
+  color: var(--accent-color);
+}
+
+/* Theme Selector – 3-segment pill */
+.theme-selector {
+  display: flex;
+  background-color: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 2px;
+  position: relative;
+  transition: all var(--transition-duration) var(--transition-timing);
+}
+
+.theme-selector-btn {
+  position: relative;
+  z-index: 2;
+  background: none;
+  border: none;
+  color: var(--text-secondary);
+  cursor: pointer;
+  width: 28px;
+  height: 28px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color var(--transition-duration) var(--transition-timing);
+  padding: 0;
+  font-size: 15px;
+  line-height: 1;
+}
+
+.theme-selector-btn:hover {
+  color: var(--text-primary);
+}
+
+.theme-selector-btn.active {
+  color: var(--bg-primary);
+}
+
+/* Sliding highlight behind the active button */
+.theme-selector-indicator {
+  position: absolute;
+  z-index: 1;
+  top: 2px;
+  left: 2px;
+  width: 28px;
+  height: 28px;
+  border-radius: 12px;
+  background-color: var(--accent-color);
+  transition: transform var(--transition-duration) var(--transition-timing),
+    background-color var(--transition-duration) var(--transition-timing);
+}
+
+/* Position indicator based on active theme */
+.theme-selector[data-active="light"] .theme-selector-indicator {
+  transform: translateX(0);
+}
+
+.theme-selector[data-active="dark"] .theme-selector-indicator {
+  transform: translateX(28px);
+}
+
+.theme-selector[data-active="y2k-cyber"] .theme-selector-indicator {
+  transform: translateX(56px);
+}
+
+/* Mobile: single-button theme cycle (hidden on desktop) */
+.theme-selector-mobile {
+  display: none;
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--text-primary);
+  cursor: pointer;
+  padding: 6px;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-duration) var(--transition-timing);
+  background-color: var(--bg-secondary);
+  flex-shrink: 0;
+}
+
+.theme-selector-mobile:hover {
+  border-color: var(--accent-color);
+}
+
+/* Y2K mobile toggle */
+[data-theme="y2k-cyber"] .theme-selector-mobile {
+  border-color: var(--y2k-neon-green) !important;
+  border-radius: 0 !important;
+  color: var(--y2k-neon-green) !important;
+}

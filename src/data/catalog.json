@@ -1,0 +1,705 @@
+{
+  "movies": [
+    {
+      "title": "12 Angry Men",
+      "year": "1957",
+      "director": "Sidney Lumet",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjE4NzdmOTYtYjc5Yi00YzBiLWEzNDEtNTgxZGQ2MWVkN2NiXkEyXkFqcGc@._V1_QL75_UX380_CR0,11,380,562_.jpg",
+      "imdbID": "tt0050083",
+      "checked": true
+    },
+    {
+      "title": "8x10 Tasveer",
+      "year": "2009",
+      "director": "Nagesh Kukunoor",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZGE0OTcyOGEtNjdlMS00ZjEzLThmN2MtNDVmMzQxMzc5NGM1XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt1105709",
+      "checked": true
+    },
+    {
+      "title": "A Class Divided",
+      "year": "1985",
+      "director": "William Peters",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzJmODk4ZmItNmY3OC00OTQ1LTkwODktOGUxM2NhMGIxODVkXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0257489",
+      "checked": true
+    },
+    {
+      "title": "A King in New York",
+      "year": "1957",
+      "director": "Charles Chaplin",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOGYxNzc3YjYtZDk3MC00YTZkLWJhYTMtY2UxYTY3ZmJhMDhlXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0050598",
+      "checked": true
+    },
+    {
+      "title": "A Monster Calls",
+      "year": "2016",
+      "director": "J.A. Bayona",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTg1OTA5OTkyNV5BMl5BanBnXkFtZTgwODMwNDU5OTE@._V1_SX300.jpg",
+      "imdbID": "tt3416532",
+      "checked": true
+    },
+    {
+      "title": "Aamir",
+      "year": "2008",
+      "director": "Raj Kumar Gupta",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzkzMjY1MmUtNmExMy00MjRlLTljOTktNTRiY2QyNzA5MzI3XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt1241195",
+      "checked": true
+    },
+    {
+      "title": "Aarakshan",
+      "year": "2011",
+      "director": "Prakash Jha",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTUwMjIxNTEyM15BMl5BanBnXkFtZTcwNjM0Njk5NQ@@._V1_SX300.jpg",
+      "imdbID": "tt1848771",
+      "checked": true
+    },
+    {
+      "title": "Chasing the Moon",
+      "year": "2019",
+      "director": "Robert Stone",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjY5YTRjYzMtNjQ3Zi00ZWY3LWI3YWMtZWFjYTI0YTM3NTBkXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt7728082",
+      "checked": true
+    },
+    {
+      "title": "Close",
+      "year": "2022",
+      "director": "Lukas Dhont",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzg4NmE0NzctMjBkMC00YjQyLWFjZDktNDBkMjU5ZGFlZDU3XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt9660502",
+      "checked": true
+    },
+    {
+      "title": "Collateral",
+      "year": "2004",
+      "director": "Michael Mann",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjE3NjM5OTMxMV5BMl5BanBnXkFtZTcwOTIzMTQyMw@@._V1_SX300.jpg",
+      "imdbID": "tt0369339",
+      "checked": true
+    },
+    {
+      "title": "Dark",
+      "year": "2017",
+      "director": "",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOWJjMGViY2UtNTAzNS00ZGFjLWFkNTMtMDBiMDMyZTM1NTY3XkEyXkFqcGc@._V1_QL75_UX380_CR0,57,380,562_.jpg",
+      "imdbID": "tt5753856",
+      "checked": true
+    },
+    {
+      "title": "DC",
+      "year": "2026",
+      "director": "Arun Matheswaran",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDM5YWY5MjEtMzQ5Ny00OGYwLTkyMjMtODdmY2ExZTk3ZGY3XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt37501035",
+      "checked": true
+    },
+    {
+      "title": "Declassified: Operation Sindoor",
+      "year": "2026",
+      "director": "",
+      "poster": "https://image.tmdb.org/t/p/w500/w7eJIMCc4DRWM2o5HleNmy8ezKw.jpg",
+      "imdbID": "tt43730117",
+      "checked": true
+    },
+    {
+      "title": "Dekh Tamasha Dekh",
+      "year": "2014",
+      "director": "Feroz Abbas Khan",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTQxNzAyODkyNV5BMl5BanBnXkFtZTgwMjY1NTA3MTE@._V1_SX300.jpg",
+      "imdbID": "tt3672618",
+      "checked": true
+    },
+    {
+      "title": "Detective Conan: The Counterfeit Case of Ultra 300",
+      "year": "2026",
+      "director": "Nobuharu Kamanaka",
+      "poster": "https://image.tmdb.org/t/p/w500/pT9RIHf4K9OyOB3eqYj97E5h0YA.jpg",
+      "imdbID": "tt46656123",
+      "checked": true
+    },
+    {
+      "title": "Dhurandhar: The Revenge",
+      "year": "2026",
+      "director": "Aditya Dhar",
+      "poster": "https://image.tmdb.org/t/p/w500/ov8vrRLZGoXHpYjSY9Vpv1tHJX7.jpg",
+      "imdbID": "tt39139925",
+      "checked": true
+    },
+    {
+      "title": "Edge of Tomorrow",
+      "year": "2014",
+      "director": "Doug Liman",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTc5OTk4MTM3M15BMl5BanBnXkFtZTgwODcxNjg3MDE@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "imdbID": "tt1631867",
+      "checked": true
+    },
+    {
+      "title": "Ek Doctor Ki Maut",
+      "year": "1990",
+      "director": "Tapan Sinha",
+      "poster": "https://image.tmdb.org/t/p/w500/kbLJ6AkumaH3Lcdufs1TgFENfKu.jpg",
+      "imdbID": "tt0345177",
+      "checked": true
+    },
+    {
+      "title": "Enemy",
+      "year": "2013",
+      "director": "Denis Villeneuve",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTQ2NzA5NjE4N15BMl5BanBnXkFtZTgwMjQ4NzMxMTE@._V1_SX300.jpg",
+      "imdbID": "tt2316411",
+      "checked": true
+    },
+    {
+      "title": "Good Morning, Vietnam",
+      "year": "1987",
+      "director": "Barry Levinson",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYThiZTU4N2UtYWU2Mi00ZGUyLWI2ZmEtM2U1ZmJmOGY1ZTc3XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0093105",
+      "checked": true
+    },
+    {
+      "title": "Had Anhad",
+      "year": "2008",
+      "director": "Shabnam Virmani",
+      "poster": "https://image.tmdb.org/t/p/w500/c7gULtZhEzQmagn3WEzPqHlNXt2.jpg",
+      "imdbID": "",
+      "checked": true
+    },
+    {
+      "title": "Hero",
+      "year": "2002",
+      "director": "Yimou Zhang",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYTlkZWVjYzQtZmI1My00MGM2LTlmZjEtNjU1M2Y1MTRkNmZjXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0299977",
+      "checked": true
+    },
+    {
+      "title": "Homebound",
+      "year": "2025",
+      "director": "Neeraj Ghaywan",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYmJiMTlhYTgtODkyMy00OGUwLWE2MzctZjlhMjQ1ZmZjZTNkXkEyXkFqcGc@._V1_QL75_UY562_CR21,0,380,562_.jpg",
+      "imdbID": "tt26733325",
+      "checked": true
+    },
+    {
+      "title": "I Saw the Devil",
+      "year": "2010",
+      "director": "Kim Jee-woon",
+      "poster": "https://m.media-amazon.com/images/M/MV5BM2Q1ZGZiNTYtMWNjOC00NmU2LTg1MDQtZGZkNmY0Y2RlOTBmXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt1588170",
+      "checked": true
+    },
+    {
+      "title": "In the Mood for Love",
+      "year": "2000",
+      "director": "Wong Kar-Wai",
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2Q4NjllMDgtOTk2Zi00YzM1LWJmOTMtNmRiZDgyZGJmMjQzXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0118694",
+      "checked": true
+    },
+    {
+      "title": "It was Just an Accident",
+      "year": "2025",
+      "director": "Jafar Panahi",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMWJkZmZlNjUtM2Q1OC00MmNjLWFkOWEtNjRhN2FkM2ZlMjI3XkEyXkFqcGc@._V1_QL75_UY562_CR0,0,380,562_.jpg",
+      "imdbID": "tt36491653",
+      "checked": true
+    },
+    {
+      "title": "Jaane Bhi Do Yaaro",
+      "year": "1983",
+      "director": "Kundan Shah",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzhhN2NlZmQtZDFmMi00ODA3LThjNTQtMmFhMzViZDcxZWFkXkEyXkFqcGc@._V1_QL75_UY562_CR24,0,380,562_.jpg",
+      "imdbID": "tt0085743",
+      "checked": true
+    },
+    {
+      "title": "Kabhi Kabhie",
+      "year": "1976",
+      "director": "Yash Chopra",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMmExYzljNTYtZjM2YS00MjNhLTk4Y2QtMmU3MzU2MDc5NWI3XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0074730",
+      "checked": true
+    },
+    {
+      "title": "Kabul Express",
+      "year": "2006",
+      "director": "Kabir Khan",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYWMwZmMyZjktMDRmZi00OTIyLTk2ODItM2E3MzgxNDM2M2U4XkEyXkFqcGc@._V1_QL75_UY562_CR21,0,380,562_.jpg",
+      "imdbID": "tt0770214",
+      "checked": true
+    },
+    {
+      "title": "Kishkindha Kaandam",
+      "year": "2024",
+      "director": "Dinjith Ayyathan",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjBkNDMzYzktZjBjMy00ZmU3LTk0MDEtNzAzNGFjMGE4MDQyXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt15980138",
+      "checked": true
+    },
+    {
+      "title": "Laal Kaptaan",
+      "year": "2019",
+      "director": "Navdeep Singh",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzcwZGQ1OWQtOWQxNC00YmM0LWIyMmYtMTM5MmQ5ODYyMjJhXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt9052960",
+      "checked": true
+    },
+    {
+      "title": "Ladies First",
+      "year": "2026",
+      "director": "Thea Sharrock",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjBhMjk2NmQtY2JhOC00OTIzLTkzZjItNjA2NWM3OTkzNzA5XkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "imdbID": "tt34611082",
+      "checked": true
+    },
+    {
+      "title": "Lessons of Darkness",
+      "year": "1992",
+      "director": "Werner Herzog",
+      "poster": "https://m.media-amazon.com/images/M/MV5BN2Q0ZDI1M2UtNTM3Ny00YjBmLWFjMjAtN2JmZGQ5NmRiNjgzXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0104706",
+      "checked": true
+    },
+    {
+      "title": "Life of Chuck",
+      "year": "2024",
+      "director": "Mike Flanagan",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZDhlMzJhMTgtN2FhZS00OWQ1LTk3Y2ItZGNiNTQ0ZmUzYmIzXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "imdbID": "tt12908150",
+      "checked": true
+    },
+    {
+      "title": "Little Nights, Little Love",
+      "year": "2019",
+      "director": "Rikiya Imaizumi",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzczMmZkYWUtYmU1NS00MWViLWFiNWMtZmM0OTYzYzBjN2ZhXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt8228906",
+      "checked": true
+    },
+    {
+      "title": "Mahaan",
+      "year": "2022",
+      "director": "Karthik Subbaraj",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTIwM2U3N2ItNThlYi00NWJkLThlZTQtMTZiODkzZTIwNjJiXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt12472554",
+      "checked": true
+    },
+    {
+      "title": "Main Vaapas Aaunga",
+      "year": "2026",
+      "director": "Imtiaz Ali",
+      "poster": "https://image.tmdb.org/t/p/w500/wHTNsZxvlfRAndc52hGlbdCUXKS.jpg",
+      "imdbID": "tt37333137",
+      "checked": true
+    },
+    {
+      "title": "Manorama Six Feet Under",
+      "year": "2007",
+      "director": "Navdeep Singh",
+      "poster": "https://image.tmdb.org/t/p/w500/1b5ZrBI48xbAVmCbNNhvFXz474y.jpg",
+      "imdbID": "tt0920464",
+      "checked": true
+    },
+    {
+      "title": "Mehrunisa V Lub U",
+      "year": "2017",
+      "director": "Yasir Nawaz",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjBmNjYxM2EtNzVmYi00YjEzLTg2YWQtMDM1MjhkMjE4N2NmXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt7063130",
+      "checked": true
+    },
+    {
+      "title": "Meiyazhagan",
+      "year": "2024",
+      "director": "C. Prem Kumar",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYTk3Zjk4MzctZDI1Zi00OWRiLTlhN2QtNDUxMTJhMWM3YTMwXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt26758372",
+      "checked": true
+    },
+    {
+      "title": "Millennium Actress",
+      "year": "2001",
+      "director": "Satoshi Kon",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZjcwZDFlMTgtN2Q1Ny00MTgxLTk5OGItNTllMDg3MjE0NjZlXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0291350",
+      "checked": true
+    },
+    {
+      "title": "Mouse",
+      "year": "2021",
+      "director": "",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjJkNzA2N2EtMjAxOC00MTY3LTkxZTEtODQxMTI4YjAyZTk2XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt13634792",
+      "checked": true
+    },
+    {
+      "title": "No other choice",
+      "year": "2025",
+      "director": "Park Chan-wook",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjg3NzY0N2ItZGFlMy00NzAzLTk2NjItMDk2YTU3ZWU0MDA1XkEyXkFqcGc@._V1_QL75_UY562_CR7,0,380,562_.jpg",
+      "imdbID": "tt1527793",
+      "checked": true
+    },
+    {
+      "title": "Obsession",
+      "year": "2026",
+      "director": "Curry Barker",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYzc1NWUwMDgtNGZlMS00ZmYzLWIzMzktNmMxMmY1MTUzNWExXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "imdbID": "tt37287335",
+      "checked": true
+    },
+    {
+      "title": "Oldboy",
+      "year": "2003",
+      "director": "Park Chan-wook",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTAwNzNjYWItZmI0Ni00ZTcyLWIwNWMtZjlmNGMxZTEyYTJmXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0364569",
+      "checked": true
+    },
+    {
+      "title": "Once Upon a Time in America",
+      "year": "1984",
+      "director": "Sergio Leone",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMDQ0ZTg2OGUtZjMyOC00M2M5LThkMmItZmM2MmUzMmIxMWJhXkEyXkFqcGc@._V1_QL75_UX380_CR0,4,380,562_.jpg",
+      "imdbID": "tt0087843",
+      "checked": true
+    },
+    {
+      "title": "One Battle After Another",
+      "year": "2025",
+      "director": "Paul Thomas Anderson",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzBkZmQ0NjMtNTZlMy00ZjdlLTg5ODUtYWFlNGM0YzE3MTg0XkEyXkFqcGc@._V1_QL75_UY562_CR35,0,380,562_.jpg",
+      "imdbID": "tt30144839",
+      "checked": true
+    },
+    {
+      "title": "Operation Safed Sagar",
+      "year": "2026",
+      "director": "",
+      "poster": "https://m.media-amazon.com/images/M/MV5BY2Y5NGY5M2MtMzc3Zi00YjZhLWJhOWMtMjY4YWRiMzZlOWJiXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt36643714",
+      "checked": true
+    },
+    {
+      "title": "Party",
+      "year": "1984",
+      "director": "Govind Nihalani",
+      "poster": "https://image.tmdb.org/t/p/w500/bpwyMapM7f2gQKRIyJODW9doCBL.jpg",
+      "imdbID": "tt0248289",
+      "checked": true
+    },
+    {
+      "title": "Pay It Forward",
+      "year": "2000",
+      "director": "Mimi Leder",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNjI3ODI5NDEwMl5BMl5BanBnXkFtZTYwNDYyMjU3._V1_SX300.jpg",
+      "imdbID": "tt0223897",
+      "checked": true
+    },
+    {
+      "title": "Phantom",
+      "year": "2015",
+      "director": "Kabir Khan",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTk5NDE2NDUxM15BMl5BanBnXkFtZTgwOTA3NzI1NjE@._V1_SX300.jpg",
+      "imdbID": "tt3469244",
+      "checked": true
+    },
+    {
+      "title": "Primal Fear",
+      "year": "1996",
+      "director": "Gregory Hoblit",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZTJlYjM5MTYtZWU3YS00ZDRhLTk1MWEtZGQyODc1ZDU2MWEwXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0117381",
+      "checked": true
+    },
+    {
+      "title": "Prisoners",
+      "year": "2013",
+      "director": "Denis Villeneuve",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTg0NTIzMjQ1NV5BMl5BanBnXkFtZTcwNDc3MzM5OQ@@._V1_SX300.jpg",
+      "imdbID": "tt1392214",
+      "checked": true
+    },
+    {
+      "title": "Project Hail Mary",
+      "year": "2026",
+      "director": "Phil Lord, Christopher Miller",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNTkwNzJiYTctNzI3NC00NjE1LTlhYjktY2Q5MTdmMWFmNzcxXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "imdbID": "tt12042730",
+      "checked": true
+    },
+    {
+      "title": "Roman Holiday",
+      "year": "1953",
+      "director": "William Wyler",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMGE5MTA2NDUtYTQ3Yi00YzM4LWJlODItNDE1ZTRjYjY0M2E5XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0046250",
+      "checked": true
+    },
+    {
+      "title": "Satluj",
+      "year": "2026",
+      "director": "Honey Trehan",
+      "poster": "https://image.tmdb.org/t/p/w500/hm4ou83RwLVwNj3HsmQuqC1qkWy.jpg",
+      "imdbID": "",
+      "checked": true
+    },
+    {
+      "title": "Satyakam",
+      "year": "1969",
+      "director": "Hrishikesh Mukherjee",
+      "poster": "https://image.tmdb.org/t/p/w500/m2H46TuVZ8vdIK9dexqfUJEkQxF.jpg",
+      "imdbID": "tt0244776",
+      "checked": true
+    },
+    {
+      "title": "Serpico",
+      "year": "1973",
+      "director": "Sidney Lumet",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYTg3NzUzYzYtMmQxOS00MjAwLWI0ZDYtNDg4OTQ4OTljNGFlXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0070666",
+      "checked": true
+    },
+    {
+      "title": "Shaadi Se Pehle",
+      "year": "2008",
+      "director": "Satish Kaushik",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNDFmYmFiZDctMGZlOC00MGUxLWIwMWItM2E2YWQ2M2QzMjE3XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0489560",
+      "checked": true
+    },
+    {
+      "title": "Sicario",
+      "year": "2015",
+      "director": "Denis Villeneuve",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjA5NjM3NTk1M15BMl5BanBnXkFtZTgwMzg1MzU2NjE@._V1_SX300.jpg",
+      "imdbID": "tt3397884",
+      "checked": true
+    },
+    {
+      "title": "Sorcerer",
+      "year": "1977",
+      "director": "William Friedkin",
+      "poster": "https://m.media-amazon.com/images/M/MV5BY2I4ZDBlM2ItNTcxZS00ZDA0LTljMDAtYjdlYmFiYzA1NGZjXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0076740",
+      "checked": true
+    },
+    {
+      "title": "Spider-Man: Brand New Day",
+      "year": "2026",
+      "director": "Destin Daniel Cretton",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOWNjYWM3NWItOGE0ZS00MWRjLThiZWEtYjc4ZmNmMmU5ZTVmXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "imdbID": "tt22084616",
+      "checked": true
+    },
+    {
+      "title": "Spotlight",
+      "year": "2015",
+      "director": "Tom McCarthy",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjIyOTM5OTIzNV5BMl5BanBnXkFtZTgwMDkzODE2NjE@._V1_SX300.jpg",
+      "imdbID": "tt1895587",
+      "checked": true
+    },
+    {
+      "title": "Succession",
+      "year": "2018",
+      "director": "",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYTY4YTVkY2QtMjRmOS00YzliLWIxOWQtMTdkOTVkN2UzODNmXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt7660850",
+      "checked": true
+    },
+    {
+      "title": "Sunday",
+      "year": "2008",
+      "director": "Rohit Shetty",
+      "poster": "https://image.tmdb.org/t/p/w500/rEFD2MOV4XrjVTmNwPP7p2Sm7hp.jpg",
+      "imdbID": "tt1039989",
+      "checked": true
+    },
+    {
+      "title": "Taste of Cherry",
+      "year": "1997",
+      "director": "Abbas Kiarostami",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZWExZjliYTgtM2U2Yi00MTU5LWFmOTAtNThkZDE1MzMxYWU2XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt0120265",
+      "checked": true
+    },
+    {
+      "title": "The 400 Blows",
+      "year": "1959",
+      "director": "François Truffaut",
+      "poster": "https://m.media-amazon.com/images/M/MV5BOTU3YTM0YzQtMmFlOS00OTIxLWFmZjctMDJkOGQxNTVhODM3XkEyXkFqcGc@._V1_QL75_UY562_CR22,0,380,562_.jpg",
+      "imdbID": "tt0053198",
+      "checked": true
+    },
+    {
+      "title": "The Adjustment Bureau",
+      "year": "2011",
+      "director": "George Nolfi",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTU3ODg3MDAxMl5BMl5BanBnXkFtZTcwMjc0MDMzNA@@._V1_SX300.jpg",
+      "imdbID": "tt1385826",
+      "checked": true
+    },
+    {
+      "title": "The Big Short",
+      "year": "2015",
+      "director": "Adam McKay",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZDZkNDQ3YjktYjBlZC00YTY1LTgxOGYtY2RhMWFhZmNkZGY3XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt1596363",
+      "checked": true
+    },
+    {
+      "title": "The Dinosaurs",
+      "year": "2026",
+      "director": "",
+      "poster": "https://m.media-amazon.com/images/M/MV5BYjdkYmIwOWQtNjQxNy00MTBmLWE1NTctNTdmYjhjYTA4NWM1XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt32493765",
+      "checked": true
+    },
+    {
+      "title": "The Great Shamsuddin Family",
+      "year": "2025",
+      "director": "Anusha Rizvi",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNWEyNDRkNjMtMGE3NS00NDE0LTljNDktNTBmZGJiYjhjM2NlXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt7944312",
+      "checked": true
+    },
+    {
+      "title": "The Invite",
+      "year": "2026",
+      "director": "Olivia Wilde",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMjI0MzJjMjctNmQzZi00Y2U4LWEwZGItMmE3NDUzNzk1YzY3XkEyXkFqcGc@._V1_QL75_UX380_CR0,15,380,562_.jpg",
+      "imdbID": "tt14173636",
+      "checked": true
+    },
+    {
+      "title": "The Island with Bear Grylls",
+      "year": "2015",
+      "director": "",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZDIzMzI5ZWEtNmI0NS00YmJhLTgzYWQtYTk4NmJiZmVkOGNiXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt3725394",
+      "checked": true
+    },
+    {
+      "title": "The Nice Guys",
+      "year": "2016",
+      "director": "Shane Black",
+      "poster": "https://m.media-amazon.com/images/M/MV5BM2YwNWZlZGEtYTEyZi00NjdjLWEwM2ItM2Q2MDMwZjkzMjk0XkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt3799694",
+      "checked": true
+    },
+    {
+      "title": "The Red Shoes",
+      "year": "1948",
+      "director": "Michael Powell, Emeric Pressburger",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMzY2MzIwMDQzN15BMl5BanBnXkFtZTcwNDUxMTM4NA@@._V1_SX300.jpg",
+      "imdbID": "tt0040725",
+      "checked": true
+    },
+    {
+      "title": "The Thinking Game",
+      "year": "2024",
+      "director": "Greg Kohs",
+      "poster": "https://m.media-amazon.com/images/M/MV5BODk0ZDdkYzAtMzZiNi00NjQ3LTgwMDEtMGM3MmIwNTlkNjMwXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt32150119",
+      "checked": true
+    },
+    {
+      "title": "The Town",
+      "year": "2010",
+      "director": "Ben Affleck",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTcyNzcxODg3Nl5BMl5BanBnXkFtZTcwMTUyNjQ3Mw@@._V1_SX300.jpg",
+      "imdbID": "tt0840361",
+      "checked": true
+    },
+    {
+      "title": "Three of Us",
+      "year": "2022",
+      "director": "Avinash Arun",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMWM3ZDUwYjMtMmEyZS00YmZiLTk0NWItOWViM2U2ZGRmOTIzXkEyXkFqcGc@._V1_SX300.jpg",
+      "imdbID": "tt23804378",
+      "checked": true
+    },
+    {
+      "title": "Train Dreams",
+      "year": "2025",
+      "director": "Clint Bentley",
+      "poster": "https://m.media-amazon.com/images/M/MV5BZDkzNzkyNTktYzNhMi00YjhiLWI5YmUtZjliMTY0ZDc5NmMyXkEyXkFqcGc@._V1_QL75_UX380_CR0,0,380,562_.jpg",
+      "imdbID": "tt29768334",
+      "checked": true
+    },
+    {
+      "title": "Tu Hai Mera Sunday",
+      "year": "2017",
+      "director": "Milind Dhaimade",
+      "poster": "https://image.tmdb.org/t/p/w500/bCiLhBpJfqSAfHsjhUItxOZqcsi.jpg",
+      "imdbID": "",
+      "checked": true
+    },
+    {
+      "title": "Two Years Later",
+      "year": "2026",
+      "director": "",
+      "poster": "https://image.tmdb.org/t/p/w500/rLx8jqmTAci1pDF8br3cIThluh4.jpg",
+      "imdbID": "tt37403273",
+      "checked": true
+    },
+    {
+      "title": "Where Is The Friends House",
+      "year": "1987",
+      "director": "Abbas Kiarostami",
+      "poster": "https://image.tmdb.org/t/p/w500/lrrtMVv2X8PNO7UA0Ce0gTtfuC8.jpg",
+      "imdbID": "",
+      "checked": true
+    }
+  ],
+  "books": [
+    {
+      "title": "A Perfect Spy",
+      "isbn": "0816141835",
+      "author": "John le Carré",
+      "cover": "https://covers.openlibrary.org/b/isbn/0816141835-M.jpg"
+    },
+    {
+      "title": "A Scanner Darkly",
+      "isbn": "9780385016131",
+      "author": "Philip K. Dick",
+      "cover": "https://covers.openlibrary.org/b/isbn/9780385016131-M.jpg"
+    },
+    {
+      "title": "Anxious People",
+      "isbn": "9781501160837",
+      "author": "Fredrik Backman",
+      "cover": "https://covers.openlibrary.org/b/isbn/9781501160837-M.jpg"
+    },
+    {
+      "title": "Is this Anything?",
+      "isbn": "9781797113050",
+      "author": "Jerry Seinfeld",
+      "cover": "https://covers.openlibrary.org/b/isbn/9781797113050-M.jpg"
+    },
+    {
+      "title": "The Lessons of History",
+      "isbn": "9780671413330",
+      "author": "Will Durant, Ariel Durant",
+      "cover": "https://covers.openlibrary.org/b/isbn/9780671413330-M.jpg"
+    },
+    {
+      "title": "The Palace of Illusions",
+      "isbn": "9781400096206",
+      "author": "Chitra Banerjee Divakaruni",
+      "cover": "https://covers.openlibrary.org/b/isbn/9781400096206-M.jpg"
+    },
+    {
+      "title": "When We Cease to Understand the World",
+      "isbn": "9781782276135",
+      "author": "Benjamín Labatut",
+      "cover": "https://covers.openlibrary.org/b/isbn/9781782276135-M.jpg"
+    }
+  ],
+  "generated": "2026-10-02"
+}

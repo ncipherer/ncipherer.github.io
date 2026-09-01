@@ -1,0 +1,1689 @@
+/* Screen/movie page styles (imported by styles/main.css)
+
+   `screens.md` is a rack of reels. A section is a bioscope: a painted wooden
+   box with two reels threaded into it, a beam of light thrown across a wall,
+   and the frame currently inside the machine shown on that wall — full size,
+   uncropped, the thing you actually look at. The arrows sit at the wall, not
+   at the rack, because the wall is where you already are.
+
+   The palette lives on .reel-room so the room, the box, the brass and the beam
+   all come from the same handful of colours, and the theme blocks at the
+   bottom only have to restate those. Every surface is gradients — no images to
+   download, and a theme switch costs nothing.
+   ────────────────────────────────────────────────────────────────────────── */
+
+.reel-room {
+  /* --reel-*-rgb are bare triplets so they can be faded with rgba() */
+
+  /* the room the bioscope stands in */
+  --reel-room-1: #0a0c15;
+  --reel-room-2: #161b2c;
+  --reel-plaster: rgba(255, 255, 255, 0.028);
+  --reel-vignette: rgba(0, 0, 0, 0.55);
+
+  /* light: the beam, the cloud it lands on, and how hard the picture burns */
+  --reel-beam-rgb: 255, 213, 128;
+  --reel-beam-blend: screen;
+  --reel-glow: 0.5;
+  --reel-glow-cloud: 0.5;
+
+  /* Film and metal. The machine is a near-black box with a single quiet brass
+     line on it — everything colourful in this room is light, not paint. */
+  /* The stock: the reel in the rack under the machine, the film threaded through
+     the gate and the reels on top. The room and the box are the same object in
+     every theme; the film is the thing that takes the light it is shown in, so
+     it — and the rack's type on it — come from here rather than from the page.
+     A darkroom negative here, a daylight print under the light theme, tube
+     stock under y2k. */
+  --stock-1: #17120c;
+  --stock-2: #090705;
+  --stock-cell: #05060a;
+  --stock-cell-2: #14161b;
+  --stock-perf-rgb: 240, 232, 214;
+  --stock-rim: rgba(0, 0, 0, 0.7);
+  --stock-frame-bg: rgba(8, 7, 5, 0.55);
+  --stock-sheen: rgba(255, 255, 255, 0.05);
+  --stock-reel-1: #1a1c22;
+  --stock-reel-2: #2c3038;
+  --stock-reel-3: #0c0e12;
+  --strip-ink: #f4ecd8;
+  --strip-ink-dim: rgba(244, 236, 216, 0.58);
+  --strip-brass: #e2c17c;
+  --reel-brass: #b08a44;
+  --reel-brass-light: #e2c17c;
+  --reel-brass-dark: #5d431a;
+  --reel-brass-rgb: 176, 138, 68;
+  --bs-body-1: #241c1d;
+  --bs-body-2: #0f0b0c;
+  --bs-rim: rgba(176, 138, 68, 0.4);
+  --bs-vent: rgba(255, 255, 255, 0.14);
+
+  /* type and surfaces */
+  --reel-ink: #f4ecd8;
+  --reel-ink-dim: #a99c82;
+  --reel-panel: rgba(4, 6, 12, 0.55);
+  --reel-panel-line: rgba(255, 255, 255, 0.09);
+  --reel-frame: #060810;
+  --reel-frame-rim: rgba(217, 165, 72, 0.55);
+
+  /* the pills that appear over the poster on hover: seen is green, a theatre
+     trip is blue, notes stay ink. Bare triplets so they can fade in rgba(). */
+  --reel-seen-rgb: 74, 200, 110;
+  --reel-seen-ink: #06210f;
+  --reel-theatre-rgb: 96, 165, 250;
+  --reel-theatre-ink: #041527;
+  --reel-notes-rgb: 244, 236, 216;
+  --reel-notes-ink: #241a10;
+  --reel-turn: 720ms;
+  /* the run of film between the bottom of the machine and the drawer */
+  --run-len: clamp(3rem, 6vw, 4rem);
+  /* half the height of the machine's face, for lining the beam up with the gate */
+  --gate-rise: 3.47rem;
+}
+
+/* ── One section = one reel ─────────────────────────────────────────────── */
+/* The room and the reel sit in one row: the picture on the wall stays where
+   it is and the reel turns beside it, so reading the whole shelf never means
+   scrolling the page — only the reel, under the cursor. */
+.film-roll {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) clamp(10rem, 18vw, 15rem);
+  grid-template-rows: auto minmax(0, 1fr);
+  column-gap: clamp(0.4rem, 1.2vw, 1rem);
+  margin: 0 0 clamp(2rem, 4.5vw, 3rem);
+}
+
+.film-roll-head {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.3rem 0.8rem;
+  margin-bottom: 0.6rem;
+}
+
+.film-roll-head h2 {
+  margin: 0;
+  padding-bottom: 0.35rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(1rem, 2.6vw, 1.25rem);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--reel-ink);
+  border-bottom: 2px solid var(--reel-brass-dark);
+}
+
+.film-roll-meta {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.72rem;
+  color: var(--reel-ink-dim);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ── The room ─────────────────────────────────────────────────────────────
+   A wall, a floor it meets, and the whole rig as one lit surface.          */
+.bioscope-rig {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(2.5rem, 0.5fr) minmax(0, 1.5fr);
+  /* the machine stands on the floor; the picture hangs higher up the wall */
+  align-items: end;
+  gap: clamp(0.4rem, 2vw, 1.4rem);
+  /* No floor slab below the feet, and no padding either: the film leaving the
+     box has to meet the drawer edge to edge, or the reel is not continuous. */
+  padding: clamp(1.5rem, 3vw, 2.25rem) clamp(0.9rem, 2.4vw, 1.75rem) 0;
+  border-radius: 14px;
+  background:
+    radial-gradient(ellipse 52% 38% at 72% 32%, rgba(var(--reel-beam-rgb), 0.1), transparent 72%),
+    repeating-linear-gradient(118deg, var(--reel-plaster) 0 2px, transparent 2px 8px),
+    repeating-linear-gradient(28deg, var(--reel-plaster) 0 1px, transparent 1px 9px),
+    linear-gradient(180deg, var(--reel-room-1) 8%, var(--reel-room-2));
+  box-shadow:
+    inset 0 0 120px var(--reel-vignette),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+/* the pool of light the wall throws on the floor */
+.bioscope-rig::after {
+  content: '';
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: 3%;
+  height: 12%;
+  background: radial-gradient(ellipse at 62% 0%, rgba(var(--reel-beam-rgb), 0.22), transparent 70%);
+  filter: blur(14px);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── The beam ─────────────────────────────────────────────────────────────
+   A cone of light leaving the lens low on the left and landing across the
+   picture high on the right: bright in the air, washing the wall where it
+   stops. The shape is clipped, not drawn, so it costs one element.        */
+.beam {
+  /* Out of the gate itself: the cone comes to a point at the bottom-left
+     corner, which sits at the middle of the machine's face. */
+  --beam-shape: polygon(0 100%, 100% 8%, 100% 52%, 0 100%);
+  /* the direction the light thins out along, and the sliver of hot air right
+     in front of the lens */
+  --beam-core-angle: 15deg;
+  --beam-core-shape: polygon(0 86%, 100% 20%, 100% 42%, 0 98%);
+  position: relative;
+  /* The throw dissolves rather than ends: solid where it leaves the gate,
+     half gone by the middle of the room, nothing at all by the picture. It is
+     the wall's own glow that the eye reads as the light arriving. */
+  -webkit-mask-image: linear-gradient(90deg, #000 0 46%, rgba(0, 0, 0, 0.4) 72%, transparent 98%);
+  mask-image: linear-gradient(90deg, #000 0 46%, rgba(0, 0, 0, 0.4) 72%, transparent 98%);
+  /* bottom-aligned to the row, then lifted to the height of the gate */
+  align-self: end;
+  min-height: 200px;
+  /* the gate's height above the bottom of the room: the film's run, then half
+     the machine's face */
+  margin-bottom: calc(var(--run-len) + var(--gate-rise));
+  /* pulled back over the machine so the light starts on its face, not in the
+     gap between the two columns */
+  margin-left: -4rem;
+  z-index: 4;
+}
+
+.beam-cone,
+.beam-dust {
+  position: absolute;
+  left: -2%;
+  right: -2%;
+  top: 0;
+  bottom: 0;
+  clip-path: var(--beam-shape);
+  /* soften the across-the-beam edges so it is haze, not a painted slab */
+  -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 22%, #000 78%, transparent 100%);
+  mask-image: linear-gradient(180deg, transparent 0, #000 22%, #000 78%, transparent 100%);
+  pointer-events: none;
+}
+
+/* Static, and brightest where it leaves the gate: the light thins out along
+   its length and is all but gone by the picture, which is what lets the beam
+   and the wall's glow read as one searchlight rather than a shape with an
+   end to it. Breathing and drifting it cost a repaint of a blurred layer
+   forever for no information. */
+.beam-cone {
+  opacity: 0.92;
+  background: linear-gradient(
+    var(--beam-core-angle),
+    rgba(var(--reel-beam-rgb), 0.56),
+    rgba(var(--reel-beam-rgb), 0.3) 40%,
+    rgba(var(--reel-beam-rgb), 0.02)
+  );
+  /* far more blur than shape: the beam is air, not a wedge */
+  filter: blur(14px);
+  mix-blend-mode: var(--reel-beam-blend);
+}
+
+/* The hot centre of the beam: the air right in front of the lens, which is
+   what makes it read as light rather than as a shape. */
+.beam::before {
+  content: '';
+  position: absolute;
+  inset: 0 -2%;
+  clip-path: var(--beam-core-shape);
+  background: linear-gradient(
+    var(--beam-core-angle),
+    rgba(255, 248, 230, 0.34),
+    rgba(255, 240, 205, 0.12) 30%,
+    transparent 56%
+  );
+  filter: blur(18px);
+  mix-blend-mode: var(--reel-beam-blend);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.beam-dust {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.55) 0 1px, transparent 1.6px);
+  background-size: 26px 26px;
+  opacity: 0.16;
+  mix-blend-mode: var(--reel-beam-blend);
+}
+
+/* ── The wall ─────────────────────────────────────────────────────────────
+   The poster, its light spill, and the arrows that turn the reel — all at
+   the same level, so nothing has to be scrolled to.                       */
+.wall {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: clamp(0.65rem, 1.5vw, 1rem);
+  /* the badges on the wall are the last thing above the drawer, so the room
+     they need comes from here rather than from the room's own bottom edge */
+  padding-bottom: clamp(1rem, 2.6vw, 1.7rem);
+  /* above the beam: the picture is never washed over by its own light */
+  z-index: 5;
+}
+
+.wall-stage {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(0.35rem, 1.4vw, 0.9rem);
+  width: 100%;
+}
+
+/* The cloud the beam stops at: an uneven wash of light with a faint ring,
+   which is how a searchlight reads once it leaves the ground. */
+.wall-stage::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(150%, 640px);
+  aspect-ratio: 1 / 0.82;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background:
+    radial-gradient(38% 44% at 36% 54%, rgba(var(--reel-beam-rgb), 0.42), transparent 70%),
+    radial-gradient(34% 38% at 64% 42%, rgba(var(--reel-beam-rgb), 0.34), transparent 72%),
+    radial-gradient(30% 32% at 52% 68%, rgba(var(--reel-beam-rgb), 0.3), transparent 74%),
+    radial-gradient(circle at 50% 50%, transparent 60%, rgba(var(--reel-beam-rgb), 0.14) 63%, transparent 68%);
+  filter: blur(clamp(14px, 2.6vw, 26px));
+  opacity: var(--reel-glow-cloud);
+  mix-blend-mode: var(--reel-beam-blend);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* the film's own colours, blurred, as the light it throws around the picture */
+/* (the poster sits above this: see .projection's z-index) */
+.wall-glow {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: min(120%, 520px);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(clamp(20px, 3.4vw, 38px)) saturate(1.45);
+  opacity: var(--reel-glow);
+  mix-blend-mode: var(--reel-beam-blend);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ── The projection ───────────────────────────────────────────────────────
+   Whole poster, never cropped: the frame is a ratio, the picture fits in it,
+   and a scratch drifts down it the way it would on real film.             */
+.projection {
+  position: relative;
+  z-index: 1;
+  flex: 0 1 auto;
+  width: auto;
+  height: clamp(200px, 32vh, 330px);
+  max-width: 100%;
+  aspect-ratio: 2 / 3;
+  margin: 0;
+  padding: 0;
+  border: none;
+  border-radius: 3px;
+  background: radial-gradient(ellipse at 50% 42%, var(--reel-frame), #020307 72%);
+  overflow: hidden;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  transform: rotate(-0.5deg);
+  box-shadow:
+    0 0 0 1px var(--reel-frame-rim),
+    0 0 0 6px rgba(3, 5, 10, 0.92),
+    0 0 0 7px var(--reel-brass-dark),
+    0 18px 40px rgba(0, 0, 0, 0.5),
+    0 0 76px rgba(var(--reel-beam-rgb), calc(var(--reel-glow) * 0.72));
+  transition:
+    transform var(--transition-duration) var(--transition-timing),
+    box-shadow var(--transition-duration) var(--transition-timing);
+}
+
+.projection:disabled {
+  cursor: default;
+}
+
+.projection:not(:disabled):hover {
+  transform: rotate(0deg) translateY(-3px);
+  box-shadow:
+    0 0 0 1px var(--reel-frame-rim),
+    0 0 0 6px rgba(3, 5, 10, 0.92),
+    0 0 0 7px var(--reel-brass),
+    0 22px 46px rgba(0, 0, 0, 0.55),
+    0 0 104px rgba(var(--reel-beam-rgb), var(--reel-glow));
+}
+
+.projection:focus-visible {
+  outline: 2px solid var(--reel-brass-light);
+  outline-offset: 8px;
+}
+
+/* Two classes on purpose: .note-content img sets its own margins, radius and
+   shadow, and this has to win regardless of import order. */
+.reel-room .projection .projection-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: contain;
+}
+
+.projection.no-art .projection-img {
+  display: none;
+}
+
+/* grain and the worn edge of the gate, over the picture, never under it */
+.projection::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background:
+    repeating-linear-gradient(180deg, rgba(255, 255, 255, 0.035) 0 1px, transparent 1px 3px);
+  mix-blend-mode: overlay;
+  box-shadow: inset 0 0 55px rgba(0, 0, 0, 0.5);
+}
+
+.projection-scratch {
+  position: absolute;
+  top: 0;
+  left: 14%;
+  width: 2px;
+  height: 26%;
+  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.4), transparent);
+  filter: blur(1px);
+  opacity: 0.5;
+  pointer-events: none;
+  animation: scratch-fall 7.5s linear infinite;
+}
+
+@keyframes scratch-fall {
+  from {
+    transform: translateY(-130%);
+  }
+
+  to {
+    transform: translateY(330%);
+  }
+}
+
+/* ── Arrows (at the projection) ─────────────────────────────────────────── */
+.reel-nav {
+  position: relative;
+  z-index: 2;
+  flex: 0 0 auto;
+  width: 56px;
+  height: 56px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+  border-radius: 50%;
+  border: 2px solid var(--reel-brass);
+  background: radial-gradient(circle at 34% 28%, #3d2a17, #150d06 72%);
+  color: var(--reel-brass-light);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.9rem;
+  line-height: 1;
+  cursor: pointer;
+  appearance: none;
+  -webkit-appearance: none;
+  box-shadow:
+    0 6px 16px rgba(0, 0, 0, 0.5),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12),
+    0 0 18px rgba(var(--reel-beam-rgb), 0.16);
+  transition:
+    transform 0.2s var(--transition-timing),
+    box-shadow 0.2s var(--transition-timing),
+    color 0.2s var(--transition-timing);
+}
+
+.reel-nav span {
+  display: block;
+  transform: translateY(-2px);
+}
+
+.reel-nav:disabled {
+  opacity: 0.35;
+  cursor: default;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.reel-nav:not(:disabled):hover {
+  color: #ffffff;
+  transform: scale(1.06);
+  box-shadow:
+    0 8px 20px rgba(0, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 255, 255, 0.2),
+    0 0 28px rgba(var(--reel-beam-rgb), 0.5);
+}
+
+.reel-nav:not(:disabled):active {
+  transform: scale(0.94);
+}
+
+.reel-nav:focus-visible {
+  outline: 2px solid var(--reel-brass-light);
+  outline-offset: 3px;
+}
+
+/* ── What is on the wall ────────────────────────────────────────────────── */
+.wall-info {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-align: center;
+  padding: 0 0.4rem;
+}
+
+.reel-room .wall-title {
+  margin: 0;
+  /* always exactly two lines: a long title can never push the picture (and the
+     arrows with it) up the wall */
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+  min-height: 2.7em;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+  font-weight: 700;
+  line-height: 1.35;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--reel-ink);
+  text-shadow: 0 0 24px rgba(var(--reel-beam-rgb), 0.4);
+}
+
+.reel-room .wall-meta {
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.3rem 0.9rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.7rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--reel-ink-dim);
+}
+
+/* the frame number, in its own little clip so it reads in every theme */
+.wall-count {
+  padding: 0.08rem 0.5rem;
+  border: 1px solid var(--reel-panel-line);
+  border-radius: 999px;
+  background: var(--reel-panel);
+  color: var(--reel-ink);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.08em;
+}
+
+.wall-badges {
+  position: absolute;
+  left: 50%;
+  bottom: 0.6rem;
+  transform: translateX(-50%);
+  z-index: 3;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: calc(100% - 1.2rem);
+  gap: 0.35rem;
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.18s ease,
+    visibility 0.18s ease;
+  pointer-events: none;
+}
+
+/* The pills say what the icons alone never did: ✓ Watched, 🍿 Theatre, ✍️ Notes.
+   They are painted over the picture and only step forward when the reader
+   comes close — a pointer over the poster, or a keyboard landing on it. */
+.wall-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.16rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  line-height: 1.5;
+  white-space: nowrap;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
+}
+
+.wall-badge .wall-badge-icon {
+  font-style: normal;
+  font-size: 0.72rem;
+  line-height: 1;
+}
+
+.wall-badge.seen {
+  background: rgb(var(--reel-seen-rgb));
+  color: var(--reel-seen-ink);
+}
+
+.wall-badge.theatre {
+  background: rgb(var(--reel-theatre-rgb));
+  color: var(--reel-theatre-ink);
+}
+
+.wall-badge.notes {
+  background: rgb(var(--reel-notes-rgb));
+  color: var(--reel-notes-ink);
+}
+
+/* The pill row is drawn at a lower contrast first, then raised on hover —
+   a poster should not greet you with chrome. */
+.wall-badge {
+  filter: saturate(0.8) brightness(0.94);
+  transition:
+    filter 0.18s ease;
+}
+
+.projection:hover .wall-badge,
+.projection:focus-visible .wall-badge {
+  filter: saturate(1.05) brightness(1.04);
+}
+
+/* the reveal: over the poster, on a capable pointer, or on keyboard focus */
+@media (hover: hover) and (pointer: fine) {
+  .projection:hover .wall-badges {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.projection:focus-visible .wall-badges {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ── The bioscope ─────────────────────────────────────────────────────────
+   Deliberately small and quiet: a near-black box with one brass line, two
+   reels on top, and the film running through it — in from the rack below,
+   past the gate, out to the take-up reel. It is here for the light it
+   throws, not for itself.                                                */
+.bioscope-bay {
+  position: relative;
+  /* its own layer, so the beam can spill over the machine's face without
+     climbing over the wall */
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  max-width: 260px;
+}
+
+/* ── The return run ───────────────────────────────────────────────────────
+   The frame that has just been through the gate drops back down this run
+   into the drawer, so the reel below the machine is continuous: the frame in
+   the gate, the one falling back, and the one coming up next.            */
+.film-run {
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  width: 40px;
+  height: var(--run-len);
+  /* left of the supply run, so both are visible under the box */
+  transform: translateX(calc(-50% - 52px));
+  overflow: hidden;
+  background:
+    repeating-linear-gradient(180deg, rgba(var(--stock-perf-rgb), 0.4) 0 2px, transparent 2px 7px) left top / 3px 100% no-repeat,
+    repeating-linear-gradient(180deg, rgba(var(--stock-perf-rgb), 0.4) 0 2px, transparent 2px 7px) right top / 3px 100% no-repeat,
+    linear-gradient(180deg, var(--stock-cell-2), var(--stock-2) 45%, var(--stock-cell-2));
+  box-shadow:
+    0 0 10px rgba(0, 0, 0, 0.55),
+    inset 0 8px 12px rgba(var(--reel-beam-rgb), 0.16);
+  pointer-events: none;
+}
+
+.run-frame {
+  position: absolute;
+  left: 50%;
+  width: 32px;
+  height: 42px;
+  border-radius: 2px;
+  background-color: var(--stock-cell);
+  background-size: cover;
+  background-position: center;
+  transform: translateX(-50%);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.85);
+}
+
+/* the one already through, sitting where it has landed: in the drawer */
+.run-frame.is-resting {
+  bottom: 0;
+  opacity: 0.7;
+}
+
+/* ── A frame of film in the air ───────────────────────────────────────────
+   Carried between the drawer and the machine when a film is loaded or spent:
+   the print lifts out of its place on the strip and travels, instead of
+   blinking out of one and into the other. */
+.film-flyer {
+  position: fixed;
+  z-index: 40;
+  border-radius: 2px;
+  background-color: var(--stock-cell);
+  background-size: cover;
+  background-position: center;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.85),
+    0 12px 28px rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+  will-change: transform, opacity;
+}
+
+/* a frame that is in the air is not on the strip */
+.film-frame.is-in-flight img,
+.film-frame.is-in-flight .film-frame-blank {
+  opacity: 0;
+}
+
+.bioscope {
+  /* How long the film takes to travel. mountBioscopes() rewrites this per wind
+     — along with --reel-turn, --turn-deg and --crank-deg — so a wind that
+     covers more of the reel runs longer and turns the reels further, instead
+     of every change taking the same beat. */
+  --slide-ms: 420ms;
+  position: relative;
+  justify-self: center;
+  /* Small and quiet: one frame across, just tall enough to hold the gate in
+     its middle with the film's neighbours clear of the box on either side. */
+  width: min(100%, 150px);
+  aspect-ratio: 1 / 0.74;
+  /* the reels stand on the box, in this space above it */
+  margin-top: 2.2rem;
+  /* and the film's runs have this much room between the box and the drawer */
+  margin-bottom: var(--run-len);
+  /* The drop shadow lives here rather than on the face: the face is punched
+     through by the aperture mask, which would take the shadow with it. */
+  box-shadow: 0 14px 26px rgba(0, 0, 0, 0.5);
+}
+
+.bioscope-body {
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid var(--bs-rim);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.06), transparent 22%),
+    linear-gradient(180deg, var(--bs-body-1), var(--bs-body-2));
+  box-shadow: inset 0 -12px 22px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  /* The face is cut away at the gate, so the film running behind the machine
+     shows through the aperture and nowhere else. */
+  -webkit-mask-image: radial-gradient(circle 18px at 50% 50%, transparent 0 17.4px, #000 18px);
+  mask-image: radial-gradient(circle 18px at 50% 50%, transparent 0 17.4px, #000 18px);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* the cooling slits on the free half of the face */
+.bioscope-vent {
+  position: absolute;
+  right: 9%;
+  top: 16%;
+  width: 13%;
+  height: 24%;
+  border-radius: 2px;
+  background: repeating-linear-gradient(180deg, var(--bs-vent) 0 2px, transparent 2px 7px);
+  opacity: 0.45;
+}
+
+/* ── The film through the machine ─────────────────────────────────────────
+   The strip travels behind the face: the frame in the gate is lit and seen
+   through the aperture, and the frames either side of it hang outside the
+   box, fading out as they leave the machine — one just gone through, one on
+   its way in.                                                          */
+.film-channel {
+  --film-pitch: 57px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  width: 44px;
+  padding: 5px 4px;
+  background:
+    repeating-linear-gradient(180deg, rgba(var(--stock-perf-rgb), 0.34) 0 2px, transparent 2px 7px) left top / 3px 100% no-repeat,
+    repeating-linear-gradient(180deg, rgba(var(--stock-perf-rgb), 0.34) 0 2px, transparent 2px 7px) right top / 3px 100% no-repeat,
+    var(--stock-2);
+  transition: transform var(--slide-ms, 420ms) cubic-bezier(0.4, 0.05, 0.6, 0.95);
+  z-index: 1;
+  /* Nothing shows above the box: the film behind the face is inside the
+     machine. Below it, the frame coming up next stays lit until it reaches
+     the drawer. */
+  -webkit-mask-image: linear-gradient(180deg, transparent 22%, #000 30%, #000 70%, transparent 88%);
+  mask-image: linear-gradient(180deg, transparent 22%, #000 30%, #000 70%, transparent 88%);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.film-channel.is-advancing {
+  transform: translate(-50%, calc(-50% - var(--film-pitch)));
+}
+
+.film-channel.is-rewinding {
+  transform: translate(-50%, calc(-50% + var(--film-pitch)));
+}
+
+.film-channel.is-settling {
+  transition: none;
+}
+
+.film-cell {
+  position: relative;
+  width: 36px;
+  height: 52px;
+  border-radius: 2px;
+  overflow: hidden;
+  background: var(--stock-cell);
+  box-shadow: 0 0 0 1px var(--stock-rim);
+  opacity: 0.5;
+  transition: opacity 0.18s linear;
+}
+
+/* the one in the gate is the one the lamp is shining through */
+.film-cell.is-gate {
+  opacity: 1;
+}
+
+.film-cell.is-blank {
+  background: linear-gradient(160deg, var(--stock-cell-2), var(--stock-cell));
+}
+
+/* A blank cell carries no film, so it must carry no image either — an <img>
+   that survives with an empty src draws the browser's broken-image glyph. */
+.film-cell.is-blank .cell-img {
+  display: none;
+}
+
+.reel-room .film-cell .cell-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+
+/* the gate: a fixed ring the film travels behind — the only window into the
+   machine */
+.bioscope-gate {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 44px;
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  border: 4px solid #14161b;
+  box-shadow:
+    0 0 0 1px var(--bs-rim),
+    inset 0 0 10px rgba(0, 0, 0, 0.75),
+    0 0 26px rgba(var(--reel-beam-rgb), 0.3),
+    0 0 60px rgba(var(--reel-beam-rgb), 0.22);
+  pointer-events: none;
+  z-index: 3;
+}
+
+/* Still until the film moves; the flare on a wind says the rest. */
+.aperture-glow {
+  position: absolute;
+  inset: -2px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(var(--reel-beam-rgb), 0.3), transparent 72%);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+/* the slots the film runs through: out of the top of the box onto the
+   take-up reel, and in through the bottom from the rack */
+.bioscope-slot {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 50px;
+  height: 7px;
+  transform: translateX(-50%);
+  border-radius: 0 0 3px 3px;
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.3));
+  box-shadow:
+    inset 0 -2px 3px rgba(0, 0, 0, 0.9),
+    0 1px 0 rgba(255, 255, 255, 0.05);
+  z-index: 3;
+}
+
+.bioscope-slot.is-feed,
+.bioscope-slot.is-return {
+  top: auto;
+  bottom: 0;
+  border-radius: 3px 3px 0 0;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.92), rgba(0, 0, 0, 0.3));
+}
+
+/* the film leaves the gate on this side and falls away down to the drawer */
+.bioscope-slot.is-return {
+  left: calc(50% - 52px);
+}
+
+/* ── The crank ────────────────────────────────────────────────────────────
+   The one part of the machine that moves when a film is changed, and it
+   turns the way the reel is going: forward for the next film, back for the
+   one before it.                                                        */
+.bioscope-handle {
+  position: absolute;
+  left: -15px;
+  top: 44%;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 36% 30%, var(--reel-brass-light), var(--reel-brass) 58%, var(--reel-brass-dark));
+  box-shadow:
+    0 3px 8px rgba(0, 0, 0, 0.5),
+    inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+  z-index: 3;
+}
+
+.bioscope-handle::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 7px;
+  height: 7px;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: #17110a;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.35);
+}
+
+.handle-arm {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 20px;
+  height: 5px;
+  margin: -2.5px 0 0 -10px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, var(--reel-brass-light), var(--reel-brass-dark));
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.45);
+  transform-origin: 50% 50%;
+}
+
+.bioscope.is-turning .handle-arm {
+  animation: handle-crank var(--reel-turn) cubic-bezier(0.32, 0.05, 0.62, 1);
+}
+
+@keyframes handle-crank {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(calc(var(--turn-direction, 1) * var(--crank-deg, 540deg)));
+  }
+}
+
+/* the plinth it stands on */
+.bioscope-foot {
+  position: absolute;
+  left: 8%;
+  right: 8%;
+  bottom: -7px;
+  height: 10px;
+  border-radius: 3px;
+  background: linear-gradient(180deg, #23252b, #0b0c10);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* ── The reels on top ───────────────────────────────────────────────────── */
+.bioscope-reels {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% - 5px);
+  width: 86%;
+  height: 2.1rem;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  z-index: 2;
+}
+
+.reel {
+  position: relative;
+  flex: 0 0 auto;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 50%, var(--stock-reel-1) 0 18%, var(--stock-reel-2) 40% 62%, var(--stock-reel-3) 63%);
+  box-shadow:
+    0 0 0 1px var(--bs-rim),
+    0 5px 12px rgba(0, 0, 0, 0.55),
+    inset 0 0 8px rgba(0, 0, 0, 0.7);
+}
+
+.reel-disc {
+  position: absolute;
+  inset: 3px;
+  border-radius: 50%;
+  transform-origin: 50% 50%;
+  background:
+    radial-gradient(circle at 50% 50%, var(--reel-brass-light) 0 9%, rgba(0, 0, 0, 0.6) 10% 14%, transparent 15%),
+    repeating-conic-gradient(from -8deg, rgba(0, 0, 0, 0.55) 0 5deg, transparent 5deg 60deg);
+  box-shadow: inset 0 0 0 1px rgba(var(--stock-perf-rgb), 0.12);
+}
+
+/* ── Winding to the next film ─────────────────────────────────────────────
+   The machine does not move: the reels turn, the film travels exactly one
+   frame, and the lamp flares as the new frame lands in the gate.         */
+.bioscope.is-turning .reel-disc {
+  animation: reel-wind var(--reel-turn) cubic-bezier(0.32, 0.05, 0.62, 1);
+}
+
+.bioscope.is-turning .aperture-glow {
+  animation: lens-pulse var(--reel-turn) ease-out;
+}
+
+@keyframes reel-wind {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(calc(var(--turn-direction, 1) * var(--turn-deg, 480deg)));
+  }
+}
+
+@keyframes lens-pulse {
+  0% {
+    opacity: 0.5;
+    transform: scale(0.86);
+  }
+
+  45% {
+    opacity: 1;
+    transform: scale(1.15);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ── The rack ─────────────────────────────────────────────────────────────
+   A vertical reel: the films read top to bottom, sprocket rails down either
+   side, and the row the machine is showing is lit. Tap a row to thread that
+   frame into the bioscope.                                                 */
+/* The rack butts straight up against the room: the film feed leaves the box
+   at the room's bottom edge, so the rack's first sprocket row is where the
+   film it holds begins. */
+/* The reel column is as tall as the room beside it and no taller. The film
+   itself is out of the flow, or the column would be sized by every frame on
+   the reel — eighty-one posters deep — instead of by the picture. */
+.film-strip-wrap {
+  grid-column: 2;
+  grid-row: 2;
+  position: relative;
+  margin-top: 0;
+  min-width: 0;
+  min-height: 0;
+}
+
+.film-strip-container {
+  /* The rack is a reel of film, and film takes the colour of the light it is
+     shown in: its stock, its perforations and its type all come from the
+     room's palette, so the same rack reads as a negative in the dark theme, a
+     daylight print in the light one and tube stock under y2k. */
+  position: absolute;
+  inset: 0;
+  /* Filling the column, not the height of its own long list: the reel is as
+     tall as the room beside it and turns inside that. */
+  display: flex;
+  flex-direction: column;
+  padding: 0.55rem 0.5rem;
+  border-radius: 8px;
+  background:
+    linear-gradient(180deg, var(--stock-sheen), transparent 14%),
+    linear-gradient(180deg, var(--stock-1), var(--stock-2) 45%, var(--stock-1));
+  box-shadow:
+    inset 0 0 0 1px rgba(var(--reel-brass-rgb), 0.2),
+    0 12px 26px rgba(0, 0, 0, 0.35);
+}
+
+.film-strip-container::before,
+.film-strip-container::after {
+  content: '';
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  /* narrow perforations: the column is only a few inches wide and the film
+     itself has to have the room */
+  width: 0.4rem;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent 0 10px,
+    rgba(var(--stock-perf-rgb), 0.22) 10px 19px,
+    transparent 19px 29px
+  );
+  opacity: 0.55;
+  pointer-events: none;
+}
+
+.film-strip-container::before {
+  left: 0;
+}
+
+.film-strip-container::after {
+  right: 0;
+}
+
+.film-strip {
+  position: relative;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 0.3rem;
+  /* The reel is browsable on its own: the list scrolls under the cursor, so
+     the projector and the wall stay exactly where they are. */
+  min-height: 0;
+  max-height: none;
+  padding: 0.1rem 0.15rem;
+  overflow-y: auto;
+  overflow-x: hidden;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(var(--reel-brass-rgb), 0.55) transparent;
+}
+
+.film-strip::-webkit-scrollbar {
+  width: 10px;
+}
+
+.film-strip::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.film-strip::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  border-radius: 999px;
+  background: rgba(var(--reel-brass-rgb), 0.55);
+  background-clip: content-box;
+}
+
+/* One cell of the reel: a horizontal flex row.
+   Left: the poster thumb (contains status badges in its bottom corner).
+   Right: the title label — given all remaining space, never overlapped. */
+.film-frame {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  width: 100%;
+  padding: 0.45rem 0.5rem;
+  border: 1px solid var(--stock-rim);
+  border-radius: 5px;
+  background: var(--stock-frame-bg);
+  color: inherit;
+  text-align: left;
+  cursor: default;
+  opacity: 0.72;
+  appearance: none;
+  -webkit-appearance: none;
+  transition:
+    opacity 0.25s var(--transition-timing),
+    border-color 0.25s var(--transition-timing),
+    background-color 0.25s var(--transition-timing),
+    box-shadow 0.25s var(--transition-timing);
+}
+
+.film-frame:hover {
+  opacity: 0.92;
+  border-color: rgba(var(--reel-brass-rgb), 0.5);
+}
+
+/* The cell's load button: flex row — thumb on the left, label on the right. */
+.film-frame-main {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 0.6rem;
+  width: 100%;
+  padding: 0;
+  border: none;
+  border-radius: 4px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+/* Poster thumbnail — fixed 3rem wide so the label always gets clean space.
+   overflow:hidden clips both the poster image and the badge overlay. */
+.film-frame-thumb {
+  position: relative;
+  display: block;
+  flex: 0 0 auto;
+  width: 3rem;
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  border: 1px solid var(--stock-rim);
+  border-radius: 3px;
+  background: var(--stock-cell);
+}
+
+/* Title + year label — fills remaining width, never overlaps anything. */
+.film-frame-label {
+  flex: 1;
+  min-width: 0;
+  padding-top: 0.1rem;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 0.65rem;
+  line-height: 1.4;
+  color: var(--strip-ink);
+  opacity: 0.82;
+  word-break: break-word;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.film-frame.active .film-frame-label {
+  opacity: 1;
+  color: var(--strip-brass);
+}
+
+.reel-room .film-frame-thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  border-radius: 0;
+  box-shadow: none;
+  object-fit: cover;
+}
+
+.film-frame-blank {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(160deg, var(--stock-cell-2), var(--stock-cell));
+}
+
+/* The frame the machine is showing is lit in the rack, like the gate's lamp
+   falling on the row it projects. */
+.film-frame.active {
+  opacity: 1;
+  border-color: rgba(226, 193, 124, 0.55);
+  background: rgba(var(--reel-beam-rgb), 0.07);
+  box-shadow:
+    inset 3px 0 0 var(--strip-brass),
+    0 0 0 1px rgba(var(--reel-brass-rgb), 0.22);
+}
+
+/* Badges live inside the thumb at its bottom-left — tiny icon-only pills,
+   dark drop-shadow so they read over any poster colour. */
+.film-frame-badges {
+  position: absolute;
+  bottom: 0.18rem;
+  left: 0.18rem;
+  right: 0.18rem;
+  z-index: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  gap: 0.12rem;
+  pointer-events: none;
+}
+
+.film-frame-badges .wall-badge-label {
+  display: none;
+}
+
+.film-frame-badges .wall-badge {
+  padding: 0.08rem 0.15rem;
+  font-size: 0.5rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.65);
+}
+
+.film-frame-badges .wall-badge-icon {
+  font-size: 0.5rem;
+}
+
+/* The notes pill in a row reads the review; it is a real button, so it needs
+   its own pointer and focus ring. */
+.film-notes-btn {
+  appearance: none;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.film-notes-btn:hover {
+  filter: saturate(1.05) brightness(1.06);
+}
+
+.film-frame-main:focus-visible,
+.film-notes-btn:focus-visible {
+  outline: 2px solid var(--strip-brass);
+  outline-offset: 2px;
+}
+
+.bioscope.is-scrubbing .handle-arm {
+  transform: rotate(var(--scrub-turn, 0deg));
+}
+
+.bioscope.is-scrubbing .reel-disc {
+  transform: rotate(calc(var(--scrub-turn, 0deg) * 1.4));
+}
+
+/* ── Light theme ──────────────────────────────────────────────────────────
+   A whitewashed room in daylight: the box keeps its lacquer (it is a real
+   object in the room), the beam becomes a warm wash on the plaster.       */
+[data-theme="light"] .reel-room {
+  /* A touch dimmer than white plaster: the picture is the only thing in this
+     room that is emitting light, so it has to beat the wall it hangs on. */
+  --reel-room-1: #e4dbc9;
+  --reel-room-2: #f4efe4;
+  --reel-plaster: rgba(120, 100, 70, 0.05);
+  --reel-vignette: rgba(96, 74, 42, 0.2);
+
+  --reel-beam-rgb: 200, 156, 74;
+  --reel-beam-blend: multiply;
+  --reel-glow: 0.3;
+  --reel-glow-cloud: 0.16;
+
+  /* The box stays dark — it is a machine in the room, not a drawing of one —
+     but the film does not: daylight gets into the stock itself, so the reel in
+     the rack is a print held up to a window — pale stock, dark perforations,
+     dark type — instead of a negative in a can. */
+  --stock-1: #f4ebd8;
+  --stock-2: #ddd0b3;
+  --stock-cell: #c8b694;
+  --stock-cell-2: #eae1cc;
+  --stock-perf-rgb: 92, 72, 42;
+  --stock-rim: rgba(122, 98, 62, 0.42);
+  --stock-frame-bg: rgba(255, 252, 244, 0.68);
+  --stock-sheen: rgba(255, 255, 255, 0.55);
+  --stock-reel-1: #e8dcc2;
+  --stock-reel-2: #cfc1a4;
+  --stock-reel-3: #8d8069;
+  --strip-ink: #241a10;
+  --strip-ink-dim: rgba(36, 26, 16, 0.66);
+  --strip-brass: #7a5a12;
+  --reel-brass: #a87c2c;
+  --reel-brass-light: #d0a548;
+  --reel-brass-dark: #6f4f14;
+  --reel-brass-rgb: 168, 124, 44;
+  --bs-body-1: #33292a;
+  --bs-body-2: #14100f;
+  --bs-rim: rgba(140, 106, 46, 0.5);
+  --bs-vent: rgba(255, 255, 255, 0.18);
+
+  --reel-ink: #241a10;
+  --reel-ink-dim: #6d5c44;
+  --reel-panel: rgba(255, 252, 244, 0.7);
+  --reel-panel-line: rgba(120, 96, 60, 0.22);
+  --reel-frame-rim: rgba(150, 112, 40, 0.5);
+
+  /* daylight pills: the same meanings, a stop deeper so they hold on plaster;
+     notes flip to a dark chip so it reads against a bright poster */
+  --reel-seen-rgb: 34, 160, 84;
+  --reel-seen-ink: #f2fbf4;
+  --reel-theatre-rgb: 37, 114, 218;
+  --reel-theatre-ink: #f2f7ff;
+  --reel-notes-rgb: 36, 26, 16;
+  --reel-notes-ink: #f4ecd8;
+}
+
+/* The projection, in daylight: a heavy black gate frame and a hot rim of light
+   bleeding onto the plaster, so the poster reads as the lamp's output and not
+   as another pale rectangle on a pale wall. */
+[data-theme="light"] .reel-room .projection {
+  box-shadow:
+    0 0 0 1px var(--reel-frame-rim),
+    0 0 0 7px rgba(2, 4, 9, 0.95),
+    0 0 0 8px var(--reel-brass-dark),
+    0 0 0 10px rgba(255, 255, 255, 0.75),
+    0 16px 32px rgba(74, 52, 22, 0.42),
+    0 0 34px 14px rgba(255, 252, 244, 0.95),
+    0 0 86px 22px rgba(255, 246, 222, 0.7);
+}
+
+/* The picture itself is lit, not printed: it keeps its contrast while the
+   plaster around it stays a stop or two down. */
+[data-theme="light"] .reel-room .projection .projection-img {
+  filter: contrast(1.1) saturate(1.12) brightness(1.06);
+}
+
+/* and it does not get the dark-room grade laid over it */
+[data-theme="light"] .reel-room .projection::after {
+  background: repeating-linear-gradient(180deg, rgba(0, 0, 0, 0.03) 0 1px, transparent 1px 3px);
+  box-shadow: inset 0 0 30px rgba(0, 0, 0, 0.26);
+  mix-blend-mode: multiply;
+}
+
+/* the wall right behind the picture is a shade darker than the rest of the
+   room, which is what makes the picture sit in front of it */
+[data-theme="light"] .reel-room .wall-stage::before {
+  opacity: 0.42;
+}
+
+/* ── Y2K-cyber ────────────────────────────────────────────────────────────
+   Same machine, neon tube light: cyan beam, hot-pink paint, chrome brass.  */
+[data-theme="y2k-cyber"] .reel-room {
+  --reel-room-1: #070a1e;
+  --reel-room-2: #101a3c;
+  --reel-plaster: rgba(0, 255, 255, 0.05);
+  --reel-vignette: rgba(0, 0, 0, 0.6);
+
+  --reel-beam-rgb: 0, 255, 255;
+  --reel-beam-blend: screen;
+  --reel-glow: 0.4;
+  --reel-glow-cloud: 0.45;
+
+  /* Tube stock: the same film under a different lamp — cyan perforations on
+     indigo, the rack's type in phosphor, its brass gone chrome. */
+  --stock-1: #131a3f;
+  --stock-2: #070b22;
+  --stock-cell: #04061a;
+  --stock-cell-2: #16204a;
+  --stock-perf-rgb: 0, 255, 255;
+  --stock-rim: rgba(0, 255, 255, 0.28);
+  --stock-frame-bg: rgba(8, 12, 40, 0.62);
+  --stock-sheen: rgba(0, 255, 255, 0.07);
+  --stock-reel-1: #16204a;
+  --stock-reel-2: #2b3a72;
+  --stock-reel-3: #05081c;
+  --strip-ink: #00ff41;
+  --strip-ink-dim: rgba(0, 255, 65, 0.62);
+  --strip-brass: #00ffff;
+  --reel-brass: #14e0e8;
+  --reel-brass-light: #b6ffff;
+  --reel-brass-dark: #0b6f78;
+  --reel-brass-rgb: 0, 255, 255;
+  --bs-body-1: #171d33;
+  --bs-body-2: #05070f;
+  --bs-rim: rgba(0, 255, 255, 0.4);
+  --bs-vent: rgba(0, 255, 255, 0.22);
+
+  --reel-ink: #00ff41;
+  --reel-ink-dim: #62c9b4;
+  --reel-panel: rgba(5, 8, 24, 0.7);
+  --reel-panel-line: rgba(0, 255, 255, 0.25);
+  --reel-frame: #04061a;
+  --reel-frame-rim: rgba(0, 255, 255, 0.55);
+
+  /* neon pills: phosphor green for seen, cyan for a theatre trip, hot pink
+     for notes — black type, the way the tube signs wear their letters */
+  --reel-seen-rgb: 0, 255, 65;
+  --reel-seen-ink: #001a08;
+  --reel-theatre-rgb: 0, 255, 255;
+  --reel-theatre-ink: #001a1a;
+  --reel-notes-rgb: 255, 45, 149;
+  --reel-notes-ink: #2a0014;
+}
+
+[data-theme="y2k-cyber"] .reel-nav {
+  background: radial-gradient(circle at 34% 28%, rgba(0, 255, 255, 0.18), #04061a 72%);
+  color: var(--reel-brass-light);
+}
+
+/* ── Mobile: the picture hangs high, the machine throws straight up ──────
+   Same rig, turned on its end: wall at the top, the beam rising vertically
+   out of the lens, the bioscope standing on the floor underneath it.     */
+@media (max-width: 760px) {
+  .bioscope-rig {
+    grid-template-columns: minmax(0, 1fr);
+    justify-items: center;
+    /* the rows are placed by hand below, so spacing is per item; no floor
+       either, so the film feed still meets the rack */
+    gap: 0;
+    padding: clamp(1.4rem, 5vw, 2rem) 0.9rem 0;
+  }
+
+  .wall {
+    grid-row: 1;
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  /* With the beam coming up from below, the caption reads better above the
+     picture than under it. */
+  .wall-info {
+    order: -1;
+    margin-bottom: 0.55rem;
+  }
+
+  /* Straight up out of the gate: the cone's point reaches down past the
+     machine's top edge to the middle of its face, so the light starts on the
+     machine rather than above it, and it fades out slowly on the way up so
+     the picture is where it lands, not where it stops. */
+  .beam {
+    --beam-shape: polygon(44% 100%, 56% 100%, 96% 0, 4% 0);
+    --beam-core-angle: 0deg;
+    --beam-core-shape: polygon(47% 100%, 53% 100%, 60% 0, 40% 0);
+    grid-row: 2;
+    width: 86%;
+    min-height: 8.5rem;
+    margin-left: 0;
+    /* the gate sits this far below the top of the machine's bay */
+    margin-bottom: calc(-1 * (var(--run-len) + var(--gate-rise)));
+    -webkit-mask-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.45) 34%, #000 62%, #000 100%);
+    mask-image: linear-gradient(180deg, transparent 0, rgba(0, 0, 0, 0.45) 34%, #000 62%, #000 100%);
+  }
+
+  /* the drawer is right under the machine here, so the wall does not need to
+     hold the badges clear of anything */
+  .wall {
+    padding-bottom: 0;
+  }
+
+  .beam-cone,
+  .beam-dust {
+    left: 0;
+    right: 0;
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 20%, #000 80%, transparent 100%);
+    mask-image: linear-gradient(90deg, transparent 0, #000 20%, #000 80%, transparent 100%);
+  }
+
+  .beam-cone {
+    /* solid at the gate, thinned to nothing at the picture */
+    background: linear-gradient(
+      0deg,
+      rgba(var(--reel-beam-rgb), 0.5),
+      rgba(var(--reel-beam-rgb), 0.24) 46%,
+      rgba(var(--reel-beam-rgb), 0.03)
+    );
+    filter: blur(12px);
+  }
+
+  .beam::before {
+    filter: blur(15px);
+  }
+
+  /* Same picture, smaller budget: the dust and the scratch only read at size,
+     and the big blurred layers are trimmed so a phone is not compositing the
+     whole room every frame. */
+  .beam-dust,
+  .projection-scratch {
+    display: none;
+  }
+
+  .wall-glow {
+    filter: blur(18px) saturate(1.35);
+  }
+
+  .wall-stage::before {
+    filter: blur(13px);
+  }
+
+  .bioscope-rig::after {
+    filter: blur(10px);
+  }
+
+  .bioscope-bay {
+    grid-row: 3;
+  }
+
+  .bioscope {
+    width: min(62%, 150px);
+    margin-top: 2.4rem;
+  }
+
+  .wall-glow {
+    width: min(112%, 340px);
+  }
+
+
+  .projection {
+    height: clamp(180px, 30vh, 262px);
+  }
+
+  .reel-nav {
+    width: 52px;
+    height: 52px;
+    font-size: 1.75rem;
+  }
+
+  .film-roll-head {
+    gap: 0.15rem 0.6rem;
+  }
+
+  /* No room for a column beside the picture on a phone: the reel lies along
+     the bottom instead, one row of cells that scrolls sideways under the
+     thumb — still without the page moving. */
+  .film-roll {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .film-roll-head {
+    grid-column: 1;
+  }
+
+  .bioscope-rig {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+  .film-strip-wrap {
+    grid-column: 1;
+    grid-row: 3;
+    position: static;
+    margin-top: 0.6rem;
+  }
+
+  .film-strip-container {
+    position: relative;
+    inset: auto;
+  }
+
+  .film-strip {
+    flex-direction: row;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 0.4rem;
+  }
+
+  .film-frame {
+    width: 4.25rem;
+  }
+
+  /* No room for the label in compact horizontal cards — poster only. */
+  .film-frame-main {
+    display: block;
+  }
+
+  .film-frame-thumb {
+    width: 100%;
+    aspect-ratio: 2 / 3;
+  }
+
+  .film-frame-label {
+    display: none;
+  }
+}
+
+@media (max-width: 420px) {
+  .bioscope {
+    width: min(56%, 134px);
+  }
+
+  .projection {
+    height: clamp(165px, 27vh, 232px);
+  }
+
+  .film-frame {
+    width: 3.75rem;
+  }
+
+  .bioscope-handle {
+    left: -12px;
+    width: 22px;
+    height: 22px;
+  }
+}
+
+/* ── Capable pointers only ──────────────────────────────────────────────── */
+@media (hover: hover) and (pointer: fine) {
+  .film-frame:hover:not(.active) {
+    opacity: 0.92;
+  }
+}
+
+/* ── Reduced motion: everything still moves, it just arrives ------------ */
+@media (prefers-reduced-motion: reduce) {
+  .bioscope,
+  .bioscope .reel-disc,
+  .bioscope .aperture-glow,
+  .bioscope .handle-arm,
+  .projection-scratch {
+    animation: none;
+  }
+
+  .film-channel {
+    transition: none;
+  }
+
+  .film-strip {
+    scroll-behavior: auto;
+  }
+
+  .film-frame,
+  .projection,
+  .reel-nav {
+    transition: none;
+  }
+}
