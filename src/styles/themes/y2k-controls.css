@@ -1,0 +1,153 @@
+/* Y2K-Cyber theme: cursors, winamp controls, badges (imported by styles/main.css) */
+
+/* =============================================
+   Y2K-CYBER: CURSORS, WINAMP CONTROLS,
+   ACTIVE IMAGE BORDER, CROSSHAIR ACCENTS
+   ============================================= */
+
+/* --- CUSTOM CURSORS --- */
+/* Dark theme: black arrow with white outline */
+* {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='-2 -2 36 36'%3E%3Cpath d='M 0,0 L 12.82,32 L 16.07,16.07 L 32,12.81 Z' fill='%23000000' stroke='%23ffffff' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E") 1 1, auto !important;
+}
+
+/* Light theme: white arrow with black outline */
+[data-theme="light"] * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='-2 -2 36 36'%3E%3Cpath d='M 0,0 L 12.82,32 L 16.07,16.07 L 32,12.81 Z' fill='%23ffffff' stroke='%23000000' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E") 1 1, auto !important;
+}
+
+/* Y2K theme: pink arrow, no outline */
+[data-theme="y2k-cyber"] * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='-2 -2 36 36'%3E%3Cpath d='M 0,0 L 12.82,32 L 16.07,16.07 L 32,12.81 Z' fill='%23ff2d95'/%3E%3C/svg%3E") 1 1, auto !important;
+}
+
+/* GALLERY SLIDER BUTTONS: Winamp metallic controls */
+/* --- GALLERY SLIDER BUTTONS: Winamp metallic controls --- */
+[data-theme="y2k-cyber"] .carousel-btn {
+  border-radius: 0 !important;
+  border: 2px outset #c0c0c0 !important;
+  background: linear-gradient(180deg, #d4d4d4 0%, #b0b0b0 30%, #909090 70%, #a0a0a0 100%) !important;
+  color: #000 !important;
+  box-shadow:
+    inset 1px 1px 0 #fff,
+    inset -1px -1px 0 #808080,
+    2px 2px 0 #000 !important;
+  width: 36px !important;
+  height: 36px !important;
+}
+
+[data-theme="y2k-cyber"] .carousel-btn:hover {
+  background: linear-gradient(180deg, #e8e8e8 0%, #c8c8c8 30%, #aaa 70%, #bbb 100%) !important;
+  box-shadow:
+    inset 1px 1px 0 #fff,
+    inset -1px -1px 0 #808080,
+    0 0 8px rgba(0,255,65,0.3),
+    2px 2px 0 #000 !important;
+}
+
+[data-theme="y2k-cyber"] .carousel-btn:active {
+  border-style: inset !important;
+  box-shadow:
+    inset 1px 1px 0 #808080,
+    inset -1px -1px 0 #fff !important;
+}
+
+[data-theme="y2k-cyber"] .carousel-btn svg {
+  stroke: #000 !important;
+}
+
+[data-theme="y2k-cyber"] .carousel-btn:hover svg {
+  stroke: var(--y2k-neon-green) !important;
+}
+
+/* --- ACTIVE IMAGE: Sharp cyan/green border inside gallery frame --- */
+[data-theme="y2k-cyber"] .carousel-img {
+  border: 2px solid var(--y2k-cyan) !important;
+  box-shadow:
+    0 0 0 1px #000,
+    0 0 12px rgba(0,255,255,0.15);
+}
+
+[data-theme="y2k-cyber"] .carousel-slide.active .carousel-img {
+  border-color: var(--y2k-neon-green) !important;
+  box-shadow:
+    0 0 0 1px #000,
+    0 0 16px rgba(0,255,65,0.2);
+}
+
+/* --- GALLERY BADGE: Pixelated pill with crosshair corners --- */
+[data-theme="y2k-cyber"] .carousel-summary {
+  position: relative !important;
+}
+
+/* Crosshair corner accents [+] */
+[data-theme="y2k-cyber"] .carousel-summary::before {
+  content: "+";
+  position: absolute;
+  left: 6px;
+  top: 3px;
+  font-size: 0.6rem;
+  color: var(--y2k-orange);
+  font-weight: 900;
+  line-height: 1;
+  pointer-events: none;
+}
+
+[data-theme="y2k-cyber"] .carousel-summary::after {
+  content: "+";
+  position: absolute;
+  right: 6px;
+  bottom: 3px;
+  font-size: 0.6rem;
+  color: var(--y2k-orange);
+  font-weight: 900;
+  line-height: 1;
+  pointer-events: none;
+}
+
+/* --- ENHANCED BRUTALIST BOX-SHADOWS ON ALL BUTTONS --- */
+[data-theme="y2k-cyber"] .copy-link-btn,
+[data-theme="y2k-cyber"] .play-all-btn,
+[data-theme="y2k-cyber"] .back-to-top,
+[data-theme="y2k-cyber"] .movie-review-modal .modal-close {
+  box-shadow:
+    inset 1px 1px 0 rgba(255,255,255,0.15),
+    inset -1px -1px 0 rgba(0,0,0,0.3),
+    3px 3px 0 #000 !important;
+}
+
+[data-theme="y2k-cyber"] .copy-link-btn:active,
+[data-theme="y2k-cyber"] .play-all-btn:active,
+[data-theme="y2k-cyber"] .back-to-top:active {
+  box-shadow:
+    inset 1px 1px 0 rgba(0,0,0,0.3),
+    inset -1px -1px 0 rgba(255,255,255,0.1) !important;
+  transform: translate(2px, 2px);
+}
+
+/* --- NOTE CARDS: Harder shadow, less blur --- */
+[data-theme="y2k-cyber"] .note-card,
+[data-theme="y2k-cyber"] .pinned-note {
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    inset 0 -1px 0 rgba(0,0,0,0.5),
+    5px 5px 0 #000 !important;
+}
+
+[data-theme="y2k-cyber"] .note-card:hover {
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    0 0 15px rgba(255,45,149,0.3),
+    5px 5px 0 #000 !important;
+}
+
+/* --- MOVIE & SONG CARDS: Hard offset --- */
+[data-theme="y2k-cyber"] .movie-card,
+[data-theme="y2k-cyber"] .song-card {
+  box-shadow: 4px 4px 0 #000 !important;
+}
+
+[data-theme="y2k-cyber"] .movie-card:hover,
+[data-theme="y2k-cyber"] .song-card:hover {
+  box-shadow: 0 0 12px rgba(0,255,65,0.25), 4px 4px 0 #000 !important;
+}

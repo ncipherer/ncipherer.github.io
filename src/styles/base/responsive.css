@@ -1,0 +1,278 @@
+/* shared layout + responsive overrides (TOC, mobile queries) (imported by styles/main.css) */
+
+/* Mobile CSS */
+/* Touch devices: larger touch targets for small nav buttons */
+@media (pointer: coarse) {
+  .sonar-info-btn {
+    padding: 8px;
+  }
+}
+
+/*
+ * Narrow phones. The navbar carries five controls (search, theme, sonar,
+ * sonar help, mute) and note pages float a "Back to all notes" link in the
+ * same band, so below ~600px the two collided (the link ran under the search
+ * button). Two changes fix it: tighter nav spacing, and a shorter visible
+ * label for the back link. The full text stays in the accessibility tree.
+ */
+@media (max-width: 600px) {
+  .nav-actions {
+    gap: 0.5rem !important;
+  }
+
+  .back-to-notes.floating {
+    font-size: 0;
+    max-width: 42vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+
+  .back-to-notes.floating::before {
+    content: "← Notes";
+    font-size: 0.9375rem;
+  }
+
+  [data-theme="y2k-cyber"] .back-to-notes.floating {
+    padding: 0.15rem 0.4rem;
+  }
+
+  [data-theme="y2k-cyber"] .nav-actions > * {
+    padding: 4px 6px;
+  }
+}
+
+/* Respect the OS setting for anything that moves, fades or blinks. Two
+   component stylesheets had their own rules; this covers the rest
+   (terminal, carousel, Y2K effects, page transitions). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    padding: 0 1rem;
+  }
+
+  .container.with-toc {
+    padding: 0 1rem;
+  }
+
+  /* keep the floating back button on mobile — it's the only way back to the
+     notes list once the nav links are hidden on note pages */
+  .back-to-notes:not(.floating) {
+    display: none;
+  }
+
+  .tag-cloud-container {
+    display: none;
+  }
+
+  .back-to-top {
+    display: none;
+  }
+
+  .theme-selector {
+    display: none;
+  }
+
+  /* Mobile: compact single-button theme cycle */
+  .theme-selector-mobile {
+    display: flex !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .table-of-contents {
+    display: none;
+  }
+
+  .container.with-toc {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
+
+.external-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color var(--transition-duration) var(--transition-timing);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.external-link:hover {
+  color: var(--accent-color);
+}
+
+.external-link sup {
+  font-size: 0.75rem;
+  line-height: 1;
+}
+
+.pinned-notes-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  padding: 1rem;
+  background: var(--background-secondary);
+  border-radius: 8px;
+}
+
+.pinned-note {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: var(--background-primary);
+  border-radius: 4px;
+  text-decoration: none;
+  color: var(--text-primary);
+  transition: transform 0.2s ease;
+}
+
+.pinned-note:hover {
+  transform: translateY(-2px);
+}
+
+.carousel-container {
+  position: relative;
+  width: 80%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+.pinned-notes-viewport {
+  overflow: hidden;
+  margin: 0 auto;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+.pinned-notes-container {
+  display: flex;
+  transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.pinned-note {
+  flex: 0 0 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding: 1.5rem 2rem;
+  background: var(--bg-secondary);
+  border-radius: 12px;
+  text-decoration: none;
+  color: var(--text-primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.pinned-note:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.pin-icon {
+  font-size: 1.2rem;
+  color: var(--accent-color);
+  flex-shrink: 0;
+}
+
+.carousel-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: var(--background-secondary);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-primary);
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.carousel-arrow:hover {
+  background: var(--background-hover);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.8rem;
+  margin-top: 1.5rem;
+}
+
+.carousel-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--text-secondary);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.4;
+  transition: all 0.3s ease;
+}
+
+.carousel-dot:hover {
+  opacity: 0.7;
+}
+
+.carousel-dot.active {
+  opacity: 1;
+  background: var(--accent-color);
+  transform: scale(1.2);
+}
+
+.carousel-arrow.prev {
+  left: 0;
+}
+
+.carousel-arrow.next {
+  right: 0;
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.carousel-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-secondary);
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+}
+
+.carousel-dot.active {
+  opacity: 1;
+}

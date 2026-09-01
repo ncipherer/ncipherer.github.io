@@ -1,0 +1,120 @@
+/* note modal opened from the terminal (imported by styles/main.css) */
+
+/* ==========================================================================
+   Terminal Navigation Modal
+   ========================================================================== */
+
+.terminal-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s ease;
+}
+
+.terminal-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.terminal-modal-content {
+  position: relative;
+  width: 90vw;
+  max-width: 900px;
+  max-height: 85vh;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.terminal-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-duration) var(--transition-timing);
+}
+
+.terminal-modal-close:hover {
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  border-color: var(--accent-color);
+}
+
+.terminal-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 2rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.terminal-modal-body .container {
+  max-width: 100%;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .terminal-modal-body {
+    padding: 1.25rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal-modal-content {
+    width: 95vw;
+    max-height: 88dvh;
+  }
+
+  .terminal-modal-body {
+    padding: 1rem 0.85rem;
+  }
+}
+
+.terminal-modal-error {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+/* Y2K modal styles */
+[data-theme="y2k-cyber"] .terminal-modal-content {
+  border: 2px solid var(--y2k-neon-green) !important;
+  border-radius: 0 !important;
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.15) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-modal-close {
+  border: 2px solid var(--y2k-hot-pink) !important;
+  border-radius: 0 !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-modal-close:hover {
+  background: var(--y2k-hot-pink) !important;
+  color: #fff !important;
+}
+
+/* Hide table of contents inside the terminal modal */
+.terminal-modal .table-of-contents {
+  display: none !important;
+}
