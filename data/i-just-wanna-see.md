@@ -100,6 +100,6 @@ Kota: memes used to get shared about me clicking pictures without my knowledge. 
 
 College: Uncool. Shut door to my face during exams, just my anxiety during exams. Until third year when two friends I made told me why I am the way I am - anxiety and walking during exams, thinking I don't deserve good things.
 
-First year in Microsoft: Got into therapy for the first time in my life, felt like I am being asked to adjust by everyone and still not getting my due. Got told that I need to be more assertive. Created ruckus when I asked for off to focus on mental health.
+First year out of college: Got into therapy for the first time in my life, felt like I am being asked to adjust by everyone and still not getting my due. Got told that I need to be more assertive. Created ruckus when I asked for off to focus on mental health.
 
 Now it's more like we don't need to like each other to work together. You can obviously find better people than me to mentor you, I can definitely find other people to keep in my projects. I will fight for you outside of our 1:1 setting but I need to know we're on the same page of the quality and speed.
