@@ -162,7 +162,7 @@
 >
 > Maybe I just like it when Spider-Man is sad? I don't know what that says about me. I loved the original Raimi movies, and the whole cheerful baby Spider-Man never quite cut it for me.
 >
-> Recommendation from: I wanted to watch it anyway. On the trek, I said I might be the only person back in my city who hasn't seen it yet. When I was back home, made a plan to go watch it with a friend I made on trek.
+> Recommendation from: I wanted to watch it anyway. On the trek, I said when I'm back in my city I might be the only person in whole town who hasn't seen it yet. When I was back home, made a plan to go watch it with a friend I made on trek.
 
 [x] Declassified: Operation Sindoor (2026) (tt43730117)
 
