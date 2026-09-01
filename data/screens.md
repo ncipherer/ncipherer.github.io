@@ -118,7 +118,7 @@
 >
 > The strange irony of this documentary is - Kabir was born in India, but Indians (both Muslims and Hindus) have either rejected him as a heretic or have made him another "god". So whatever little legacy is left of him is with Sufi qawwals in Pakistan, and even they're under threat.
 >
-> I see Prahlad Singh Tipaniya has a bandagi coming up in Bangalore next month, I need to see if I can make it!
+> I see Prahlad Singh Tipaniya has a bandagi coming up in my city next month, I need to see if I can make it!
 > 
 > Recommendation from: The very famous "Flies went to Moth's King" clip sent me to this! And then saw it was about Kabir!
 
@@ -162,7 +162,7 @@
 >
 > Maybe I just like it when Spider-Man is sad? I don't know what that says about me. I loved the original Raimi movies, and the whole cheerful baby Spider-Man never quite cut it for me.
 >
-> Recommendation from: I wanted to watch it anyway. On the trek, I said I might be the only guy in Bangalore who hasn't seen it yet. When I was back in Gurgaon, made a plan to go watch it with a friend I made on trek.
+> Recommendation from: I wanted to watch it anyway. On the trek, I said I might be the only person back in my city who hasn't seen it yet. When I was back home, made a plan to go watch it with a friend I made on trek.
 
 [x] Declassified: Operation Sindoor (2026) (tt43730117)
 
@@ -185,7 +185,7 @@
 
 Main Vaapas Aaunga (2026) (tt37333137)
 
-> Recommendation from: It's an Imtiaz Ali film, and a colleague from sign language class recommended it.
+> Recommendation from: It's an Imtiaz Ali film, and a colleague from a class recommended it.
 
 I Saw the Devil (2010)
 
@@ -231,7 +231,7 @@ Kishkindha Kaandam (2024)
 
 Meiyazhagan (2024)
 
-> Recommendation from: Deepak from the Search team, who mentioned it during a dosa break on the bus journey back from our Ooty outing. 
+> Recommendation from: A colleague, who mentioned it during a break on the bus journey back from a team outing. 
 
 Primal Fear (1996)
 

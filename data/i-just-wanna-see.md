@@ -96,7 +96,7 @@ Reading through all of this — taking extreme ownership, treating embarrassment
 School: Kanjoos. A guy said baap ne aankhon mein bhi kanjoosi kar di.
 I outgrew the friendship, couldn't fit in anymore they weren't unlearning the shit we conditioned to and was flexing their ignorance.
 
-Kota: memes used to get shared about me clicking pictures without my knowledge. Someone in GS mentioned it to a friend of mine. I would ask a lot of questions during class (because the professor wouldn't be available post class - he was one of the reasons why everything in my career worked perfectly) and people would call me question-mark loudly in class. For me it was important to clear JEE knowing fully well the situation at home and I felt if I'm paying lakhs for them to teach me, then I should actually know things.
+Coaching city: memes used to get shared about me clicking pictures without my knowledge. Someone mentioned it to a friend of mine. I would ask a lot of questions during class (because the professor wouldn't be available post class - he was one of the reasons why everything in my career worked perfectly) and people would call me question-mark loudly in class. For me it was important to clear my entrance exams knowing fully well the situation at home and I felt if I'm paying lakhs for them to teach me, then I should actually know things.
 
 College: Uncool. Shut door to my face during exams, just my anxiety during exams. Until third year when two friends I made told me why I am the way I am - anxiety and walking during exams, thinking I don't deserve good things.
 

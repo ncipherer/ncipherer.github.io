@@ -614,6 +614,21 @@
         "psychology"
       ],
       "contentPath": "dreams.md"
+    },
+    {
+      "id": "31",
+      "title": "What's good for freefall is bad for landing!",
+      "readingTime": "8 min",
+      "publishDate": "2026-09-01",
+      "blogLink": "therapy-works-question",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [],
+      "tags": [
+        "psychology"
+      ],
+      "contentPath": "therapy-works-question.md"
     }
   ]
 }

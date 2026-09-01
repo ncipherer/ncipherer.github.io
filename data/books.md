@@ -13,11 +13,11 @@
 > 
 > But this book failed the Bechdel test for me. I know the Bechdel test is a modern thing, but since this is a modern adaptation, I expected it to do better. Women are already so underrepresented in the Mahabharata because of the cultural norms of that time, so a modern retelling should have ideally fixed that a bit. Instead, Draupadi is never really talking about anything except some guy or another—some guy she's enamoured by, some guy she loves, some guy she's seeking revenge on. The Mahabharata actually had quite a lot of good women characters, but the book doesn't focus on them at all. So that was a bit underwhelming.
 > 
-> Recommended by a colleague from sign language class!
+> Recommended by a colleague from a class!
 
 The Last Queen (978-9354894152)
 
-> Again, recommended by a colleague from sign language class!
+> Again, recommended by a colleague from a class!
 
 Is this Anything? (978-1797113050)
 
