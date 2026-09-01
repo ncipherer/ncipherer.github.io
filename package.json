@@ -1,0 +1,43 @@
+{
+  "name": "ncipherer.github.io",
+  "version": "1.0.0",
+  "description": "A minimalist blog built with TypeScript and vanilla JavaScript",
+  "scripts": {
+    "dev": "webpack serve --mode development",
+    "build": "webpack --mode production",
+    "build:gh-pages": "GITHUB_PAGES=true webpack --mode production",
+    "preview": "http-server dist",
+    "predeploy": "npm run build:gh-pages",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "@types/d3": "^7.4.3",
+    "@types/d3-cloud": "^1.2.9",
+    "@types/d3-scale-chromatic": "^3.1.0",
+    "@types/d3-selection": "^3.0.11",
+    "d3": "^7.9.0",
+    "d3-cloud": "^1.2.7",
+    "d3-scale-chromatic": "^3.1.0",
+    "d3-selection": "^3.0.0",
+    "marked": "^9.1.5"
+  },
+  "devDependencies": {
+    "@types/marked": "^5.0.2",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^6.8.1",
+    "gh-pages": "^6.3.0",
+    "html-webpack-plugin": "^5.5.3",
+    "http-server": "^14.1.1",
+    "image-minimizer-webpack-plugin": "^5.0.0",
+    "imagemin": "^9.0.1",
+    "imagemin-mozjpeg": "^10.0.0",
+    "imagemin-pngquant": "^10.0.0",
+    "imagemin-webp": "^8.0.0",
+    "mini-css-extract-plugin": "^2.7.6",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.2.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  }
+}
