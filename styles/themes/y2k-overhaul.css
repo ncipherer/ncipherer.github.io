@@ -1,0 +1,1011 @@
+/* Y2K-Cyber theme: CRT shell, chrome bevels, retro components (imported by styles/main.css) */
+
+/* ============================================
+   Y2K-CYBER: AUTHENTIC RETRO OVERHAUL
+   CRT scanlines, chrome bevels, terminal UI,
+   radar grids, starbursts, animated neon
+   ============================================ */
+
+/* --- KEYFRAMES --- */
+@keyframes y2k-scanline {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(4px); }
+}
+
+@keyframes y2k-glow-pulse {
+  0%, 100% { opacity: 0.6; }
+  50% { opacity: 1; }
+}
+
+@keyframes y2k-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+@keyframes y2k-chrome-shine {
+  0% { background-position: -200% center; }
+  100% { background-position: 200% center; }
+}
+
+@keyframes y2k-border-glow {
+  0%, 100% {
+    box-shadow: 0 0 5px var(--y2k-neon-green), 0 0 10px rgba(0,255,65,0.15);
+  }
+  50% {
+    box-shadow: 0 0 10px var(--y2k-neon-green), 0 0 25px rgba(0,255,65,0.25);
+  }
+}
+
+@keyframes y2k-crt-flicker {
+  0%, 100% { opacity: 1; }
+  92% { opacity: 1; }
+  93% { opacity: 0.95; }
+  94% { opacity: 1; }
+}
+
+@keyframes y2k-star-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes y2k-load-fill {
+  0%   { width: 0%; }
+  10%  { width: 10%; }
+  20%  { width: 20%; }
+  30%  { width: 30%; }
+  40%  { width: 40%; }
+  50%  { width: 50%; }
+  60%  { width: 60%; }
+  70%  { width: 70%; }
+  80%  { width: 80%; }
+  90%  { width: 90%; }
+  100% { width: 100%; }
+}
+
+@keyframes y2k-load-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0; }
+}
+
+/* --- TEXT SELECTION: Neon matrix highlight --- */
+[data-theme="y2k-cyber"] ::selection {
+  background: #00ff41;
+  color: #000000;
+}
+
+[data-theme="y2k-cyber"] ::-moz-selection {
+  background: #00ff41;
+  color: #000000;
+}
+
+/* --- MUTE BUTTON (visible in all themes) --- */
+.y2k-mute-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s ease;
+}
+
+.y2k-mute-btn:hover {
+  opacity: 0.7;
+}
+
+/* Hide speaker-on icon when muted, show speaker-off */
+.y2k-mute-btn.muted .y2k-mute-icon-on {
+  display: none !important;
+}
+
+.y2k-mute-btn.muted .y2k-mute-icon-off {
+  display: block !important;
+}
+
+/* Y2K theme: neon border style */
+[data-theme="y2k-cyber"] .y2k-mute-btn {
+  border: 1px solid var(--y2k-neon-green) !important;
+  border-radius: 0 !important;
+  padding: 4px !important;
+  color: var(--y2k-neon-green) !important;
+}
+
+[data-theme="y2k-cyber"] .y2k-mute-btn:hover {
+  background: rgba(0,255,65,0.1);
+  box-shadow: 0 0 6px rgba(0,255,65,0.3);
+}
+
+[data-theme="y2k-cyber"] .y2k-mute-btn.muted {
+  border-color: var(--y2k-hot-pink) !important;
+  color: var(--y2k-hot-pink) !important;
+}
+
+/* --- RETRO LOADING BAR (Y2K only) --- */
+[data-theme="y2k-cyber"] .loading-content,
+[data-theme="y2k-cyber"] .loading {
+  font-family: "Courier New", Consolas, monospace;
+  font-weight: 700;
+  color: var(--y2k-neon-green);
+  background: #0a0a0a;
+  border: 2px solid var(--y2k-neon-green);
+  padding: 1rem 1.25rem;
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+/* The loading bar track */
+[data-theme="y2k-cyber"] .loading-content::before,
+[data-theme="y2k-cyber"] .loading::before {
+  content: "[//////////]";
+  font-family: "Courier New", monospace;
+  font-weight: 900;
+  color: var(--y2k-neon-green);
+  display: inline-block;
+  animation: y2k-load-blink 0.8s step-end infinite;
+  white-space: nowrap;
+  overflow: hidden;
+  /* Clip to simulate filling */
+  max-width: 100%;
+  background: linear-gradient(90deg, var(--y2k-neon-green) 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: 100% 0;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* The label text */
+[data-theme="y2k-cyber"] .loading-content::after,
+[data-theme="y2k-cyber"] .loading::after {
+  content: "LOADING...";
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  font-size: 0.8rem;
+  color: var(--y2k-orange);
+  letter-spacing: 0.15em;
+  animation: y2k-load-blink 1s step-end infinite;
+}
+
+/* --- NAVIGATION LOADING OVERLAY --- */
+#y2k-loading-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 99999;
+  background: #0a0a0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.15s ease;
+}
+
+#y2k-loading-overlay.fade-out {
+  animation: fadeOut 0.3s ease forwards;
+}
+
+.y2k-load-box {
+  text-align: center;
+  font-family: "Courier New", Consolas, monospace;
+}
+
+.y2k-load-title {
+  font-size: 0.75rem;
+  font-weight: 900;
+  letter-spacing: 0.25em;
+  color: var(--y2k-neon-green);
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 8px rgba(0,255,65,0.5);
+}
+
+.y2k-load-dialup {
+  font-size: 1.1rem;
+  font-weight: 900;
+  letter-spacing: 0.1em;
+  color: var(--y2k-neon-green);
+  white-space: pre;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeOut {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+[data-theme="y2k-cyber"] body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 0, 0, 0.08) 2px,
+    rgba(0, 0, 0, 0.08) 4px
+  );
+  pointer-events: none;
+  z-index: 9998;
+  animation: y2k-crt-flicker 8s infinite;
+}
+
+/* Subtle vignette around screen edges — like an old CRT */
+[data-theme="y2k-cyber"] body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at center,
+    transparent 60%,
+    rgba(0, 0, 0, 0.4) 100%
+  );
+  pointer-events: none;
+  z-index: 9997;
+}
+
+/* --- BODY & FONTS --- */
+[data-theme="y2k-cyber"] body {
+  font-family: "Courier New", "Consolas", "Lucida Console", monospace;
+  letter-spacing: 0.02em;
+  animation: y2k-crt-flicker 8s infinite;
+  background-color: var(--bg-primary);
+  background-image:
+    radial-gradient(circle, rgba(0,255,65,0.07) 1px, transparent 1px),
+    radial-gradient(circle, rgba(255,45,149,0.04) 1px, transparent 1px);
+  background-size: 4px 4px, 12px 12px;
+  background-position: 0 0, 6px 6px;
+}
+
+/* Catch every element that explicitly sets a non-monospace font */
+[data-theme="y2k-cyber"] h1,
+[data-theme="y2k-cyber"] h2,
+[data-theme="y2k-cyber"] h3,
+[data-theme="y2k-cyber"] h4,
+[data-theme="y2k-cyber"] h5,
+[data-theme="y2k-cyber"] h6,
+[data-theme="y2k-cyber"] p,
+[data-theme="y2k-cyber"] span,
+[data-theme="y2k-cyber"] a,
+[data-theme="y2k-cyber"] div,
+[data-theme="y2k-cyber"] button,
+[data-theme="y2k-cyber"] td,
+[data-theme="y2k-cyber"] th,
+[data-theme="y2k-cyber"] li,
+[data-theme="y2k-cyber"] label,
+[data-theme="y2k-cyber"] strong,
+[data-theme="y2k-cyber"] em,
+[data-theme="y2k-cyber"] cite {
+  font-family: "Courier New", "Consolas", "Lucida Console", monospace;
+}
+
+/* --- NAVBAR: Chrome bevel panel like Godzilla terminal border --- */
+[data-theme="y2k-cyber"] .navbar {
+  border-bottom: none !important;
+  background:
+    linear-gradient(180deg, #5a5a6e 0%, #2a2a3e 4%, #1a1a2e 8%, #1a1a2e 92%, #2a2a3e 96%, #5a5a6e 100%) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.12),
+    inset 0 -1px 0 rgba(0,0,0,0.6),
+    0 2px 12px rgba(0,255,65,0.15) !important;
+  border-radius: 0 !important;
+}
+
+[data-theme="y2k-cyber"] .nav-content {
+  border-bottom: 1px solid rgba(0,255,65,0.2);
+}
+
+/* --- NAV LINKS: Chrome tab bar like Xbox --- */
+[data-theme="y2k-cyber"] .nav-link {
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  padding: 0.3rem 0.6rem;
+  border: 1px solid transparent;
+  transition: all 0.15s ease;
+}
+
+[data-theme="y2k-cyber"] .nav-link:hover {
+  color: #000;
+  background: var(--y2k-neon-green);
+  border-color: var(--y2k-neon-green);
+  text-shadow: none;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), inset 0 -1px 0 rgba(0,0,0,0.3);
+}
+
+/* --- THEME SELECTOR: Neon-lit panel --- */
+[data-theme="y2k-cyber"] .theme-selector {
+  border-color: var(--y2k-neon-green) !important;
+  border-radius: 0 !important;
+  box-shadow:
+    0 0 6px rgba(0,255,65,0.3),
+    inset 0 0 4px rgba(0,255,65,0.1),
+    var(--y2k-bevel) !important;
+  animation: y2k-border-glow 3s ease-in-out infinite;
+}
+
+[data-theme="y2k-cyber"] .theme-selector-indicator {
+  background: var(--y2k-neon-green) !important;
+  box-shadow: 0 0 8px rgba(0,255,65,0.6) !important;
+  border-radius: 0 !important;
+}
+
+[data-theme="y2k-cyber"] .theme-selector-btn {
+  border-radius: 0 !important;
+}
+
+[data-theme="y2k-cyber"] .theme-selector-btn.active {
+  color: #000 !important;
+}
+
+/* --- NOTE CARDS: Chrome-framed panels with bevel --- */
+[data-theme="y2k-cyber"] .note-card,
+[data-theme="y2k-cyber"] .pinned-note {
+  border-radius: 0 !important;
+  border: 2px solid #2a2a2a !important;
+  background: linear-gradient(135deg, #111128 0%, #0d0d22 100%) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    inset 0 -1px 0 rgba(0,0,0,0.5),
+    4px 4px 0 rgba(0,0,0,0.5) !important;
+  transition: all 0.2s ease !important;
+}
+
+[data-theme="y2k-cyber"] .note-card:hover {
+  border-color: var(--y2k-hot-pink) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    0 0 15px rgba(255,45,149,0.3),
+    0 0 30px rgba(255,45,149,0.1),
+    4px 4px 0 rgba(255,45,149,0.2) !important;
+}
+
+/* --- CARDS & BUTTONS: All zero-radius with bevel --- */
+[data-theme="y2k-cyber"] .copy-link-btn,
+[data-theme="y2k-cyber"] .play-all-btn,
+[data-theme="y2k-cyber"] .tag,
+[data-theme="y2k-cyber"] .glossary-popover,
+[data-theme="y2k-cyber"] [data-tooltip]::after,
+[data-theme="y2k-cyber"] .carousel-image-card,
+[data-theme="y2k-cyber"] .movie-review-modal .modal-content,
+[data-theme="y2k-cyber"] .movie-review-modal .modal-close {
+  border-radius: 0 !important;
+}
+
+/* --- TAGS: Win95 double-border badge with hard shadow --- */
+[data-theme="y2k-cyber"] .tag {
+  border: 2px solid var(--y2k-cyan) !important;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  box-shadow:
+    inset 1px 1px 0 rgba(255,255,255,0.15),
+    inset -1px -1px 0 rgba(0,0,0,0.3),
+    2px 2px 0 #000;
+  border-radius: 0 !important;
+}
+
+[data-theme="y2k-cyber"] .tag:hover,
+[data-theme="y2k-cyber"] .tag.active {
+  background-color: var(--y2k-neon-green) !important;
+  color: #000000 !important;
+  border-color: var(--y2k-neon-green) !important;
+  border-style: solid !important;
+  box-shadow:
+    inset 1px 1px 0 rgba(255,255,255,0.3),
+    inset -1px -1px 0 rgba(0,0,0,0.2),
+    3px 3px 0 #000;
+  transform: translate(-1px, -1px);
+}
+
+/* --- LINKS: Bright underlined like Y2K hyperlinks --- */
+[data-theme="y2k-cyber"] .note-content a {
+  color: var(--y2k-cyan);
+  text-decoration: underline;
+  text-decoration-color: rgba(0,255,255,0.4);
+  text-underline-offset: 3px;
+  transition: all 0.15s ease;
+}
+
+[data-theme="y2k-cyber"] .note-content a:hover {
+  color: var(--y2k-hot-pink);
+  border-bottom-color: var(--y2k-hot-pink);
+  text-decoration-color: var(--y2k-hot-pink);
+  text-shadow: 0 0 6px rgba(255,45,149,0.4);
+}
+
+/* --- TOOLTIPS / POPOVERS: Terminal green CRT --- */
+[data-theme="y2k-cyber"] [data-tooltip]::after {
+  background: #0a0a0a !important;
+  color: var(--y2k-neon-green) !important;
+  border: 2px solid var(--y2k-neon-green) !important;
+  font-family: "Courier New", monospace;
+  box-shadow:
+    0 0 10px rgba(0,255,65,0.25),
+    inset 0 0 30px rgba(0,255,65,0.05) !important;
+}
+
+[data-theme="y2k-cyber"] .glossary-popover {
+  background: #0a0a0a !important;
+  color: var(--y2k-neon-green) !important;
+  border: 2px solid var(--y2k-neon-green) !important;
+  font-family: "Courier New", monospace;
+  box-shadow:
+    0 0 10px rgba(0,255,65,0.25),
+    inset 0 0 30px rgba(0,255,65,0.05) !important;
+}
+
+/* --- HOME PAGE: Starburst kicker + neon title --- */
+[data-theme="y2k-cyber"] .whisper-kicker {
+  color: var(--y2k-orange);
+  letter-spacing: 0.25em;
+  font-weight: 900;
+  text-shadow: 0 0 8px rgba(255,102,0,0.5);
+}
+
+[data-theme="y2k-cyber"] .whisper-kicker::before,
+[data-theme="y2k-cyber"] .whisper-kicker::after {
+  content: "✦";
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background: none;
+  font-size: 0.6rem;
+  color: var(--y2k-yellow);
+  animation: y2k-star-spin 4s linear infinite;
+  vertical-align: middle;
+  margin: 0 0.3rem;
+}
+
+[data-theme="y2k-cyber"] .whisper-kicker::after {
+  animation-direction: reverse;
+}
+
+[data-theme="y2k-cyber"] .home-title,
+[data-theme="y2k-cyber"] .home-page h1 {
+  font-family: "Courier New", "Consolas", "Lucida Console", monospace;
+  text-shadow:
+    0 0 10px rgba(0,255,65,0.5),
+    0 0 30px rgba(0,255,65,0.2),
+    0 0 60px rgba(0,255,65,0.1);
+  color: var(--y2k-neon-green);
+}
+
+/* --- CAROUSEL: Chrome-framed like Godzilla device border --- */
+[data-theme="y2k-cyber"] .carousel-stage {
+  border: 3px solid #3a3a4e !important;
+  border-radius: 0 !important;
+  background: linear-gradient(180deg, #3a3a4e 0%, #1a1a2e 3%, #111128 97%, #3a3a4e 100%) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.1),
+    inset 0 -1px 0 rgba(0,0,0,0.6),
+    0 0 20px rgba(0,255,65,0.1) !important;
+}
+
+[data-theme="y2k-cyber"] .carousel-image-card {
+  border: 2px solid #000 !important;
+  border-radius: 0 !important;
+}
+
+/* CRT scanline effect on carousel images */
+[data-theme="y2k-cyber"] .carousel-image-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 1px,
+    rgba(0,0,0,0.06) 1px,
+    rgba(0,0,0,0.06) 2px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+[data-theme="y2k-cyber"] .carousel-btn {
+  border-radius: 0 !important;
+  border: 2px solid var(--y2k-neon-green) !important;
+  background: rgba(0,0,0,0.7) !important;
+  color: var(--y2k-neon-green) !important;
+}
+
+[data-theme="y2k-cyber"] .carousel-btn:hover {
+  background: var(--y2k-neon-green) !important;
+  color: #000 !important;
+  box-shadow: 0 0 10px rgba(0,255,65,0.5);
+}
+
+[data-theme="y2k-cyber"] .carousel-counter {
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  color: var(--y2k-neon-green);
+  text-shadow: 0 0 6px rgba(0,255,65,0.4);
+}
+
+[data-theme="y2k-cyber"] .carousel-dot {
+  border-radius: 0 !important;
+  width: 8px;
+  height: 8px;
+}
+
+[data-theme="y2k-cyber"] .carousel-dot.active {
+  background: var(--y2k-neon-green) !important;
+  box-shadow: 0 0 6px rgba(0,255,65,0.6);
+}
+
+/* --- COLLAPSIBLE GALLERY: Terminal prompt --- */
+[data-theme="y2k-cyber"] .carousel-summary {
+  border-radius: 0 !important;
+  border: 2px solid var(--y2k-neon-green) !important;
+  color: var(--y2k-neon-green) !important;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  background: rgba(0,0,0,0.5) !important;
+  box-shadow: var(--y2k-bevel);
+}
+
+[data-theme="y2k-cyber"] .carousel-collapsible[open] .carousel-summary {
+  border-radius: 0 !important;
+}
+
+[data-theme="y2k-cyber"] .carousel-summary-text::before {
+  content: ">>" !important;
+  font-weight: 900;
+  color: var(--y2k-orange);
+  margin-right: 0.4rem;
+  animation: y2k-blink 1s step-end infinite;
+}
+
+[data-theme="y2k-cyber"] .carousel-collapsible[open] .carousel-summary-text::before {
+  content: "✓" !important;
+  color: var(--y2k-neon-green);
+  animation: none;
+}
+
+[data-theme="y2k-cyber"] .carousel-summary:hover {
+  border-color: var(--y2k-hot-pink) !important;
+  color: var(--y2k-hot-pink) !important;
+  box-shadow: 0 0 10px rgba(255,45,149,0.3), var(--y2k-bevel);
+}
+
+/* --- CODE BLOCKS: Green-on-black terminal --- */
+[data-theme="y2k-cyber"] .note-content pre {
+  background: #0a0a0a !important;
+  border: 2px solid var(--y2k-neon-green) !important;
+  border-radius: 0 !important;
+  color: var(--y2k-neon-green) !important;
+  box-shadow:
+    inset 0 0 40px rgba(0,255,65,0.04),
+    0 0 8px rgba(0,255,65,0.15) !important;
+}
+
+[data-theme="y2k-cyber"] .note-content code {
+  background: #0a0a0a !important;
+  border: 1px solid rgba(0,255,65,0.3) !important;
+  color: var(--y2k-neon-green) !important;
+}
+
+/* --- BLOCKQUOTES: Hot pink terminal panel --- */
+[data-theme="y2k-cyber"] .note-content blockquote {
+  border-left: 4px solid var(--y2k-hot-pink) !important;
+  background: rgba(255,45,149,0.04) !important;
+  border-radius: 0 !important;
+  box-shadow: inset 0 0 30px rgba(255,45,149,0.03);
+}
+
+[data-theme="y2k-cyber"] .note-content blockquote::before {
+  color: var(--y2k-hot-pink) !important;
+  opacity: 0.3;
+}
+
+/* --- TABLES: Chrome header row --- */
+[data-theme="y2k-cyber"] .note-content table {
+  border: 2px solid var(--y2k-neon-green) !important;
+  border-radius: 0 !important;
+}
+
+[data-theme="y2k-cyber"] .note-content th {
+  background: linear-gradient(180deg, #1a3a1a 0%, #0a1a0a 100%) !important;
+  color: var(--y2k-neon-green) !important;
+  font-family: "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.75rem;
+  border-bottom: 2px solid var(--y2k-neon-green) !important;
+}
+
+[data-theme="y2k-cyber"] .note-content tr:nth-child(even) {
+  background-color: rgba(0,255,65,0.02) !important;
+}
+
+[data-theme="y2k-cyber"] .note-content td strong {
+  color: var(--y2k-hot-pink);
+}
+
+/* --- POETIC FOCUS: Neon underline highlight --- */
+[data-theme="y2k-cyber"] .poetic-focus {
+  background-image: linear-gradient(
+    transparent 60%,
+    rgba(0,255,65,0.25) 60%,
+    rgba(0,255,65,0.25) 100%
+  ) !important;
+  color: var(--y2k-cyan) !important;
+}
+
+/* --- BACK TO TOP: Orange terminal button --- */
+[data-theme="y2k-cyber"] .back-to-top {
+  background: var(--y2k-orange) !important;
+  color: #000 !important;
+  border: 2px solid #000 !important;
+  border-radius: 0 !important;
+  font-weight: 900;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.5), var(--y2k-bevel);
+}
+
+[data-theme="y2k-cyber"] .back-to-top:hover {
+  background: var(--y2k-neon-green) !important;
+  box-shadow: 0 0 15px rgba(0,255,65,0.4), 4px 4px 0 rgba(0,0,0,0.5);
+}
+
+/* --- MUSIC PLAYER: Chrome bar with neon accents --- */
+[data-theme="y2k-cyber"] .music-player-bar {
+  border-top: 2px solid var(--y2k-neon-green) !important;
+  background: linear-gradient(180deg, #1a1a2e 0%, #0a0a1a 100%) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.06),
+    0 -2px 15px rgba(0,255,65,0.15) !important;
+}
+
+[data-theme="y2k-cyber"] .mp-progress-bar {
+  background: var(--y2k-cyan) !important;
+}
+
+[data-theme="y2k-cyber"] .mp-btn.play-pause {
+  background: var(--y2k-hot-pink) !important;
+  color: #fff !important;
+  border-radius: 0 !important;
+}
+
+[data-theme="y2k-cyber"] .mp-btn {
+  border-radius: 0 !important;
+}
+
+[data-theme="y2k-cyber"] .mp-title {
+  font-family: "Courier New", monospace;
+  color: var(--y2k-neon-green);
+  text-shadow: 0 0 6px rgba(0,255,65,0.3);
+}
+
+/* --- COPY LINK BTN: Retro media player / Win95 button --- */
+[data-theme="y2k-cyber"] .copy-link-btn {
+  background: linear-gradient(180deg, #d4d4d4 0%, #b0b0b0 30%, #909090 70%, #a0a0a0 100%) !important;
+  color: #000 !important;
+  border: 2px outset #c0c0c0 !important;
+  border-radius: 0 !important;
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 0.8rem;
+  box-shadow:
+    inset 1px 1px 0 #fff,
+    inset -1px -1px 0 #808080,
+    2px 2px 0 #000;
+  padding: 0.5rem 1rem !important;
+  cursor: pointer;
+  transition: none;
+}
+
+[data-theme="y2k-cyber"] .copy-link-btn:hover {
+  background: linear-gradient(180deg, #e0e0e0 0%, #c0c0c0 30%, #a0a0a0 70%, #b0b0b0 100%) !important;
+}
+
+[data-theme="y2k-cyber"] .copy-link-btn:active {
+  border-style: inset !important;
+  box-shadow:
+    inset 1px 1px 0 #808080,
+    inset -1px -1px 0 #fff;
+  padding: 0.6rem 0.9rem 0.4rem 1.1rem !important;
+}
+
+/* --- PLAY ALL BTN: Neon pink chrome --- */
+[data-theme="y2k-cyber"] .play-all-btn {
+  border: 2px solid var(--y2k-hot-pink) !important;
+  box-shadow: var(--y2k-bevel), 0 0 8px rgba(255,45,149,0.2);
+}
+
+[data-theme="y2k-cyber"] .play-all-btn:hover {
+  box-shadow: var(--y2k-bevel), 0 0 15px rgba(255,45,149,0.4);
+}
+
+/* --- MOVIE MODAL: Chrome terminal frame --- */
+[data-theme="y2k-cyber"] .movie-review-modal .modal-content {
+  border: 3px solid #3a3a4e !important;
+  border-radius: 0 !important;
+  background: linear-gradient(180deg, #2a2a3e, #111128) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.1),
+    0 0 30px rgba(0,255,65,0.15) !important;
+}
+
+[data-theme="y2k-cyber"] .movie-review-modal .modal-close {
+  border: 2px solid var(--y2k-hot-pink) !important;
+  border-radius: 0 !important;
+  background: rgba(0,0,0,0.7) !important;
+}
+
+[data-theme="y2k-cyber"] .movie-review-modal .modal-review {
+  border-left: 4px solid var(--y2k-neon-green) !important;
+  border-radius: 0 !important;
+}
+
+/* --- SEARCH TRIGGER --- */
+[data-theme="y2k-cyber"] .search-trigger-btn {
+  border: 1px solid var(--y2k-neon-green) !important;
+  padding: 6px !important;
+  border-radius: 0 !important;
+}
+
+[data-theme="y2k-cyber"] .search-trigger-btn:hover {
+  background: rgba(0,255,65,0.1) !important;
+  box-shadow: 0 0 8px rgba(0,255,65,0.3);
+}
+
+/* --- TABLE OF CONTENTS: Chrome panel --- */
+[data-theme="y2k-cyber"] .table-of-contents {
+  border-left: 3px solid #3a3a4e !important;
+  background: linear-gradient(180deg, #151530, #0a0a1a) !important;
+  box-shadow: inset 1px 0 0 rgba(255,255,255,0.05);
+}
+
+[data-theme="y2k-cyber"] .toc-link.active {
+  color: var(--y2k-neon-green) !important;
+}
+
+[data-theme="y2k-cyber"] .toc-link.active::after {
+  background: var(--y2k-neon-green) !important;
+  box-shadow: 0 0 6px rgba(0,255,65,0.5);
+}
+
+/* --- EXTERNAL LINK --- */
+[data-theme="y2k-cyber"] .external-link {
+  color: var(--y2k-cyan);
+  font-weight: 600;
+}
+
+[data-theme="y2k-cyber"] .external-link:hover {
+  color: var(--y2k-hot-pink);
+  text-shadow: 0 0 6px rgba(255,45,149,0.4);
+}
+
+/* --- BACK TO NOTES FLOATING LINK --- */
+[data-theme="y2k-cyber"] .back-to-notes.floating {
+  color: var(--y2k-neon-green);
+  font-family: "Courier New", monospace;
+  font-weight: 700;
+  text-shadow: 0 0 6px rgba(0,255,65,0.3);
+}
+
+[data-theme="y2k-cyber"] .back-to-notes.floating {
+  padding: 0.3rem 0.6rem;
+  border: 1px solid transparent;
+}
+
+[data-theme="y2k-cyber"] .back-to-notes.floating:hover {
+  color: #000;
+  background: var(--y2k-hot-pink);
+  border-color: var(--y2k-hot-pink);
+  text-shadow: none;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.2), inset 0 -1px 0 rgba(0,0,0,0.3);
+}
+
+/* --- NOTE HEADINGS: Plasma screen glow --- */
+[data-theme="y2k-cyber"] .note-content h1,
+[data-theme="y2k-cyber"] .note-content h2,
+[data-theme="y2k-cyber"] .note-content h3 {
+  color: var(--y2k-neon-green);
+  text-shadow:
+    0 0 4px rgba(0,255,65,0.6),
+    0 0 12px rgba(0,255,65,0.3),
+    0 0 28px rgba(0,255,65,0.15),
+    0 0 50px rgba(0,255,65,0.08);
+}
+
+/* --- NOTE META / READING TIME --- */
+[data-theme="y2k-cyber"] .note-meta .reading-time,
+[data-theme="y2k-cyber"] .note-meta .publish-date {
+  color: var(--y2k-yellow);
+}
+
+/* --- SECTION HEADINGS --- */
+[data-theme="y2k-cyber"] .section-header h2,
+[data-theme="y2k-cyber"] .section-header h3 {
+  color: var(--y2k-neon-green);
+  text-shadow: 0 0 8px rgba(0,255,65,0.25);
+}
+
+/* --- NOTE NAVIGATION LINKS: Chrome buttons --- */
+[data-theme="y2k-cyber"] .nav-link.prev,
+[data-theme="y2k-cyber"] .nav-link.next {
+  border: 2px solid #3a3a4e !important;
+  background: linear-gradient(180deg, #1a1a2e, #111128) !important;
+  box-shadow: var(--y2k-bevel), 4px 4px 0 rgba(0,0,0,0.4);
+}
+
+[data-theme="y2k-cyber"] .nav-link.prev:hover,
+[data-theme="y2k-cyber"] .nav-link.next:hover {
+  border-color: var(--y2k-neon-green) !important;
+  box-shadow: 0 0 10px rgba(0,255,65,0.2), 4px 4px 0 rgba(0,0,0,0.4);
+}
+
+/* --- NOT-FOUND PAGE --- */
+[data-theme="y2k-cyber"] .not-found-actions .btn-primary {
+  background: var(--y2k-neon-green) !important;
+  color: #000 !important;
+  border-radius: 0 !important;
+}
+
+/* --- SHELF (BOOKS) --- */
+[data-theme="y2k-cyber"] .shelf-plank {
+  background: linear-gradient(180deg, #3a3a4e 0%, #2a2a3e 50%, #1a1a2e 100%) !important;
+  border: 2px solid #4a4a5e;
+  box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+}
+
+/* --- MOVIE CARD --- */
+[data-theme="y2k-cyber"] .movie-card {
+  border: 2px solid #2a2a2a !important;
+  border-radius: 0 !important;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.4) !important;
+}
+
+[data-theme="y2k-cyber"] .movie-card:hover {
+  border-color: var(--y2k-neon-green) !important;
+}
+
+[data-theme="y2k-cyber"] .review-indicator {
+  background: var(--y2k-hot-pink) !important;
+  border-radius: 0 !important;
+}
+
+/* --- SONG CARD --- */
+[data-theme="y2k-cyber"] .song-card {
+  border: 2px solid #2a2a2a !important;
+  border-radius: 0 !important;
+  box-shadow: 4px 4px 0 rgba(0,0,0,0.4) !important;
+}
+
+[data-theme="y2k-cyber"] .play-icon {
+  border-radius: 0 !important;
+  background: rgba(0,255,65,0.9) !important;
+  color: #000 !important;
+}
+
+/* --- SONG LIST: Terminal data display --- */
+[data-theme="y2k-cyber"] .song-list-header-row {
+  border-bottom: 2px solid var(--y2k-neon-green) !important;
+  color: var(--y2k-neon-green) !important;
+  font-family: "Courier New", monospace;
+}
+
+[data-theme="y2k-cyber"] .song-list-item:hover {
+  background-color: rgba(0,255,65,0.05) !important;
+}
+
+/* --- TAG CLOUD --- */
+[data-theme="y2k-cyber"] .tag-cloud-container {
+  border: 2px solid var(--y2k-neon-green) !important;
+  border-radius: 0 !important;
+  background: rgba(0,0,0,0.3) !important;
+  box-shadow: inset 0 0 30px rgba(0,255,65,0.03);
+}
+
+/* Override d3-cloud inline font-family on SVG text */
+[data-theme="y2k-cyber"] .tag-cloud-container text {
+  font-family: "Courier New", Consolas, monospace !important;
+  font-weight: 700 !important;
+}
+
+/* --- VINTAGE SCROLLBAR: Chunky gray Win95 track --- */
+[data-theme="y2k-cyber"] ::-webkit-scrollbar {
+  width: 16px;
+  height: 16px;
+}
+
+[data-theme="y2k-cyber"] ::-webkit-scrollbar-track {
+  background: #c0c0c0;
+  border-left: 1px solid #808080;
+}
+
+[data-theme="y2k-cyber"] ::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #dfdfdf 0%, #c0c0c0 20%, #a0a0a0 80%, #b0b0b0 100%);
+  border: 2px outset #c0c0c0;
+  box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080;
+}
+
+[data-theme="y2k-cyber"] ::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #e8e8e8 0%, #ccc 20%, #aaa 80%, #bbb 100%);
+}
+
+[data-theme="y2k-cyber"] ::-webkit-scrollbar-thumb:active {
+  border-style: inset;
+  box-shadow: inset 1px 1px 0 #808080, inset -1px -1px 0 #fff;
+}
+
+[data-theme="y2k-cyber"] ::-webkit-scrollbar-button {
+  display: block;
+  height: 16px;
+  width: 16px;
+  background: linear-gradient(180deg, #dfdfdf 0%, #c0c0c0 40%, #a0a0a0 100%);
+  border: 2px outset #c0c0c0;
+  box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #808080;
+}
+
+[data-theme="y2k-cyber"] ::-webkit-scrollbar-button:active {
+  border-style: inset;
+}
+
+[data-theme="y2k-cyber"] ::-webkit-scrollbar-corner {
+  background: #c0c0c0;
+}
+
+/* Firefox scrollbar */
+[data-theme="y2k-cyber"] html {
+  scrollbar-width: auto;
+  scrollbar-color: #a0a0a0 #c0c0c0;
+}
+
+/* --- PIXEL-ART ICON LABELS (Y2K only) --- */
+/* Hide the emoji spans */
+[data-theme="y2k-cyber"] .y2k-hide-emoji {
+  display: none;
+}
+
+/* Show bracketed labels instead */
+[data-theme="y2k-cyber"] .reading-time::before {
+  content: "[T:";
+  font-weight: 900;
+  color: var(--y2k-orange);
+}
+
+[data-theme="y2k-cyber"] .reading-time::after {
+  content: "]";
+  font-weight: 900;
+  color: var(--y2k-orange);
+}
+
+[data-theme="y2k-cyber"] .reading-time {
+  font-size: 0.8rem;
+  color: var(--y2k-yellow);
+}
+
+[data-theme="y2k-cyber"] .publish-date::before {
+  content: "[D:";
+  font-weight: 900;
+  color: var(--y2k-cyan);
+}
+
+[data-theme="y2k-cyber"] .publish-date::after {
+  content: "]";
+  font-weight: 900;
+  color: var(--y2k-cyan);
+}
+
+[data-theme="y2k-cyber"] .publish-date {
+  color: var(--y2k-yellow);
+}
+
+/* --- EXTERNAL LINK: Blocky hover --- */
+[data-theme="y2k-cyber"] .external-link:hover {
+  color: #000 !important;
+  background: var(--y2k-cyan);
+  padding: 0.1rem 0.3rem;
+  text-shadow: none;
+}

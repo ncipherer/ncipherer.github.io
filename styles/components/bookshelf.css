@@ -1,0 +1,262 @@
+/* CSS bookshelf: shelf, books, covers (imported by styles/main.css) */
+
+/* ── CSS Bookshelf ─────────────────────────────────────────── */
+.bookshelf-scene {
+  perspective: 800px;
+  margin: 2rem 0 0.5rem;
+}
+
+.bookshelf-stage {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.bookshelf-row {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 0;
+}
+
+/* side chevrons: work with both mouse and touch */
+.shelf-arrow {
+  flex-shrink: 0;
+  width: 2.4rem;
+  height: 2.4rem;
+  border-radius: 999px;
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  opacity: 0.6;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.shelf-arrow:hover:not(:disabled) {
+  opacity: 1;
+  transform: scale(1.08);
+}
+
+.shelf-arrow:active:not(:disabled) {
+  transform: scale(0.94);
+}
+
+.shelf-arrow:disabled {
+  opacity: 0.15;
+  cursor: default;
+}
+
+@media (max-width: 520px) {
+  .bookshelf-stage {
+    gap: 0.25rem;
+  }
+
+  .shelf-arrow {
+    width: 2.2rem;
+    height: 2.2rem;
+    font-size: 1.3rem;
+  }
+}
+
+.shelf-track {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 0.55rem;
+  overflow-x: auto;
+  overflow-y: visible;
+  scroll-behavior: smooth;
+  cursor: grab;
+  padding: 1.2rem 1.4rem 0.4rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  min-height: 13.6rem;
+  /* depth: the whole row is viewed through one lens, so the fan of books
+     reads as a row standing on a shelf instead of flat cards side by side */
+  perspective: 1100px;
+}
+
+.shelf-track::-webkit-scrollbar {
+  display: none;
+}
+
+.shelf-track:active {
+  cursor: grabbing;
+}
+
+/* when the row fits, centre it instead of leaving a dead empty gap */
+.shelf-track.shelf-fits {
+  justify-content: center;
+}
+
+/* refined shelf plank — light metallic tone so it reads against the page */
+.shelf-plank {
+  height: 0.7rem;
+  background: linear-gradient(to bottom, #cfcfcf 0%, #9a9a9a 22%, #5c5c5c 62%, #3a3a3a 100%);
+  border-radius: 3px 3px 6px 6px;
+  border-top: 1px solid rgba(255, 255, 255, 0.55);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+  margin: 0 0.6rem;
+}
+
+[data-theme="light"] .shelf-plank {
+  background: linear-gradient(to bottom, #ecebe7, #d2cfc9 25%, #a5a29b 65%, #83807a 100%);
+  border-top: 1px solid rgba(255, 255, 255, 0.95);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.16), inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.shelf-hint {
+  text-align: center;
+  font-size: 0.72rem;
+  margin: 0.85rem 0 0;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  opacity: 0.95;
+}
+
+/* individual book — upright on the shelf, turned just enough that the
+   cover is visible at a glance without facing the viewer head-on */
+.shelf-book {
+  flex-shrink: 0;
+  width: var(--book-width, 7rem);
+  height: 10.9rem;
+  cursor: pointer;
+  transform-origin: bottom center;
+  transform: rotateX(3deg) rotateY(var(--slant, 0deg));
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1),
+    filter 0.25s ease;
+  user-select: none;
+}
+
+.shelf-book:hover:not(.shelf-book--active) {
+  transform: rotateX(3deg) rotateY(0deg) translateY(-0.55rem) scale(1.04);
+  filter: brightness(1.06) drop-shadow(0 10px 18px rgba(0, 0, 0, 0.35));
+  z-index: 2;
+}
+
+.shelf-book--active {
+  transform: rotateX(2deg) rotateY(0deg) translateY(-0.8rem) scale(1.07) !important;
+  filter: drop-shadow(0 12px 22px rgba(0, 0, 0, 0.45));
+  z-index: 3;
+}
+
+/* the book's front cover, visible at a gentle angle on the shelf */
+.shelf-book-cover {
+  width: 100%;
+  height: 100%;
+  background: hsl(var(--book-hue, 30), 35%, 38%);
+  border-radius: 3px 7px 7px 3px;
+  /* the cream edge reads as the page block behind the cover */
+  border-right: 5px solid #efe6d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+  box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.2),
+    2px 4px 0 rgba(255, 255, 255, 0.05),
+    0 8px 16px rgba(0, 0, 0, 0.3);
+  position: relative;
+  overflow: hidden;
+}
+
+/* subtle cloth texture for books still waiting on their cover art */
+.shelf-book-cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.05) 2px,
+      rgba(0, 0, 0, 0.05) 4px);
+}
+
+/* cover art: fades in over the plain colour once loaded */
+.shelf-book-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--book-cover, none);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.55s ease;
+  pointer-events: none;
+}
+
+.shelf-book.has-cover .shelf-book-cover::after {
+  opacity: 1;
+}
+
+.shelf-book.has-cover .shelf-book-label {
+  display: none;
+}
+
+.shelf-book-label {
+  font-family: 'Georgia', serif;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  max-height: 100%;
+  overflow: hidden;
+  text-align: center;
+  padding: 0.35rem;
+  z-index: 1;
+  position: relative;
+}
+
+/* read badge, matching the movie grid's seen indicator */
+.shelf-book-read {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 4px;
+  background: rgba(46, 204, 113, 0.92);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  z-index: 3;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.shelf-book:hover .shelf-book-read {
+  transform: scale(1.1);
+}
+
+/* ── Shelf motion ──────────────────────────────────────────── */
+/* One gentle fade when the shelf scrolls into view — no per-book
+   stagger, so the entrance stays cheap on mobile. */
+.shelf-inview .shelf-book {
+  animation: shelf-fade-in 0.45s ease backwards;
+}
+
+.shelf-inview .shelf-hint {
+  animation: shelf-fade-in 0.45s ease 0.2s backwards;
+}
+
+@keyframes shelf-fade-in {
+  from {
+    opacity: 0;
+  }
+}

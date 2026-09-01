@@ -1,0 +1,221 @@
+/* movies and songs grids (imported by styles/main.css) */
+
+/* Movies and Songs Grid Styles */
+.movie-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* Song List (Spotify-like) Styles */
+.song-list {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+}
+
+.song-list-header-row {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.song-list-item {
+  display: grid;
+  grid-template-columns: 40px 1fr 1fr;
+  padding: 0.75rem 1rem;
+  align-items: center;
+  border-radius: 4px;
+  text-decoration: none !important;
+  transition: background-color 0.2s ease;
+}
+
+.song-list-item:hover {
+  background-color: var(--bg-secondary);
+}
+
+.sl-col-index {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+}
+
+.song-list-item .play-icon-hover {
+  display: none;
+  font-size: 0.8rem;
+  color: var(--text-primary);
+}
+
+.song-list-item:hover .track-number {
+  display: none;
+}
+
+.song-list-item:hover .play-icon-hover {
+  display: block;
+}
+
+.sl-col-title {
+  color: var(--text-primary);
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 1rem;
+}
+
+.sl-col-artist {
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.section-header h2,
+.section-header h3 {
+  margin: 0;
+}
+
+.section-title-wrapper {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.playlist-length {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  font-weight: 500;
+}
+
+.note-content a.play-all-btn,
+.play-all-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.8rem;
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 500;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.note-content a.play-all-btn:hover,
+.play-all-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  color: var(--bg-primary);
+}
+
+.play-all-btn .play-icon-small {
+  font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+  .song-list-header-row {
+    grid-template-columns: 30px 1fr;
+  }
+
+  .song-list-header-row .sl-col-artist {
+    display: none;
+  }
+
+  .song-list-item {
+    grid-template-columns: 30px 1fr;
+    padding: 1rem 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .sl-col-artist {
+    display: none;
+  }
+
+  .sl-col-title {
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  /* Show artist under title on mobile */
+  .sl-col-title::after {
+    content: attr(data-artist);
+    font-size: 0.8rem;
+    color: var(--text-secondary);
+    font-weight: 400;
+  }
+}
+
+.movie-card {
+  background: var(--card-bg);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  height: 100%;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.movie-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.movie-poster {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+}
+
+.movie-info {
+  padding: 0.75rem;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.movie-info h3 {
+  margin: 0 0 0.25rem 0;
+  font-size: 0.85rem;
+  color: var(--text-primary);
+  line-height: 1.3;
+}
+
+.movie-info p {
+  margin: 0.2rem 0;
+  font-size: 0.7rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+.movie-review {
+  margin-top: 0.5rem !important;
+  font-size: 0.75rem !important;
+  color: var(--text-primary) !important;
+  line-height: 1.5 !important;
+  border-top: 1px solid var(--border-color);
+  padding-top: 0.5rem;
+}

@@ -1,0 +1,385 @@
+/* recipe layout, timeline steps and notes (imported by styles/main.css) */
+
+/* Recipe Styles */
+.recipe-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 2.5rem;
+  margin-bottom: 2.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.recipe-title-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+}
+
+.recipe-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  color: var(--text-primary);
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.recipe-times {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.recipe-time-badge {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--bg-primary);
+  padding: 0.25rem 0.65rem;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.recipe-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr;
+  gap: 3rem;
+}
+
+.recipe-ingredients h3,
+.recipe-instructions h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  color: var(--text-primary);
+  font-size: 1.3rem;
+}
+
+.recipe-ingredients ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.recipe-ingredients li {
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  color: var(--text-secondary);
+  cursor: pointer;
+  user-select: none;
+  padding: 0.5rem;
+  border-radius: 6px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.recipe-ingredients li:hover {
+  background: var(--bg-primary);
+  color: var(--text-primary);
+}
+
+.ingredient-checkbox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid var(--border-color);
+  border-radius: 4px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.recipe-ingredients li:hover .ingredient-checkbox {
+  border-color: var(--accent-color);
+}
+
+.recipe-ingredients li.checked .ingredient-checkbox {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.recipe-ingredients li.checked .ingredient-checkbox::after {
+  content: '✓';
+  color: var(--bg-primary);
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.recipe-ingredients li.checked .ingredient-text {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+/* Instructions / Timeline View */
+.recipe-steps {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.recipe-step {
+  display: flex;
+  gap: 1.25rem;
+  margin-bottom: 2rem;
+  transition: transform 0.2s ease;
+}
+
+.recipe-step:last-child {
+  margin-bottom: 0;
+}
+
+.step-timeline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+.step-num {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid var(--text-secondary);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: var(--text-secondary);
+  background: transparent;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  user-select: none;
+}
+
+.step-num:hover {
+  background: rgba(var(--accent-color), 0.1);
+  border-color: var(--accent-color);
+}
+
+.recipe-step.checked .step-num {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--bg-primary);
+  font-weight: 600;
+}
+
+.recipe-step.checked .step-content {
+  text-decoration: line-through;
+  opacity: 0.5;
+}
+
+.recipe-step.checked .step-line {
+  border-color: var(--border-color);
+  opacity: 0.3;
+}
+
+/* Ensure check-off styles persist during hover */
+.recipe-step.checked:hover .step-num {
+  color: var(--bg-primary);
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.recipe-step.checked:hover .step-title {
+  color: var(--text-primary);
+  opacity: 0.5;
+}
+
+.step-line {
+  width: 0;
+  border-left: 1px dotted var(--border-color);
+  flex-grow: 1;
+  margin-top: 0.5rem;
+  margin-bottom: -1.75rem;
+  /* Extend to connect to next item */
+  transition: border-color 0.3s ease;
+}
+
+.recipe-step:last-child .step-line {
+  display: none;
+}
+
+.step-content {
+  flex-grow: 1;
+  padding-top: 0.15rem;
+}
+
+.step-title {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  transition: color 0.3s ease;
+}
+
+.step-duration {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: var(--text-secondary);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.step-description {
+  margin: 0;
+  line-height: 1.6;
+  color: var(--text-secondary);
+  font-size: 0.95rem;
+}
+
+.step-tip {
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  background: var(--bg-primary);
+  border-left: 3px solid var(--accent-color);
+  border-radius: 0 6px 6px 0;
+  font-size: 0.9rem;
+  color: var(--text-primary);
+}
+
+.tip-label {
+  font-weight: 600;
+  color: var(--accent-color);
+}
+
+/* Hover effects for UX */
+.recipe-step:hover .step-num {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+  box-shadow: 0 0 8px rgba(var(--accent-color), 0.2);
+}
+
+.recipe-step:hover .step-title {
+  color: var(--accent-color);
+}
+
+.recipe-step:hover .step-line {
+  border-left-style: dashed;
+  border-color: var(--accent-color);
+}
+
+/* Notes Styles */
+.recipe-notes {
+  margin-top: 2.5rem;
+  padding: 1.75rem 2rem;
+  background: var(--recipe-note-bg, var(--bg-primary));
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  position: relative;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+[data-theme="light"] .recipe-notes {
+  --recipe-note-bg: linear-gradient(135deg, #fffdf2 0%, #fffadb 100%);
+  border: 1px solid #f2e9bc;
+  box-shadow: 0 4px 15px rgba(220, 200, 100, 0.15);
+}
+
+[data-theme="dark"] .recipe-notes {
+  --recipe-note-bg: linear-gradient(135deg, #1e1b12 0%, #15130b 100%);
+  border: 1px solid #332d18;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+/* Tape graphic at top-center to look like it's taped down */
+.recipe-notes::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -20%) rotate(-2deg);
+  width: 90px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  border: 1px dashed rgba(255, 255, 255, 0.1);
+  z-index: 1;
+}
+
+[data-theme="light"] .recipe-notes::before {
+  background: rgba(240, 230, 180, 0.6);
+  border: 1px dashed rgba(0, 0, 0, 0.08);
+}
+
+.recipe-notes h4 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+[data-theme="light"] .recipe-notes h4 {
+  color: #8c731f;
+}
+
+[data-theme="dark"] .recipe-notes h4 {
+  color: #ffd84d;
+}
+
+.recipe-notes ul {
+  margin: 0;
+  padding-left: 1.25rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+[data-theme="light"] .recipe-notes ul {
+  color: #615325;
+}
+
+[data-theme="dark"] .recipe-notes ul {
+  color: #bfae80;
+}
+
+/* Recipe sonar banner (desktop only) */
+.recipe-sonar-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 2rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.recipe-sonar-banner-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.recipe-sonar-banner-text strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+
+
+@media (max-width: 900px) {
+  .recipe-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .recipe-card {
+    padding: 1.5rem;
+  }
+}

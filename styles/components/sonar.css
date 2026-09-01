@@ -1,0 +1,369 @@
+/* sonar scroll button and signal meter (imported by styles/main.css) */
+
+/* ═══════════════════════════════════════════════════════════════
+   Sonar Scroll UI
+   ═══════════════════════════════════════════════════════════════ */
+.sonar-fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.sonar-fab:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+.sonar-fab.active {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--bg-primary);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+  animation: sonar-pulse 2s ease-in-out infinite;
+}
+
+@keyframes sonar-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.03);
+  }
+}
+
+.sonar-fab.calibrating {
+  animation: sonar-calibrate 0.6s ease-in-out infinite;
+}
+
+@keyframes sonar-calibrate {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.sonar-fab svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* The note page's back-to-top button shares the bottom-right corner —
+   stack the two instead of overlapping when the sonar is active. */
+body.note-open .sonar-fab {
+  bottom: 7.5rem;
+}
+
+body.note-open .sonar-meter {
+  bottom: 7.5rem;
+}
+
+
+
+/* Y2K theme sonar */
+[data-theme="y2k-cyber"] .sonar-fab {
+  border-radius: 0;
+  border-color: var(--y2k-neon-green);
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.2);
+}
+
+[data-theme="y2k-cyber"] .sonar-fab.active {
+  background: var(--y2k-neon-green);
+  border-color: var(--y2k-hot-pink);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
+}
+
+
+
+/* Sonar signal strength meter */
+.sonar-meter {
+  position: fixed;
+  bottom: 2rem;
+  right: 5rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  gap: 3px;
+  height: 56px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.sonar-meter.visible {
+  opacity: 1;
+}
+
+.sonar-meter-bar {
+  width: 4px;
+  border-radius: 2px;
+  background: var(--border-color);
+  transition: height 0.08s ease-out, background 0.15s ease;
+  min-height: 3px;
+}
+
+.sonar-meter-bar.active {
+  background: var(--accent-color);
+}
+
+.sonar-meter-bar.hot {
+  background: #f59e0b;
+}
+
+.sonar-meter-bar.peak {
+  background: #ef4444;
+}
+
+.sonar-meter-label {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.sonar-meter.visible .sonar-meter-label {
+  opacity: 0.6;
+}
+
+/* Y2K theme meter */
+[data-theme="y2k-cyber"] .sonar-meter-bar {
+  border-radius: 0;
+}
+
+[data-theme="y2k-cyber"] .sonar-meter-bar.active {
+  background: var(--y2k-neon-green);
+}
+
+[data-theme="y2k-cyber"] .sonar-meter-bar.hot {
+  background: var(--y2k-hot-pink);
+}
+
+[data-theme="y2k-cyber"] .sonar-meter-bar.peak {
+  background: #ff0;
+}
+
+/* ═══════════════════════════════════════════════════════════════
+   Sonar Onboarding Dialog
+   ═══════════════════════════════════════════════════════════════ */
+.sonar-onboarding {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.sonar-onboarding.visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.sonar-onboarding-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.sonar-onboarding-card {
+  position: relative;
+  z-index: 1;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 16px;
+  padding: 2.5rem 2rem 2rem;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
+  transform: translateY(12px) scale(0.97);
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.sonar-onboarding.visible .sonar-onboarding-card {
+  transform: translateY(0) scale(1);
+}
+
+.sonar-onboarding-icon {
+  margin-bottom: 1rem;
+  color: var(--text-primary);
+  opacity: 0.85;
+}
+
+.sonar-onboarding-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  color: var(--text-primary);
+}
+
+.sonar-onboarding-desc {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin-bottom: 1.25rem;
+}
+
+.sonar-onboarding-hints {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 1.5rem;
+  text-align: left;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.sonar-onboarding-hints li {
+  padding: 0.3rem 0;
+  padding-left: 1.2rem;
+  position: relative;
+}
+
+.sonar-onboarding-hints li::before {
+  content: "\2022";
+  position: absolute;
+  left: 0;
+  color: var(--accent-color);
+  font-weight: 700;
+}
+
+.sonar-onboarding-hints li strong {
+  color: var(--text-primary);
+}
+
+.sonar-onboarding-actions {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+}
+
+.sonar-onboarding-btn {
+  padding: 0.6rem 1.5rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+}
+
+.sonar-onboarding-btn.primary {
+  background: var(--text-primary);
+  color: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+.sonar-onboarding-btn.primary:hover {
+  opacity: 0.88;
+}
+
+.sonar-onboarding-btn.secondary:hover {
+  background: var(--bg-primary);
+  border-color: var(--text-primary);
+}
+
+/* Y2K onboarding card */
+.sonar-onboarding-card.y2k {
+  border: 2px solid var(--y2k-neon-green);
+  border-radius: 0;
+  background: #0a0a1a;
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.15);
+}
+
+.sonar-onboarding-card.y2k .sonar-onboarding-title {
+  color: var(--y2k-neon-green);
+  font-family: "Courier New", monospace;
+  text-shadow: 0 0 8px rgba(0, 255, 65, 0.4);
+}
+
+.sonar-onboarding-card.y2k .sonar-onboarding-desc {
+  color: var(--y2k-cyan);
+  font-family: "Courier New", monospace;
+}
+
+.sonar-onboarding-card.y2k .sonar-onboarding-hints li strong {
+  color: var(--y2k-neon-green);
+}
+
+.sonar-onboarding-card.y2k .sonar-onboarding-hints li::before {
+  color: var(--y2k-hot-pink);
+}
+
+.sonar-onboarding-card.y2k .sonar-onboarding-btn {
+  border-radius: 0;
+  font-family: "Courier New", monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.sonar-onboarding-card.y2k .sonar-onboarding-btn.primary {
+  background: var(--y2k-neon-green);
+  color: #000;
+  border-color: var(--y2k-neon-green);
+}
+
+.sonar-onboarding-card.y2k .sonar-onboarding-btn.secondary {
+  border-color: var(--y2k-hot-pink);
+  color: var(--y2k-hot-pink);
+  background: transparent;
+}
+
+.sonar-onboarding-card.y2k .sonar-onboarding-btn.secondary:hover {
+  background: rgba(255, 45, 149, 0.1);
+}
+
+/* Light theme onboarding */
+[data-theme="light"] .sonar-onboarding-card {
+  background: #fdfcfa;
+  border-color: #e2ddd5;
+  box-shadow: 0 20px 60px rgba(80, 60, 30, 0.12);
+}
+
+[data-theme="light"] .sonar-onboarding-btn.primary {
+  background: #2d5a27;
+  color: #fff;
+  border-color: #2d5a27;
+}
+
+[data-theme="light"] .sonar-onboarding-backdrop {
+  background: rgba(80, 60, 30, 0.25);
+}
+
+/* Mobile onboarding */
+@media (max-width: 480px) {
+  .sonar-onboarding-card {
+    padding: 2rem 1.5rem 1.5rem;
+  }
+
+  .sonar-onboarding-title {
+    font-size: 1.05rem;
+  }
+
+  .sonar-onboarding-desc {
+    font-size: 0.85rem;
+  }
+}

@@ -1,0 +1,11 @@
+node_modules/**
+dist/**
+package-lock.json
+.freebuff/**
+.env
+.verify-tmp/
+
+# https://www.alanagoyal.com/notes/
+# https://drewcoffman.com/
+# https://iamadipatil.com/blog/
+# https://manthanguptaa.in/

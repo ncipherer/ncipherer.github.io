@@ -1,0 +1,239 @@
+/* notes page: view toggle, sticky header, pinned state (imported by styles/main.css) */
+
+/* Notes Page View Toggle */
+.notes-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  transition: all 0.3s ease;
+}
+
+.notes-header.sticky {
+  position: sticky;
+  top: var(--header-height);
+  background: var(--bg-primary);
+  z-index: 50;
+  border-bottom: 1px solid transparent;
+}
+
+/* Sticky header behavior handled by position: sticky */
+
+
+/* Add a subtle shadow when sticky header is active (scrolled) */
+@supports (position: sticky) {
+  .notes-header.sticky {
+    box-shadow: 0 4px 6px -6px rgba(0, 0, 0, 0.1);
+    border-bottom-color: var(--border-color);
+    padding: 0.5rem 0;
+  }
+}
+
+.view-toggle {
+  display: flex;
+  background: var(--bg-secondary);
+  padding: 0.25rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.toggle-btn {
+  padding: 0.5rem 1.25rem;
+  border: none;
+  background: transparent;
+  color: var(--text-secondary);
+  cursor: pointer;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.toggle-btn.active {
+  background: var(--accent-color);
+  color: var(--bg-primary);
+}
+
+.notes-feed {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.feed-item {
+  position: relative;
+}
+
+/* Pinned state indicator handled by pin icon in title */
+
+
+.feed-item .note-header {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.feed-item .note-header-top h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.feed-item .note-header-top h2 a {
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.feed-item .note-header-top h2 a:hover {
+  color: var(--accent-color);
+}
+
+.feed-item .note-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+
+.feed-footer {
+  margin-top: 6rem;
+  margin-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.separator-line {
+  height: 1px;
+  width: 100%;
+  background-color: var(--text-secondary);
+  transition: all 0.3s ease;
+}
+
+.separator-line:nth-child(1) {
+  opacity: 0.8;
+}
+
+.separator-line:nth-child(2) {
+  opacity: 0.5;
+  width: 85%;
+  margin: 0 auto;
+}
+
+.separator-line:nth-child(3) {
+  opacity: 0.2;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.song-card:hover .play-icon {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+
+  .movie-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .song-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    gap: 0.5rem;
+  }
+
+  .movie-info {
+    padding: 0.5rem;
+  }
+
+  .movie-info h3 {
+    font-size: 0.75rem;
+  }
+
+  .movie-info p {
+    font-size: 0.6rem;
+  }
+
+  .song-title {
+    padding: 0.4rem;
+    font-size: 0.65rem;
+  }
+
+  /* Pinned notes mobile improvements */
+  .carousel-container {
+    width: 100%;
+    padding: 0 30px;
+  }
+
+  .carousel-arrow {
+    width: 32px;
+    height: 32px;
+    font-size: 1rem;
+  }
+
+  .pinned-note {
+    aspect-ratio: 1 / 1;
+    padding: 1rem;
+    justify-content: center;
+  }
+
+  .pinned-note h2 {
+    font-size: 1.25rem;
+  }
+
+  .pinned-note .note-meta {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    padding: 0 10px;
+  }
+
+  .carousel-arrow {
+    width: 15px;
+    height: 15px;
+    font-size: 0.9rem;
+  }
+
+  .carousel-arrow.prev {
+    left: -5px;
+  }
+
+  .carousel-arrow.next {
+    right: -5px;
+  }
+
+  .pinned-note {
+    padding: 0.5rem;
+  }
+
+  .pinned-note h2 {
+    font-size: 1rem;
+  }
+
+
+
+  .pinned-note .note-meta {
+    font-size: 0.5rem;
+    gap: 0.5rem;
+  }
+
+  .pinned-note .note-tags {
+    display: none;
+  }
+
+  .carousel-dots {
+    gap: 0.4rem;
+    margin-top: 0.5rem;
+  }
+
+}

@@ -1,0 +1,35 @@
+/* ==========================================================================
+   Stylesheet entry point.
+
+   Every rule lives in one of the partials below; this file only says which
+   order they load in. That order is the cascade, so keep it: tokens first,
+   then page frame, then themes, then components and pages roughly in the
+   order they were written, then each component's later adjustments. Moving
+   an import can change which rule wins.
+
+   css-loader resolves these imports at build time, so the site still ships
+   (and loads) a single stylesheet — no runtime @import waterfall.
+   ========================================================================== */
+
+@import "./base/tokens.css";
+@import "./base/shell.css";
+@import "./themes/y2k-overhaul.css";
+@import "./themes/y2k-controls.css";
+@import "./components/note-content.css";
+@import "./components/music-player.css";
+@import "./base/responsive.css";
+@import "./components/movies-songs.css";
+@import "./components/movie-review-modal.css";
+@import "./pages/notes.css";
+@import "./components/shelf.css";
+@import "./components/recipe.css";
+@import "./pages/not-found.css";
+@import "./components/search.css";
+@import "./components/bucket-list.css";
+@import "./components/bookshelf.css";
+@import "./components/book-review-modal.css";
+@import "./pages/home.css";
+@import "./components/terminal.css";
+@import "./components/terminal-modal.css";
+@import "./components/sonar.css";
+@import "./components/garden.css";

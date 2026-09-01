@@ -1,0 +1,2 @@
+- US has an AGI which has all the data is making decisions. India can't turn off its AGI as then humans will be competing against an AGI.
+- The doom scenario will start with loss of control and understanding. AGI only will know all there is to understand. And to fight off AGIs, new AGIs will need to be developed. And humans are just out of that equation entirely at this point.
