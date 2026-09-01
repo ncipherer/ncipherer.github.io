@@ -1,0 +1,385 @@
+/* Library: a coverflow shelf of book covers (imported by styles/main.css).
+   Styled entirely from the shared theme tokens and the same button/label
+   idioms the rest of the site uses, so it reads as part of the page rather
+   than a separate room. */
+
+.bookshelf-scene {
+  --shelf-book-h: 12.6rem;
+  margin: 2rem 0;
+  padding: 1.25rem 1.25rem 1.4rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  /* the fan deliberately runs off both edges of the panel */
+  overflow: hidden;
+}
+
+/* ── Header row ────────────────────────────────────────────── */
+/* Same shape as the songs/movies .section-header + .playlist-length pair. */
+.shelf-top {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.shelf-heading {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.shelf-count {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+/* ── Stage ─────────────────────────────────────────────────── */
+/* the arrows sit at shelf level, one either side of the books */
+.shelf-stage-row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.shelf-stage {
+  position: relative;
+  height: 15rem;
+  /* the single lens every book is rendered through — this is what makes the
+     row read as depth instead of flat cards side by side */
+  perspective: 1500px;
+  perspective-origin: 50% 46%;
+  outline: none;
+  cursor: default;
+  /* Over the shelf the wheel turns books (see the page script); vertical
+     touch scrolling stays with the page, horizontal flicks are ours. */
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.shelf-stage:focus-visible {
+  border-radius: 8px;
+  box-shadow: 0 0 0 2px var(--accent-color);
+}
+
+/* preserve-3d carries the stage's perspective down to the books */
+.shelf-ring {
+  position: absolute;
+  inset: 0;
+  transform-style: preserve-3d;
+}
+
+/* ── Books ─────────────────────────────────────────────────── */
+.shelf-book {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: var(--book-width, 8rem);
+  height: var(--shelf-book-h);
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  /* the ring rewrites this transform inline; the default keeps the very
+     first paint centred even before it runs */
+  transform: translate(-50%, -50%);
+  /* No permanent will-change here: promoting every book on the shelf costs a
+     layer each on a phone, and the transform is only ever mid-transition. */
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.4s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.shelf-book:focus-visible {
+  outline: none;
+}
+
+.shelf-book:focus-visible .shelf-book-cover {
+  box-shadow: 0 0 0 2px var(--accent-color), 0 10px 24px var(--shadow-color);
+}
+
+/* the cover: art once it loads, a cloth-bound colour until then */
+.shelf-book-cover {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  padding: 0.6rem;
+  background: hsl(var(--book-hue, 30), 35%, 38%);
+  border-radius: 3px 7px 7px 3px;
+  /* the cream edge reads as the page block behind the cover */
+  border-right: 5px solid #efe6d2;
+  box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.2),
+    0 6px 16px var(--shadow-color);
+  overflow: hidden;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* subtle cloth texture for books still waiting on their cover art */
+.shelf-book-cover::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(0deg,
+      transparent,
+      transparent 2px,
+      rgba(0, 0, 0, 0.05) 2px,
+      rgba(0, 0, 0, 0.05) 4px);
+}
+
+/* cover art: fades in over the plain colour once loaded */
+.shelf-book-cover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image: var(--book-cover, none);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0;
+  transition: opacity 0.55s ease;
+  pointer-events: none;
+}
+
+.shelf-book.has-cover .shelf-book-cover::after {
+  opacity: 1;
+}
+
+.shelf-book.has-cover .shelf-book-label {
+  display: none;
+}
+
+/* neighbours lift as you reach for them */
+.shelf-book:hover:not(.shelf-book--active) .shelf-book-cover {
+  transform: translateY(-0.4rem);
+  box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.2),
+    0 14px 26px var(--shadow-color);
+}
+
+/* the book being read sits proudest of the row */
+.shelf-book--active .shelf-book-cover {
+  box-shadow: inset -2px 0 4px rgba(0, 0, 0, 0.2),
+    0 16px 32px var(--shadow-color),
+    0 0 0 1px var(--border-color-secondary);
+}
+
+.shelf-book-label {
+  position: relative;
+  z-index: 1;
+  padding: 0.35rem;
+  max-height: 100%;
+  overflow: hidden;
+  font-family: 'Georgia', serif;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.9);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.45);
+  text-align: center;
+}
+
+/* read badge, matching the movie grid's seen indicator */
+.shelf-book-read {
+  position: absolute;
+  top: 5px;
+  right: 8px;
+  z-index: 3;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 4px;
+  background: rgba(46, 204, 113, 0.92);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.shelf-book:hover .shelf-book-read {
+  transform: scale(1.1);
+}
+
+/* ── Caption ───────────────────────────────────────────────── */
+/* Title on the left, action on the right — the same shape as the note
+   header's title + "Copy Link" row. */
+.shelf-caption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 1.25rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.shelf-caption-text {
+  min-width: 0;
+}
+
+.shelf-title {
+  margin: 0;
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--text-primary);
+}
+
+.shelf-author {
+  margin: 0.15rem 0 0;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+
+.shelf-author.is-placeholder {
+  opacity: 0.75;
+}
+
+/* the site's pill button (.play-all-btn), in this panel's voice */
+.shelf-read-btn {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1.1rem;
+  border: 0;
+  border-radius: 20px;
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  font-family: inherit;
+  font-size: 0.9rem;
+  font-weight: 500;
+  letter-spacing: normal;
+  text-transform: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+.shelf-read-btn:hover:not(:disabled) {
+  opacity: 0.9;
+  transform: translateY(-2px);
+}
+
+.shelf-read-btn:disabled {
+  opacity: 0.45;
+  cursor: default;
+}
+
+/* circular nav, the same bordered button the rest of the site uses.
+   Opaque and lifted, because the outer books pass underneath it. */
+.shelf-arrow {
+  position: relative;
+  z-index: 2;
+  width: 2.2rem;
+  height: 2.2rem;
+  padding: 0;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 1.15rem;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 10px var(--shadow-color);
+  transition: border-color 0.2s ease, transform 0.2s ease, opacity 0.2s ease;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.shelf-arrow:hover:not(:disabled) {
+  border-color: var(--border-color-secondary);
+  transform: translateY(-2px);
+}
+
+.shelf-arrow:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.shelf-arrow:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+/* announced, never seen */
+.shelf-status {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* ── Shelf motion ──────────────────────────────────────────── */
+/* One gentle fade when the shelf scrolls into view — no per-book stagger,
+   so the entrance stays cheap on mobile. */
+.shelf-inview .shelf-book {
+  animation: shelf-fade-in 0.45s ease backwards;
+}
+
+@keyframes shelf-fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* ── Small screens ─────────────────────────────────────────── */
+@media (max-width: 600px) {
+  .bookshelf-scene {
+    --shelf-book-h: 9.6rem;
+    margin: 1.5rem 0;
+    padding: 1rem 0.9rem 1.1rem;
+  }
+
+  .shelf-stage {
+    height: 12.5rem;
+    perspective: 1100px;
+  }
+
+  .shelf-stage-row {
+    gap: 0.35rem;
+  }
+
+  .shelf-title {
+    font-size: 0.95rem;
+  }
+
+  .shelf-author {
+    font-size: 0.82rem;
+  }
+
+  .shelf-caption {
+    gap: 0.6rem;
+    margin-top: 1rem;
+    padding-top: 1rem;
+  }
+
+  /* thumbs rather than cursors: the shelf's controls grow to a comfortable
+     40px minimum here, since on a phone they are the precise way to browse */
+  .shelf-read-btn {
+    min-height: 2.5rem;
+    padding: 0.5rem 1rem;
+    font-size: 0.85rem;
+  }
+
+  .shelf-arrow {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1.1rem;
+  }
+}

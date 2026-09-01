@@ -1,0 +1,692 @@
+/* background music player bar and its song list (imported by styles/main.css) */
+
+/* Background Music Player */
+.music-player-bar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90px;
+  background: var(--bg-primary);
+  border-top: 1px solid var(--border-color);
+  box-shadow: 0 -4px 30px var(--shadow-color);
+  z-index: 1001;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.music-player-bar.hidden {
+  transform: translateY(calc(100% + 20px));
+}
+
+.mp-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 100%;
+  max-width: var(--container-width);
+  margin: 0 auto;
+  width: 100%;
+}
+
+.mp-info {
+  flex: 1;
+  min-width: 0;
+  padding-right: 1rem;
+}
+
+.mp-title {
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+
+.mp-artist {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mp-controls {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 0 2rem;
+}
+
+.mp-btn {
+  background: none;
+  border: none;
+  color: var(--text-primary);
+  font-size: 1.6rem;
+  cursor: pointer;
+  padding: 0.75rem;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.mp-btn:hover {
+  background-color: var(--bg-secondary);
+  color: var(--accent-color);
+}
+
+.mp-btn.play-pause {
+  font-size: 2.2rem;
+  width: 56px;
+  height: 56px;
+  background-color: var(--accent-color);
+  color: var(--bg-primary);
+}
+
+.mp-btn.play-pause:hover {
+  transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.mp-btn.close {
+  font-size: 1.3rem;
+  opacity: 0.5;
+  margin-left: 1rem;
+}
+
+.mp-btn.close:hover {
+  opacity: 1;
+  background-color: transparent;
+}
+
+/* ── Volume ─────────────────────────────────────────────────────────────── */
+.mp-volume {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.mp-volume .mp-btn {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+}
+
+/* A thin filled track; the fill is painted inline from the service so it
+   always matches the remembered level. */
+.mp-volume-slider {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 90px;
+  height: 4px;
+  border-radius: 999px;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(90deg, var(--accent-color) 80%, var(--border-color) 80%);
+}
+
+.mp-volume-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  border: none;
+  box-shadow: 0 1px 4px var(--shadow-color);
+  transition: transform 0.15s ease;
+}
+
+.mp-volume-slider::-webkit-slider-thumb:hover {
+  transform: scale(1.2);
+}
+
+.mp-volume-slider::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--accent-color);
+  border: none;
+  box-shadow: 0 1px 4px var(--shadow-color);
+}
+
+.mp-volume-slider:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+/* ── Queue drawer ───────────────────────────────────────────────────────────
+   The panel above the bar lists everything waiting behind the song on the
+   air; the badge on the button counts the songs still to come. */
+.mp-queue-btn {
+  position: relative;
+  font-size: 1.3rem;
+}
+
+.mp-queue-count {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  min-width: 16px;
+  height: 16px;
+  padding: 0 4px;
+  border-radius: 999px;
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  font-size: 0.65rem;
+  font-weight: 700;
+  line-height: 16px;
+  text-align: center;
+}
+
+.mp-queue-count[hidden] {
+  display: none;
+}
+
+.mp-queue-panel {
+  position: absolute;
+  right: 0;
+  bottom: 100%;
+  z-index: 1003;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  max-width: 100%;
+  max-height: min(60vh, 460px);
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-bottom: none;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0 -10px 30px var(--shadow-color);
+  overflow: hidden;
+}
+
+.mp-queue-panel.hidden {
+  display: none;
+}
+
+.mp-queue-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 0.65rem 0.5rem 0.9rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+/* The whole title area folds the drawer away — a tray you push back down. */
+.mp-queue-toggle {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 0.6rem;
+  min-width: 0;
+  padding: 0.3rem 0.4rem;
+  border: none;
+  border-radius: 6px;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.mp-queue-toggle:hover {
+  color: var(--accent-color);
+}
+
+.mp-queue-heading {
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.mp-queue-total {
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+}
+
+.mp-queue-chevron {
+  font-size: 0.7rem;
+  opacity: 0.6;
+}
+
+.mp-queue-clear {
+  padding: 0.2rem 0.7rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: none;
+  color: var(--text-secondary);
+  font: inherit;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.mp-queue-clear:hover {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
+
+.mp-queue-close {
+  padding: 0.25rem;
+  font-size: 1.1rem;
+}
+
+.mp-queue-list {
+  margin: 0;
+  padding: 0.35rem;
+  list-style: none;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+}
+
+.mp-queue-item {
+  display: flex;
+  align-items: center;
+  border-radius: 8px;
+}
+
+.mp-queue-item.playing {
+  background: color-mix(in srgb, var(--accent-color) 12%, transparent);
+}
+
+.mp-queue-track {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  gap: 0.65rem;
+  min-width: 0;
+  padding: 0.5rem 0.6rem;
+  border: none;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+
+.mp-queue-index {
+  flex: none;
+  width: 1.2rem;
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.mp-queue-item.playing .mp-queue-index {
+  color: var(--accent-color);
+}
+
+.mp-queue-info {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.mp-queue-track-title {
+  overflow: hidden;
+  font-size: 0.88rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mp-queue-item.playing .mp-queue-track-title {
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+.mp-queue-track-artist {
+  overflow: hidden;
+  color: var(--text-secondary);
+  font-size: 0.75rem;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.mp-queue-remove {
+  flex: none;
+  width: 30px;
+  height: 30px;
+  margin-right: 0.35rem;
+  border: none;
+  border-radius: 50%;
+  background: none;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.15s ease, background-color 0.15s ease, color 0.15s ease;
+}
+
+.mp-queue-item:hover .mp-queue-remove,
+.mp-queue-remove:focus-visible {
+  opacity: 1;
+}
+
+.mp-queue-remove:hover {
+  background: var(--bg-secondary);
+  color: var(--accent-color);
+}
+
+.mp-queue-empty {
+  padding: 1rem 1.25rem 1.25rem;
+  color: var(--text-secondary);
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.mp-queue-panel:not(.is-empty) .mp-queue-empty {
+  display: none;
+}
+
+.mp-queue-panel.is-empty .mp-queue-list {
+  display: none;
+}
+
+/* ── Scroll to now playing ───────────────────────────────────────────────
+   A small floater above the player bar: appears only while something is on
+   the air and its row has scrolled away, and brings the row back. */
+.mp-scroll-now {
+  position: fixed;
+  right: 1.5rem;
+  bottom: 7.5rem;
+  z-index: 1000;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.45rem 0.9rem;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  background: var(--bg-primary);
+  color: var(--text-primary);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+  box-shadow: 0 6px 18px var(--shadow-color);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(8px);
+  transition:
+    opacity 0.25s ease,
+    visibility 0.25s ease,
+    transform 0.25s ease,
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.mp-scroll-now.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.mp-scroll-now:hover {
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  border-color: var(--accent-color);
+}
+
+.mp-scroll-now .mp-scroll-arrow {
+  font-size: 0.9rem;
+  line-height: 1;
+}
+
+.mp-scroll-now:focus-visible {
+  outline: 2px solid var(--accent-color);
+  outline-offset: 3px;
+}
+
+.mp-progress-container {
+  position: absolute;
+  top: -6px;
+  /* Slightly overlapping the player top */
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background: var(--bg-secondary);
+  cursor: pointer;
+  z-index: 1002;
+  transition: height 0.2s ease, top 0.2s ease;
+}
+
+.mp-progress-container:hover {
+  height: 12px;
+  top: -10px;
+}
+
+.mp-progress-bar {
+  height: 100%;
+  background: var(--accent-color);
+  width: 0%;
+  transition: width 0.1s linear;
+  position: relative;
+}
+
+/* Progress Handle */
+.mp-progress-bar::after {
+  content: "";
+  position: absolute;
+  right: -6px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 12px;
+  height: 12px;
+  background-color: var(--accent-color);
+  border-radius: 50%;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.mp-progress-container:hover .mp-progress-bar::after {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .music-player-bar {
+    height: 100px;
+  }
+
+  .mp-content {
+    padding: 0 1rem;
+  }
+
+  .mp-controls {
+    margin: 0;
+    gap: 0.75rem;
+  }
+
+  .mp-info {
+    padding-right: 0.5rem;
+  }
+
+  .mp-title {
+    font-size: 0.95rem;
+  }
+
+  .mp-artist {
+    font-size: 0.75rem;
+    display: block;
+    /* Show artist on mobile but with smaller text */
+    opacity: 0.8;
+  }
+
+  .mp-btn {
+    padding: 0.5rem;
+    font-size: 1.4rem;
+  }
+
+  .mp-btn.play-pause {
+    width: 48px;
+    height: 48px;
+    font-size: 1.8rem;
+  }
+
+  .mp-btn.close {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    margin: 0;
+    padding: 2px;
+  }
+
+  .mp-progress-container {
+    height: 10px;
+    top: -10px;
+  }
+
+  .mp-progress-bar::after {
+    opacity: 1;
+    /* Always show handle on mobile for clarity */
+    width: 16px;
+    height: 16px;
+    right: -8px;
+  }
+
+  /* Mobile: the slider has no room next to the transport; the mute button
+     alone carries the volume control. */
+  .mp-volume-slider {
+    display: none;
+  }
+
+  .mp-volume .mp-btn {
+    font-size: 1.2rem;
+  }
+
+  .mp-scroll-now {
+    right: 1rem;
+    bottom: 7.6rem;
+    font-size: 0.72rem;
+    padding: 0.4rem 0.75rem;
+  }
+
+  .mp-queue-panel {
+    right: 0;
+    left: 0;
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .mp-queue-btn {
+    font-size: 1.2rem;
+  }
+}
+
+/* Song List Improvements */
+.song-list-item {
+  cursor: pointer;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.song-list-item:hover .play-icon-hover {
+  opacity: 1;
+  visibility: visible;
+}
+
+.play-all-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background-color: var(--accent-color);
+  color: var(--bg-primary);
+  border-radius: 20px;
+  text-decoration: none !important;
+  font-weight: 500;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.play-all-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-color);
+}
+
+.table-of-contents {
+  position: fixed;
+  right: 2rem;
+  top: 6rem;
+  width: 250px;
+  max-height: calc(100vh - 8rem);
+  overflow-y: auto;
+  padding: 1.5rem;
+  background: var(--bg-primary);
+  border-left: 2px solid #eaeaea;
+  font-size: 0.9rem;
+  z-index: 100;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+.table-of-contents h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+  color: var(--text-primary);
+}
+
+.toc-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.toc-list ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin: 0.5rem 0;
+}
+
+.toc-list li {
+  margin: 0.5rem 0;
+  line-height: 1.4;
+}
+
+.toc-link {
+  color: var(--text-secondary);
+  text-decoration: none;
+  display: block;
+  padding: 0.2rem 0;
+  transition: color 0.2s ease;
+}
+
+.toc-link:hover {
+  color: var(--accent-color);
+}
+
+.toc-link.active {
+  color: var(--accent-color);
+  font-weight: 500;
+}
+
+/* Adjust main content to make space for TOC */
+.container.with-toc {
+  max-width: min(calc(100% - 300px), 1000px);
+  margin: 0 auto;
+  padding: 0 2rem;
+  margin-right: 300px;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Center content when TOC is hidden */
+@media (max-width: 1200px) {
+  .table-of-contents {
+    display: none;
+  }
+
+  .container.with-toc {
+    max-width: min(100%, 800px);
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+}
