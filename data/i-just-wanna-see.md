@@ -1,3 +1,7 @@
+> edit 3 September 2026: since I wrote this almost a year ago - I have kind of eased around the idea of continuously trying to improve yourself by keep shifting the goal, first of what mood do you need to do to feel that you're doing something well. Your relationship with yourself cannot be built entirely around improvement. at some point, you have to become someone you are allowed to enjoy being. you get to be proud of who you are. present tense.
+> I have been working on that to personally, it started with trying to make my rented home a space which I genuinely want to return back to. I never put emphasis on how much and what kind of quality time I am spending in my own home, and finally getting into it after changing my last home is a new thing. And funny thing is that it has not reduced my earning to go out and do something challenging at all, at least in the short term so far
+> but I'm still keeping this note intact as it is, even though I formed a different opinion and change my mind about it, just so I recall what opinion I had one point, and how I change my opinions. This entire website is meant to be just that, record of my thoughts for just me.
+
 
 ## You ready for hobbies?
 
