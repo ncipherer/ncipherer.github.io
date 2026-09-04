@@ -588,6 +588,21 @@
     },
     {
       "id": "29",
+      "title": "Looking back!",
+      "readingTime": "7 min",
+      "publishDate": "2026-05-05",
+      "blogLink": "looking-back",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": false,
+      "links": [],
+      "tags": [
+        "work"
+      ],
+      "contentPath": "looking-back.md"
+    },
+    {
+      "id": "30",
       "title": "Don't be a cynic!",
       "readingTime": "5 min",
       "publishDate": "2026-05-02",
@@ -600,7 +615,7 @@
       "contentPath": "cynic.md"
     },
     {
-      "id": "30",
+      "id": "31",
       "title": "Dreams that woke me up",
       "readingTime": "3 min",
       "publishDate": "2026-08-23",
@@ -616,7 +631,7 @@
       "contentPath": "dreams.md"
     },
     {
-      "id": "31",
+      "id": "32",
       "title": "What's good for freefall is bad for landing!",
       "readingTime": "8 min",
       "publishDate": "2026-09-05",
@@ -626,7 +641,9 @@
       "pinned": false,
       "links": [],
       "tags": [
-        "psychology"
+        "psychology",
+        "love",
+        "work"
       ],
       "contentPath": "therapy-works-question.md"
     }

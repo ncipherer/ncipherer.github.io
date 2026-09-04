@@ -16,7 +16,7 @@ Over the next three to four months, I attended my therapy sessions very diligent
 
 That worked. For about five years, it worked. But recently, I've started noticing that all that had made my way of working to be too rigid and it is no longer the correct tool to be able to achieve what I want to. Now that I'm a lead, my words carry five times more weight. And that same assertiveness has led people early in their careers to avoid some awkward conversations - and the feedback, which should have come to me directly, now reaches me through other channels. I have been applying that very same tool I was given in those therapy sessions in leadership too, but tool is not generic.
 
-### How I am approaching work differently this time
+### Approaching work differently
 
 Looking back, I think the problem was that I was treated as an individual with a problem, not as a person stuck in a system that was actually broken. The therapy fixed me — my inability to say no, my need of people pleasing — but it never touched the relationship between me and my work environment. It gave me a personal coping strategy when what I really needed was someone to help me function inside a team where the dynamics were the real issue.
 
@@ -36,7 +36,7 @@ I expected therapy to help me discover those. Instead, the major focus was: *"Yo
 
 The relationship ended soon after. We were deeply incompatible. Therapy didn't end it, but it also didn't help me see my own part in the mess.
 
-### How I am approaching relationships differently this time
+### Approaching relationships differently
 
 Now I realize the real issue wasn't the topics we were fighting about — it was that we just didn't know why the other person was the way they were, because we didn't use our time understanding that part of each other.
 
