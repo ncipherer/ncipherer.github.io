@@ -184,7 +184,7 @@
 > Recommendation from: PB says, I oblige.
 
 
-DC (2026)
+[x] DC (2026)
 > I really love Lokesh as a director, and discovering him as an actor is a delight too. Just like in the movies he directs, you see a nod to international influences in a way that still feels distinctly Indian.
 > Wamiqa is breathtaking in her role—the emotions and madness are portrayed so convincingly.
 > The first impression anyone would have is that this is just another South Indian movie glorifying violence and gangs, but it actually offers a fresh perspective on the grief that drives it.
