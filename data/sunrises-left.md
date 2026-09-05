@@ -15,14 +15,14 @@ But these flaws can't be excuses, right?
 
 He too can't expect her to see the "gravels" in his life or what he was going through. That would be an excuse. He just hopes he never has an excuse in the future, and that no one ever sees this side of him again.
 
-He hopes that some day, the definition of emotional intelligence will also include when someone’s heart is into it, even if their tools aren’t sharp yet. He was still figuring things out, learning how to untangle his survival habits. He was yet to find a language to navigate conflict between them. He liked them together for the potential, for what things would have been if everything aligned, for the softness and kindness that she showed _sometimes_. But none of it was reality, none of it was her.
+He hopes that some day, the definition of emotional intelligence will also include when someone’s heart is into it, even if their tools aren’t sharp yet. He was still figuring things out, learning how to untangle his survival habits. He was yet to find a language to navigate conflict between them. He liked them together for the potential, for what things would have been if everything aligned, for the softness and kindness that she showed _sometimes_. But none of it was reality, none of it was her — or so it felt from where he stood.
 
 He believes that regret is a cruel storyteller. It rewrites the past with the wisdom of the present, convinces you that you should have known better when you actually had no way of knowing at all. So he keeps no regrets in life. He makes mistakes, and then does the work to ensure the same mistakes don't happen again on a second chance he'll get sometime with someone else in future. He forgives himself for not knowing earlier what only time could teach.
 
 > “I hope that either all of us or none of us are judged by the actions of our weakest moments, but rather by the strength we show - when and if - we’re given second chances”
 > <cite>— Ted Lasso</cite>
 
-So yes, he holds no anger towards her anymore. He only holds the sadness that he left her no other option than to end things. He's sad for pushing her to such a filthy corner that she was willing to lie about her infidelity just to get him away faster, and further.
+So yes, he holds no anger towards her anymore. He only holds the sadness that they couldn't have ended it more gently. She thought about telling him she'd cheated — he'll never know if it was true. She knew a confession like that would make him walk away, so she wouldn't have to be the one to choose. He just wishes she'd known she could have walked out honestly.
 
 Every person has a gap between their self-image and their reality. He has a shot in bridging that for himself. He doesn't want to lie to people, or worse, to himself. This will be a journey. It will be a slow process, and something in him will change for the better. The only commitment he can make right now is to that process. He has the time, the 2700 sunrises he is yet to see in this life.
 And he has the courage.

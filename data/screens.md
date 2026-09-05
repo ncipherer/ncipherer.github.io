@@ -83,7 +83,7 @@
 
 [x] The Thinking Game (2024)
 
-> I am lost for words. I have my own colorful opinions about AI and how it is going to change the world, but this documentary... it's something else. It's not just about AI, it's about us. And who gets to build it is as important as the tech itself (I'm not saying this because they're my employer). The storytelling is top-notch, and Demis is just one of those characters in our current world who you can't help but be fascinated by. The passion, the audacity and the vision of this man!
+> I am lost for words. I have my own colorful opinions about AI and how it is going to change the world, but this documentary... it's something else. It's not just about AI, it's about us. And who gets to build it is as important as the tech itself (bias disclaimer: I have Opinions™ about what kind of actors should get to build the future). The storytelling is top-notch, and Demis is just one of those characters in our current world who you can't help but be fascinated by. The passion, the audacity and the vision of this man!
 > 
 > Recommendation from: Just read synopsis on a Pie-page, it mentioned Demis, I was sold!
 

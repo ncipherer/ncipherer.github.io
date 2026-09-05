@@ -19,7 +19,7 @@
 - [ ] Sign up to donate an organ after death
 - [ ] Get a Sak Yant tattoo from a monk
 - [ ] Watch a rocket launch
-- [ ] Take psychedelics once
+- [ ] Experience altered perception once
 - [ ] Learn a Foreign language
 - [ ] Watch a Volcano erupt
 > Reunion Island?

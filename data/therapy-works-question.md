@@ -1,3 +1,5 @@
+> (Quick note before I start: names are deliberately absent here. These are my sides of two stories — the people in them would tell them differently, and learning to sit with that is honestly half the point of this essay.)
+
 I have been through therapy twice. Both times, I walked in genuinely wanting an external perspective — not validation. I put in all the efforts. I wasn't pushing back or treating it like a debate. But what I got versus what I actually needed turned out to be very different things.
 
 ## First time
@@ -25,6 +27,8 @@ This time, instead of going back to therapy, I found a mentor. One hour with him
 For me, this is a major shift — because therapy had essentially told me that everyone else was wrong and I was right to worry about just myself. My mentor has told me that there are situations when you need to do that, but most of the other situations you have a way out, even by caring for everyone. To stretch into someone else's perspective, even if I had to pretend at first. It's a long 5-6 month process, and I need to be honest about it. But I already feel more in control and understanding of what I'm doing.
 
 ## Second time
+
+(I'm going to talk about someone who didn't ask to be in my essay. So: my side only, and I own my part of it.)
 
 I started dating someone I had known for years. Pretty quickly, I realized we had a massive gap in how we handled conflict. Her reaction to an uncomfortable situation was to make up a lie or give a false commitment — just to soothe things in the moment, hoping it would never come up again. Of course, it always came up again. Once that happened a couple of times, my instinct was to resort to a full-on interrogation, maybe trying to confirm if I was being lied to this time or not. I never realized I was overwhelming her with this distrust, triggered by my overthinking. And she would make up another lie to kill the fight. The loop went on and on.
 

@@ -1,3 +1,7 @@
+**Context:** What follows is a quotation — The Hacker's Manifesto, a 1986 text from Phrack, a piece of internet folklore written when computers were new and curiosity was treated as suspicion. The "criminal" in this text is a 40-year-old metaphor for intellectual curiosity, not a personal declaration. 
+
+Read it like you'd frame a band's lyrics on your wall: for the feeling of a world that was just discovering what a keyboard could do. Read it like a time capsule.
+
 > This is our world now... the world of the electron and the switch, the beauty of the baud.
 >
 > We make use of a service already existing without paying for what could be dirt-cheap if it wasn't run by profiteering gluttons, and you call us criminals.

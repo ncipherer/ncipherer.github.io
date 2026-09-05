@@ -25,11 +25,11 @@ Andor on the other hand is hyper focused on a human struggle and shows what an i
 
 ### Honorable mention
 
-I sense the irony here that you hear this critique of fascism and capitalism on a Disney show but that reminds me of a random Reddit comment I had read years ago,
+I sense the irony here that you hear this critique of fascism and capitalism on a Disney show but that reminds me of a random Reddit comment I had read years ago about Star Wars (It's about fictional contracts, in a fictional galaxy),
 
 > When it comes time to hang the capitalists, they will fight with each other for the rope contract.
 
-I think Nemik's manifesto is a fine touch, and a call to rebellion against the Galactic Empire. It serves as a structural bridge connecting personal stories of characters like Andor with the larger fight against the Empire.
+I think Nemik's manifesto is a fine touch. A fictional manifesto in a fictional show about a fictional Empire — you have to admire it as writing, and as a mirror for real history. It serves as a structural bridge connecting personal stories of characters like Andor with the larger fight against the Empire.
 
 > There will be times when the struggle seems impossible. I know this already. Alone, unsure, dwarfed by the scale of the enemy. Remember this. Freedom is a pure idea. It occurs spontaneously and without instruction. Random acts of insurrection are occurring constantly throughout the galaxy. There are whole armies, battalions that have no idea that they've already enlisted in the cause. Remember that the frontier of the Rebellion is everywhere. And even the smallest act of insurrection pushes our lines forward. And then remember this. The Imperial need for control is so desperate because it is so unnatural. Tyranny requires constant effort. It breaks, it leaks. Authority is brittle. Oppression is the mask of fear. Remember that. And know this, the day will come when all these skirmishes and battles, these moments of defiance will have flooded the banks of the Empire's authority and then there will be one too many. One single thing will break the siege. Remember this. Try.
 > <cite>— Nemik (in his manifesto)</cite>
