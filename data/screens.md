@@ -183,6 +183,15 @@
 >
 > Recommendation from: PB says, I oblige.
 
+
+DC (2026)
+> I really love Lokesh as a director, and discovering him as an actor is a delight too. Just like in the movies he directs, you see a nod to international influences in a way that still feels distinctly Indian.
+> Wamiqa is breathtaking in her role—the emotions and madness are portrayed so convincingly.
+> The first impression anyone would have is that this is just another South Indian movie glorifying violence and gangs, but it actually offers a fresh perspective on the grief that drives it.
+> The movie is pretty long, but you really don't feel bored at any point. The score carries the movie throughout, almost acting as a protagonist. I think some scenes you've seen in a hundred times in other gangster movies are really enjoyable because they are amped up by the music.
+>
+> Recommendation from: Newly released movie.
+
 Main Vaapas Aaunga (2026) (tt37333137)
 
 > Recommendation from: It's an Imtiaz Ali film, and a colleague from a class recommended it.
