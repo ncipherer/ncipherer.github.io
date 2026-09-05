@@ -313,9 +313,12 @@ body.note-open .nav-actions {
   color: #000000;
 }
 
-/* --- MUTE BUTTON (hidden by default, Y2K only) --- */
+/* --- MUTE BUTTON (visible in all themes) --- */
 .y2k-mute-btn {
-  display: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s ease;
 }
 
 .y2k-mute-btn:hover {
@@ -331,16 +334,12 @@ body.note-open .nav-actions {
   display: block !important;
 }
 
-/* Y2K theme: show and style the mute button */
+/* Y2K theme: neon border style */
 [data-theme="y2k-cyber"] .y2k-mute-btn {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
   border: 1px solid var(--y2k-neon-green) !important;
   border-radius: 0 !important;
   padding: 4px !important;
   color: var(--y2k-neon-green) !important;
-  transition: opacity 0.15s ease;
 }
 
 [data-theme="y2k-cyber"] .y2k-mute-btn:hover {
@@ -4921,12 +4920,9 @@ body.js-tooltips [data-tooltip]::after {
    ========================================================================== */
 
 .home-container {
-  max-width: 900px;
+  width: 100%;
   margin: 0 auto;
-  padding: 2rem 1.5rem 3.5rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 2rem 3rem 3.5rem;
 }
 
 .home-header {
@@ -5452,9 +5448,776 @@ body.js-tooltips [data-tooltip]::after {
 
   .carousel-track {
     min-height: 210px;
-  }
-
-  .carousel-expand-hint {
+  }  .carousel-expand-hint {
     display: none;
   }
+}
+
+/* ==========================================================================
+   Terminal Command Line — Windows Terminal aesthetic
+   ========================================================================== */
+
+.terminal {
+  width: 100%;
+  background: #0c0c0c;
+  border: 1px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: clamp(420px, calc(100vh - 230px), 760px);
+  height: clamp(420px, calc(100dvh - 230px), 760px); /* dvh: mobile URL-bar safe */
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
+  transition: border-color 0.15s ease;
+
+  /* VS Code Dark+ inspired text palette */
+  --term-heading: #29b8db;
+  --term-note: #4da6ff;
+  --term-tag: #e07ce0;
+  --term-cmd: #23d18b;
+  --term-error: #f14c4c;
+  --term-echo: #8b949e;
+  --term-dim: #7d8590;
+  --term-link: #23d18b;
+  --term-link-hover: #5ce7ae;
+  --term-note-hover: #7db8ff;
+  --term-tag-hover: #f09df0;
+  --term-cmd-hover: #5ce7ae;
+}
+
+.terminal:focus-within {
+  border-color: #3b9eff;
+}
+
+/* ── Title bar ─────────────────────────────────────────────────── */
+.terminal-titlebar {
+  display: flex;
+  align-items: center;
+  padding: 0.4rem 0.85rem;
+  background: #1a1a1a;
+  border-bottom: 1px solid #333;
+  user-select: none;
+  flex-shrink: 0;
+}
+
+.terminal-titlebar-text {
+  font-family: "SF Mono", "Fira Code", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+  font-size: 0.7rem;
+  color: #999;
+  letter-spacing: 0.02em;
+}
+
+/* ── Output area ───────────────────────────────────────────────── */
+.terminal-output {
+  flex: 1;
+  overflow-y: auto;
+  padding: 0.85rem 1rem;
+  font-family: "SF Mono", "Fira Code", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+  font-size: 0.82rem;
+  line-height: 1.6;
+  color: #cccccc;
+  background: #0c0c0c;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.terminal-block {
+  margin-bottom: 0.6rem;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+.terminal-block:last-child {
+  margin-bottom: 0;
+}
+
+/* ── Input line ────────────────────────────────────────────────── */
+.terminal-input-line {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.5rem 1rem;
+  background: #0c0c0c;
+  flex-shrink: 0;
+}
+
+.terminal-prompt {
+  font-family: "SF Mono", "Fira Code", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+  font-size: 0.82rem;
+  color: #3b9eff;
+  user-select: none;
+  flex-shrink: 0;
+  font-weight: 600;
+}
+
+.terminal-input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-family: "SF Mono", "Fira Code", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+  font-size: 0.82rem;
+  color: #cccccc;
+  caret-color: #3b9eff;
+  caret-shape: block;
+}
+
+.terminal-input::placeholder {
+  color: #666;
+}
+
+/* ── Command popover ────────────────────────────────────────────── */
+.terminal-popover {
+  position: absolute;
+  bottom: calc(100% + 6px);
+  left: 0;
+  right: 0;
+  max-height: 240px;
+  overflow-y: auto;
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 6px;
+  box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.45);
+  z-index: 20;
+  font-family: "SF Mono", "Fira Code", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+  font-size: 0.78rem;
+}
+
+.terminal-popover-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.42rem 0.8rem;
+  cursor: pointer;
+  color: #cccccc;
+}
+
+@media (hover: hover) {
+  .terminal-popover-item:hover {
+    background: #2b3d52;
+  }
+}
+
+.terminal-popover-item.selected {
+  background: #2b3d52;
+}
+
+.terminal-popover-cmd {
+  color: var(--term-cmd);
+  font-weight: 500;
+  flex-shrink: 0;
+}
+
+.terminal-popover-cmd.term-tag {
+  color: var(--term-tag);
+}
+
+.terminal-popover-desc {
+  color: #888;
+  font-size: 0.7rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.terminal-popover-section {
+  padding: 0.4rem 0.8rem 0.2rem;
+  color: #666;
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.terminal-popover-note {
+  color: var(--term-note);
+}
+
+.terminal-popover-empty {
+  padding: 0.5rem 0.8rem;
+  color: #888;
+  font-size: 0.75rem;
+}
+
+/* ── Status bar ─────────────────────────────────────────────────── */
+.terminal-statusbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.3rem 1rem;
+  background: #1a1a1a;
+  border-top: 1px solid #333;
+  font-family: "SF Mono", "Fira Code", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+  font-size: 0.68rem;
+  color: #888;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.terminal-status-mode {
+  color: #777;
+}
+
+.terminal-status-mode.insert {
+  color: #3b9eff;
+}
+
+.terminal-status-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+#terminal-clock {
+  color: #999;
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── Text styles ───────────────────────────────────────────────── */
+.terminal-heading {
+  color: var(--term-heading);
+  font-weight: 600;
+}
+
+.terminal-category {
+  color: #888;
+  font-weight: 500;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.terminal-cmd {
+  color: var(--term-cmd);
+  font-weight: 500;
+}
+
+.terminal-link {
+  color: var(--term-link);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.1s ease;
+}
+
+.terminal-link:hover {
+  color: var(--term-link-hover);
+  text-decoration: underline;
+}
+
+/* Semantic colours: notes, tags and commands each get their own hue */
+.terminal-link.term-cmd {
+  color: var(--term-cmd);
+}
+
+.terminal-link.term-note {
+  color: var(--term-note);
+}
+
+.terminal-link.term-tag {
+  color: var(--term-tag);
+}
+
+.terminal-link.term-cmd:hover {
+  color: var(--term-cmd-hover);
+}
+
+.terminal-link.term-note:hover {
+  color: var(--term-note-hover);
+}
+
+.terminal-link.term-tag:hover {
+  color: var(--term-tag-hover);
+}
+
+.terminal-echo {
+  color: var(--term-echo);
+}
+
+/* Known commands pop green in the echo; typos pop red */
+.terminal-echo-cmd {
+  color: var(--term-cmd);
+  font-weight: 600;
+}
+
+.terminal-echo-cmd.unknown {
+  color: var(--term-error);
+}
+
+.terminal-error {
+  color: var(--term-error);
+}
+
+.terminal-dim {
+  color: var(--term-dim);
+}
+
+/* ── Scrollbar ─────────────────────────────────────────────────── */
+.terminal-output::-webkit-scrollbar {
+  width: 8px;
+}
+
+.terminal-output::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+.terminal-output::-webkit-scrollbar-thumb {
+  background: #444;
+  border-radius: 4px;
+}
+
+.terminal-output::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* ── Responsive ────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .terminal {
+    height: clamp(340px, calc(100vh - 220px), 560px);
+    height: clamp(340px, calc(100dvh - 220px), 560px);
+    border-radius: 6px;
+  }
+
+  .terminal-output {
+    padding: 0.65rem 0.85rem;
+    font-size: 0.78rem;
+  }
+
+  .terminal-input-line {
+    padding: 0.45rem 0.85rem;
+  }
+
+  .terminal-input {
+    font-size: 0.78rem;
+  }
+
+  .terminal-statusbar {
+    padding: 0.25rem 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal {
+    height: clamp(300px, calc(100vh - 200px), 480px);
+    height: clamp(300px, calc(100dvh - 200px), 480px);
+  }
+
+  .terminal-output {
+    font-size: 0.72rem;
+  }
+
+  .terminal-status-mode {
+    display: none;
+  }
+
+  .terminal-popover-desc {
+    display: none;
+  }
+}
+
+/* Mobile hardening — status bar text never pushes content off-screen */
+.terminal-status-left {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
+}
+
+.terminal-status-right {
+  flex-shrink: 1;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.terminal-status-mode {
+  flex-shrink: 0;
+}
+
+/* Touch devices: 16px+ input text stops iOS Safari from zooming the page
+   when the terminal is focused, and rows get more breathing room. */
+@media (pointer: coarse) {
+  .terminal-input,
+  .terminal-prompt {
+    font-size: 1rem;
+  }
+
+  .terminal-input-line {
+    padding: 0.65rem 0.9rem;
+  }
+
+  .terminal-popover-item {
+    padding: 0.6rem 0.8rem;
+  }
+
+  .terminal-popover {
+    max-height: min(300px, 55dvh);
+  }
+}
+
+/* Light theme — the terminal flips to a light terminal */
+[data-theme="light"] .terminal {
+  background: #fafafa;
+  border-color: #d0d0d0;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.12);
+
+  /* VS Code Light+ inspired text palette */
+  --term-heading: #0e7490;
+  --term-note: #0550ae;
+  --term-tag: #8250df;
+  --term-cmd: #1a7f37;
+  --term-error: #cf222e;
+  --term-echo: #59636e;
+  --term-dim: #59636e;
+  --term-link: #1a7f37;
+  --term-link-hover: #14652c;
+  --term-note-hover: #044289;
+  --term-tag-hover: #6f42c1;
+  --term-cmd-hover: #14652c;
+}
+
+[data-theme="light"] .terminal:focus-within {
+  border-color: #0563c1;
+}
+
+[data-theme="light"] .terminal-titlebar {
+  background: #ececec;
+  border-bottom-color: #d9d9d9;
+}
+
+[data-theme="light"] .terminal-titlebar-text {
+  color: #555;
+}
+
+[data-theme="light"] .terminal-output {
+  color: #1a1a1a;
+  background: #fafafa;
+}
+
+[data-theme="light"] .terminal-input-line {
+  background: #fafafa;
+}
+
+[data-theme="light"] .terminal-prompt {
+  color: #0563c1;
+}
+
+[data-theme="light"] .terminal-input {
+  color: #1a1a1a;
+  caret-color: #0563c1;
+}
+
+[data-theme="light"] .terminal-input::placeholder {
+  color: #9a9a9a;
+}
+
+[data-theme="light"] .terminal-statusbar {
+  background: #ececec;
+  border-top-color: #d9d9d9;
+  color: #666;
+}
+
+[data-theme="light"] .terminal-status-mode {
+  color: #777;
+}
+
+[data-theme="light"] .terminal-status-mode.insert {
+  color: #0563c1;
+}
+
+[data-theme="light"] #terminal-clock {
+  color: #555;
+}
+
+[data-theme="light"] .terminal-popover {
+  background: #ffffff;
+  border-color: #d0d0d0;
+  box-shadow: 0 -6px 24px rgba(0, 0, 0, 0.12);
+}
+
+[data-theme="light"] .terminal-popover-item {
+  color: #1a1a1a;
+}
+
+[data-theme="light"] .terminal-popover-desc,
+[data-theme="light"] .terminal-popover-empty {
+  color: #777;
+}
+
+[data-theme="light"] .terminal-popover-section {
+  color: #8a8a8a;
+}
+
+@media (hover: hover) {
+  [data-theme="light"] .terminal-popover-item:hover {
+    background: #e4edfa;
+  }
+}
+
+[data-theme="light"] .terminal-popover-item.selected {
+  background: #e4edfa;
+}
+
+[data-theme="light"] .terminal-output::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}
+
+[data-theme="light"] .terminal-output::-webkit-scrollbar-thumb {
+  background: #c4c4c4;
+}
+
+[data-theme="light"] .terminal-output::-webkit-scrollbar-thumb:hover {
+  background: #ababab;
+}
+
+/* Y2K theme terminal styles */
+[data-theme="y2k-cyber"] .terminal {
+  border: 2px solid var(--y2k-neon-green) !important;
+  border-radius: 0 !important;
+  background: #0a0a1a !important;
+  box-shadow:
+    inset 0 0 30px rgba(0,255,65,0.03),
+    0 0 10px rgba(0,255,65,0.1) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-titlebar {
+  background: #050510 !important;
+  border-bottom: 2px solid var(--y2k-neon-green) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-titlebar-text {
+  color: var(--y2k-neon-green) !important;
+  font-family: "Courier New", monospace !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-output {
+  color: var(--y2k-neon-green) !important;
+  font-family: "Courier New", Consolas, monospace !important;
+  background: #0a0a1a !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-input-line {
+  background: #0a0a1a !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-prompt {
+  color: var(--y2k-neon-green) !important;
+  font-family: "Courier New", monospace !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-input {
+  color: var(--y2k-neon-green) !important;
+  font-family: "Courier New", monospace !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-statusbar {
+  background: #050510 !important;
+  border-top: 2px solid var(--y2k-neon-green) !important;
+  color: var(--y2k-neon-green) !important;
+  font-family: "Courier New", monospace !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-status-mode.insert {
+  color: var(--y2k-neon-green) !important;
+  text-shadow: 0 0 6px rgba(0, 255, 65, 0.4);
+}
+
+[data-theme="y2k-cyber"] .terminal-popover {
+  background: #050510 !important;
+  border: 2px solid var(--y2k-neon-green) !important;
+  border-radius: 0 !important;
+  font-family: "Courier New", monospace !important;
+}
+
+@media (hover: hover) {
+  [data-theme="y2k-cyber"] .terminal-popover-item:hover {
+    background: rgba(0, 255, 65, 0.15) !important;
+  }
+}
+
+[data-theme="y2k-cyber"] .terminal-popover-item.selected {
+  background: rgba(0, 255, 65, 0.15) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-popover-cmd {
+  color: var(--y2k-neon-green) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-popover-note {
+  color: var(--y2k-cyan) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-popover-section {
+  color: var(--y2k-orange) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-popover-desc {
+  color: var(--y2k-cyan) !important;
+}
+
+[data-theme="y2k-cyber"] #terminal-clock {
+  color: var(--y2k-orange) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-heading {
+  color: var(--y2k-neon-green) !important;
+  text-shadow: 0 0 6px rgba(0,255,65,0.4);
+}
+
+[data-theme="y2k-cyber"] .terminal-category {
+  color: var(--y2k-orange) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-cmd {
+  color: var(--y2k-cyan) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-link {
+  color: var(--y2k-cyan) !important;
+  text-decoration: none;
+}
+
+[data-theme="y2k-cyber"] .terminal-link:hover {
+  color: var(--y2k-neon-green) !important;
+  text-shadow: 0 0 6px rgba(0,255,65,0.4);
+  text-decoration: none;
+}
+
+[data-theme="y2k-cyber"] .terminal-error {
+  color: var(--y2k-hot-pink) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-echo {
+  color: var(--y2k-cyan) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-echo-cmd {
+  color: var(--y2k-neon-green) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-echo-cmd.unknown {
+  color: var(--y2k-hot-pink) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-output::-webkit-scrollbar-thumb {
+  background: var(--y2k-neon-green) !important;
+}
+
+/* ==========================================================================
+   Terminal Navigation Modal
+   ========================================================================== */
+
+.terminal-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 10000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.2s ease;
+}
+
+.terminal-modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+}
+
+.terminal-modal-content {
+  position: relative;
+  width: 90vw;
+  max-width: 900px;
+  max-height: 85vh;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4);
+}
+
+.terminal-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  z-index: 10;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all var(--transition-duration) var(--transition-timing);
+}
+
+.terminal-modal-close:hover {
+  background: var(--accent-color);
+  color: var(--bg-primary);
+  border-color: var(--accent-color);
+}
+
+.terminal-modal-body {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 2rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.terminal-modal-body .container {
+  max-width: 100%;
+  padding: 0;
+}
+
+@media (max-width: 768px) {
+  .terminal-modal-body {
+    padding: 1.25rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .terminal-modal-content {
+    width: 95vw;
+    max-height: 88dvh;
+  }
+
+  .terminal-modal-body {
+    padding: 1rem 0.85rem;
+  }
+}
+
+.terminal-modal-error {
+  padding: 2rem;
+  text-align: center;
+  color: var(--text-secondary);
+}
+
+/* Y2K modal styles */
+[data-theme="y2k-cyber"] .terminal-modal-content {
+  border: 2px solid var(--y2k-neon-green) !important;
+  border-radius: 0 !important;
+  box-shadow: 0 0 30px rgba(0, 255, 65, 0.15) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-modal-close {
+  border: 2px solid var(--y2k-hot-pink) !important;
+  border-radius: 0 !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+}
+
+[data-theme="y2k-cyber"] .terminal-modal-close:hover {
+  background: var(--y2k-hot-pink) !important;
+  color: #fff !important;
+}
+
+/* Hide table of contents inside the terminal modal */
+.terminal-modal .table-of-contents {
+  display: none !important;
 }

@@ -409,6 +409,21 @@
       "contentPath": "songs.md"
     },
     {
+      "id": "18b",
+      "title": "📷 Photos",
+      "readingTime": "∞",
+      "publishDate": "2026-01-01",
+      "blogLink": "photos",
+      "githubLink": "",
+      "hidden": true,
+      "pinned": true,
+      "links": [],
+      "tags": [
+        "photography"
+      ],
+      "contentPath": "photos.md"
+    },
+    {
       "id": "19",
       "title": "📜 Purpose",
       "readingTime": "2 min",
@@ -427,7 +442,7 @@
       "id": "20",
       "title": "📚 Books",
       "readingTime": "∞",
-      "publishDate": "2026-06-07",
+      "publishDate": "2026-01-01",
       "blogLink": "books",
       "githubLink": "",
       "hidden": true,
@@ -442,7 +457,7 @@
       "id": "21",
       "title": "🍳 Recipes",
       "readingTime": "∞",
-      "publishDate": "2026-06-27",
+      "publishDate": "2026-01-01",
       "blogLink": "recipes",
       "githubLink": "",
       "hidden": true,
