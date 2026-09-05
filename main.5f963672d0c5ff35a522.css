@@ -5790,6 +5790,7 @@ body.js-tooltips [data-tooltip]::after {
 
   .terminal-input {
     font-size: 0.78rem;
+    min-width: 0;
   }
 
   .terminal-statusbar {
