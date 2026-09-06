@@ -369,6 +369,7 @@ Yaadein | Hariharan | https://www.youtube.com/watch?v=gnBtsIIgOq8
 Behroopia | Mohit Chauhan | https://www.youtube.com/watch?v=Sb2CP0IHQno
 O Saathi Mere | Sonu Nigam | https://www.youtube.com/watch?v=VTkrmUAhNeU
 Tum Todo Na | Bela Shende | https://www.youtube.com/watch?v=502xhwUiGTs
+Mere Sau Janam | Monali Thakur, Raghu Dixit, Aditya Narayan | https://www.youtube.com/watch?v=t4FdXsDKw0g
 Lo Safar | Jubin Nautiyal | https://www.youtube.com/watch?v=jcV7i0WM9jU
 Tu Hi hai Ashiqui | Arijit Singh | https://www.youtube.com/watch?v=fX41N940bMU
 Ishq Nachaave | Rashmeet Kaur | https://www.youtube.com/watch?v=l-nDXyVCpTs
