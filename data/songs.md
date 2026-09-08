@@ -122,6 +122,7 @@ Sita Ramam Interval Block | Sita Ramam | https://www.youtube.com/watch?v=gnpFgC3
 Tumhi Dekho na | Rishab Rikhiram | https://www.youtube.com/watch?v=EK0V8Fdb9OM
 Vladimir's theme | Dean Valentine | https://www.youtube.com/watch?v=fkeO8shNkf0
 Rocket Boy's theme | Achint | https://www.youtube.com/watch?v=mGsJlE4cRFE
+The Last of the Mohicans | Trevor Jones | https://www.youtube.com/watch?v=9tjdswqGGVg
 Growing Up Londinium | Daniel Pemberton | https://www.youtube.com/watch?v=e2LLS33eQvk
 F1 theme | Brian Tyler | https://www.youtube.com/watch?v=8AYy-BcjRXg
 Mella Mella | Ilaiyaraaja | https://www.youtube.com/watch?v=XmBRVTERyqg
