@@ -1250,37 +1250,23 @@ body.note-open .nav-actions {
    ACTIVE IMAGE BORDER, CROSSHAIR ACCENTS
    ============================================= */
 
-/* --- CUSTOM PIXEL CURSORS --- */
-/* Arrow cursor: a crisp pixelated green arrow */
-[data-theme="y2k-cyber"] body,
-[data-theme="y2k-cyber"] body *:not(a):not(button):not(.tag):not(.nav-link):not(.theme-selector-btn):not(.carousel-btn):not(.carousel-summary):not(.copy-link-btn):not(.play-all-btn):not(.back-to-top):not(.search-trigger-btn):not(input):not(textarea) {
-  cursor: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2720%27 height=%2720%27 viewBox=%270 0 20 20%27%3E%3Cpath d=%27M3 1L3 16L7.5 12L11 19L14 17.5L10.5 11L16 11Z%27 fill=%27%2300ff41%27 stroke=%27%23000%27 stroke-width=%271%27/%3E%3C/svg%3E") 3 1, auto;
+/* --- CUSTOM CURSORS --- */
+/* Dark theme: black arrow with white outline */
+* {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%27-2 -2 36 36%27%3E%3Cpath d=%27M 0,0 L 12.82,32 L 16.07,16.07 L 32,12.81 Z%27 fill=%27%23000000%27 stroke=%27%23ffffff%27 stroke-width=%272%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E") 1 1, auto !important;
 }
 
-/* Pointer hand cursor for all interactive elements */
-[data-theme="y2k-cyber"] a,
-[data-theme="y2k-cyber"] button,
-[data-theme="y2k-cyber"] .tag,
-[data-theme="y2k-cyber"] .nav-link,
-[data-theme="y2k-cyber"] .theme-selector-btn,
-[data-theme="y2k-cyber"] .carousel-btn,
-[data-theme="y2k-cyber"] .carousel-summary,
-[data-theme="y2k-cyber"] .copy-link-btn,
-[data-theme="y2k-cyber"] .play-all-btn,
-[data-theme="y2k-cyber"] .back-to-top,
-[data-theme="y2k-cyber"] .search-trigger-btn,
-[data-theme="y2k-cyber"] [data-link],
-[data-theme="y2k-cyber"] .movie-card.has-review,
-[data-theme="y2k-cyber"] .song-list-item,
-[data-theme="y2k-cyber"] .carousel-image-card,
-[data-theme="y2k-cyber"] input,
-[data-theme="y2k-cyber"] textarea,
-[data-theme="y2k-cyber"] select,
-[data-theme="y2k-cyber"] [role="button"],
-[data-theme="y2k-cyber"] [role="radio"] {
-  cursor: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2720%27 height=%2720%27 viewBox=%270 0 20 20%27%3E%3Cpath d=%27M4 1L4 14L8 10.5L11 17L14 15.5L11 9L16 9Z%27 fill=%27%23ffcc00%27 stroke=%27%23000%27 stroke-width=%271%27/%3E%3C/svg%3E") 4 1, pointer;
+/* Light theme: white arrow with black outline */
+[data-theme="light"] * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%27-2 -2 36 36%27%3E%3Cpath d=%27M 0,0 L 12.82,32 L 16.07,16.07 L 32,12.81 Z%27 fill=%27%23ffffff%27 stroke=%27%23000000%27 stroke-width=%272%27 stroke-linejoin=%27round%27/%3E%3C/svg%3E") 1 1, auto !important;
 }
 
+/* Y2K theme: pink arrow, no outline */
+[data-theme="y2k-cyber"] * {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 width=%2716%27 height=%2716%27 viewBox=%27-2 -2 36 36%27%3E%3Cpath d=%27M 0,0 L 12.82,32 L 16.07,16.07 L 32,12.81 Z%27 fill=%27%23ff2d95%27/%3E%3C/svg%3E") 1 1, auto !important;
+}
+
+/* GALLERY SLIDER BUTTONS: Winamp metallic controls */
 /* --- GALLERY SLIDER BUTTONS: Winamp metallic controls --- */
 [data-theme="y2k-cyber"] .carousel-btn {
   border-radius: 0 !important;
@@ -5011,6 +4997,31 @@ body.js-tooltips [data-tooltip]::after {
   background: rgba(100, 116, 139, 0.12);
   color: #475569;
   border: 1px solid rgba(100, 116, 139, 0.3);
+}
+
+/* darker badge colours for dark and Y2K themes to stay readable on dark modal */
+[data-theme="dark"] .shelf-badge-read {
+  background: rgba(34, 134, 72, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 134, 72, 0.4);
+}
+
+[data-theme="dark"] .shelf-badge-unread {
+  background: rgba(100, 116, 139, 0.15);
+  color: #94a3b8;
+  border: 1px solid rgba(100, 116, 139, 0.35);
+}
+
+[data-theme="y2k-cyber"] .shelf-badge-read {
+  background: rgba(0, 255, 65, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(0, 255, 65, 0.4);
+}
+
+[data-theme="y2k-cyber"] .shelf-badge-unread {
+  background: rgba(100, 116, 139, 0.15);
+  color: #94a3b8;
+  border: 1px solid rgba(100, 116, 139, 0.35);
 }
 
 .shelf-panel-review {
