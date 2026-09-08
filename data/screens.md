@@ -193,7 +193,7 @@
 > Recommendation from: Newly released movie.
 
 [x] Operation Safed Sagar (2026)
-> This is such a great production. Basically, everything that Fighter wanted to be — sup supposedly India's answer to Top Gun — this one comes very close to it. The tactics, the jugaads. I was aware of most of the details, but even for me, a lot of it was new, and I was surprised to learn that it was actually fact and not something they spun up for the fiction.
+> This is such a great production. Basically, everything that Fighter wanted to be — supposedly India's answer to Top Gun — this one comes very close to it. The tactics, the jugaads. I was aware of most of the details, but even for me, a lot of it was new, and I was surprised to learn that it was actually fact and not something they spun up for the fiction.
 > It also shows how much weight good leadership carries in such moments. Vajpayee's call to keep the Air Force from crossing the LOC was such forward thinking, knowing fully well that the enemy would try to push the LOC marker using that in international forums as an excuse, and you see the same thing was tried with the captured soldiers.
 > I really love the aerial action shots — they are genuinely stunning and feel very real, really amped up the quality, and that obviously improves the experience while watching it.
 > Some parts of the movie might be a little too much emotionally, since India has a history of being the good guy and being punished for that.
@@ -201,7 +201,7 @@
 >
 > Recommendation from: Gunda recommended it.
 
-[x] Main Vaapas Aaunga (2026) (tt37333137)
+Main Vaapas Aaunga (2026) (tt37333137)
 
 > Recommendation from: It's an Imtiaz Ali film, and a colleague from a class recommended it.
 
