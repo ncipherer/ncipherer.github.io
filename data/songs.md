@@ -129,6 +129,7 @@ RHTDM | Harris Jayaraj | https://www.youtube.com/watch?v=AoiLOuJATos
 Finding The Bomb | The Dust Brothers | https://www.youtube.com/watch?v=z7UunxFEJ8Q
 God Mode Entry | Sai Abhyankar | https://www.youtube.com/watch?v=L3urQZ9vzMQ
 Preparation for War | Majid Entezami | https://www.youtube.com/watch?v=n2ZrQpkkWCw
+Az Soug ta Sepideh | La Daf Ensemble | https://www.youtube.com/watch?v=lEpYNVzXdOg
 
 ## Ma-sufiyat
 

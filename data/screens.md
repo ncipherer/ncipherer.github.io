@@ -351,3 +351,27 @@ Homebound (2025)
 The Dinosaurs (2026)
 
 > Recommendation from: History + Morgan Freeman as voiceover! SOLD!
+
+Roman Holiday (1953)
+
+> Recommendation from:  Random YouTube short.
+
+Serpico (1973)
+
+> Recommendation from: Random YouTube short. Never seen Pacino's 70s acting.
+
+Party (1984)
+
+> Recommendation from: Random YouTube short, watching Om Puri talking about politics with his trademark bluntness sold me.
+
+Spotlight (2015)
+
+> Recommendation from: Random YouTube short.
+
+Taste of Cherry (1997)
+
+> Recommendation from:  Random YouTube short. Iranian cinema is always intriguing.
+
+It was Just an Accident (2005)
+
+> Recommendation from: Random YouTube short comment.
