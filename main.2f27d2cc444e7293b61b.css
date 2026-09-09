@@ -3911,6 +3911,37 @@ body.js-tooltips [data-tooltip]::after {
   color: #bfae80;
 }
 
+/* Recipe sonar banner (desktop only) */
+.recipe-sonar-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.85rem 1.25rem;
+  margin-bottom: 2rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.recipe-sonar-banner-icon {
+  font-size: 1.2rem;
+  flex-shrink: 0;
+}
+
+.recipe-sonar-banner-text strong {
+  color: var(--text-primary);
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .recipe-sonar-banner {
+    display: none;
+  }
+}
+
 @media (max-width: 900px) {
   .recipe-grid {
     grid-template-columns: 1fr;
@@ -6349,3 +6380,152 @@ body.js-tooltips [data-tooltip]::after {
 .terminal-modal .table-of-contents {
   display: none !important;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   Sonar Scroll UI
+   ═══════════════════════════════════════════════════════════════ */
+.sonar-fab {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  z-index: 1000;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid var(--border-color);
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.sonar-fab:hover {
+  transform: scale(1.08);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.3);
+}
+
+.sonar-fab.active {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  color: var(--bg-primary);
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+  animation: sonar-pulse 2s ease-in-out infinite;
+}
+
+@keyframes sonar-pulse {
+  0%, 100% {
+    box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.08);
+  }
+  50% {
+    box-shadow: 0 0 0 10px rgba(255, 255, 255, 0.03);
+  }
+}
+
+.sonar-fab.calibrating {
+  animation: sonar-calibrate 0.6s ease-in-out infinite;
+}
+
+@keyframes sonar-calibrate {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.4; }
+}
+
+.sonar-fab svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+
+/* Y2K theme sonar */
+[data-theme="y2k-cyber"] .sonar-fab {
+  border-radius: 0;
+  border-color: var(--y2k-neon-green);
+  box-shadow: 0 0 12px rgba(0, 255, 65, 0.2);
+}
+
+[data-theme="y2k-cyber"] .sonar-fab.active {
+  background: var(--y2k-neon-green);
+  border-color: var(--y2k-hot-pink);
+  box-shadow: 0 0 20px rgba(0, 255, 65, 0.4);
+}
+
+
+
+/* Sonar signal strength meter */
+.sonar-meter {
+  position: fixed;
+  bottom: 2rem;
+  right: 5rem;
+  z-index: 1000;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-end;
+  gap: 3px;
+  height: 56px;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s ease;
+}
+
+.sonar-meter.visible {
+  opacity: 1;
+}
+
+.sonar-meter-bar {
+  width: 4px;
+  border-radius: 2px;
+  background: var(--border-color);
+  transition: height 0.08s ease-out, background 0.15s ease;
+  min-height: 3px;
+}
+
+.sonar-meter-bar.active {
+  background: var(--accent-color);
+}
+
+.sonar-meter-bar.hot {
+  background: #f59e0b;
+}
+
+.sonar-meter-bar.peak {
+  background: #ef4444;
+}
+
+.sonar-meter-label {
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.6rem;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+
+.sonar-meter.visible .sonar-meter-label {
+  opacity: 0.6;
+}
+
+/* Y2K theme meter */
+[data-theme="y2k-cyber"] .sonar-meter-bar {
+  border-radius: 0;
+}
+
+[data-theme="y2k-cyber"] .sonar-meter-bar.active {
+  background: var(--y2k-neon-green);
+}
+
+[data-theme="y2k-cyber"] .sonar-meter-bar.hot {
+  background: var(--y2k-hot-pink);
+}
+
+[data-theme="y2k-cyber"] .sonar-meter-bar.peak {
+  background: #ff0;
+}
+
