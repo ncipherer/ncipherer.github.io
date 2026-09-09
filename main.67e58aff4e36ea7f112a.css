@@ -3936,11 +3936,7 @@ body.js-tooltips [data-tooltip]::after {
   font-weight: 500;
 }
 
-@media (max-width: 768px) {
-  .recipe-sonar-banner {
-    display: none;
-  }
-}
+
 
 @media (max-width: 900px) {
   .recipe-grid {
