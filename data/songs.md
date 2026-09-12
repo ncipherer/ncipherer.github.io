@@ -52,6 +52,7 @@ Kanthaa | Masala Coffee | https://www.youtube.com/watch?v=B3hlqsBY0Qk
 Megham Karukutha | Dhanush | https://www.youtube.com/watch?v=cEWwJxEq9Lg
 Azhagiye | A. R. Rahman | https://www.youtube.com/watch?v=CFj1HXUGhaY
 Sairaat Zaala Ji | Ajay-Atul | https://www.youtube.com/watch?v=PJ4z69XoBdc
+Anthaathi | Govind Vasantha | https://www.youtube.com/watch?v=29WzIwFvVdg
 
 ## Any-me
 
