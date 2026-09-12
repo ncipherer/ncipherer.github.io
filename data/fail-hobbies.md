@@ -18,7 +18,7 @@ Well, like most things in psychology there's no _magic fix_ - it's fundamentally
 > You gotta makes mistakes in life, and you don't want to make them on big decisions like who you marry - but you do want to make mistakes on small things like your coffee order.
 > <cite>— Warren Buffet (rephrased from an interview I saw years ago)</cite>
 
-## Why did I think of this today?
+## What made me think of this?
 
 I started learning swimming ~5 months back. But it's only this week I am starting with Butterfly style, which in my opinion is the hardest style of swimming in terms of maintaining form. And though I am reasonably proficient in breaststroke, freestyle and backstroke now - I am still struggling with even doing basic movements in butterfly from the first day. Hell, I can't even push my hips out of water while floating. So while I used to swim 25m lane in other styles like a "champ" - now I'm back to beginners lane for butterfly. And that's gotta sting.
 

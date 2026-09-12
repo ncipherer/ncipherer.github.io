@@ -53,7 +53,7 @@ Suddenly, the 3Ns shift dramatically:
 
 Yes, these tools can flatten a style built on soul and painstaking human effort. Yet, they can also provide unexpected windows, "a crack in the wall", allowing people often relegated to the background to experience themselves, and perhaps beauty itself, in a new light, even if just for a moment. The answer, then, isn't a simple yes or no, but deeply intertwined with individual experience and access.
 
-## Why I thought of this today?
+## What made me think of this?
 
 Yesterday, I watched the re-release of Interstellar on the big screen – still incredible. Later, I stumbled upon AI-generated images depicting key Interstellar scenes in the Ghibli style. While technically interesting, something felt undeniably absent. It wasn't just the medium change; it lacked that ineffable quality – "soul," perhaps – stemming from human intention, struggle, and experience.
 

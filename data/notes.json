@@ -170,7 +170,7 @@
     {
       "id": "6",
       "title": "[WIP] Be better!",
-      "readingTime": "3 min",
+      "readingTime": "∞",
       "publishDate": "2025-08-05",
       "blogLink": "vices",
       "githubLink": "",
@@ -224,7 +224,7 @@
     },
     {
       "id": "9",
-      "title": "From Text to Token: Why I`m Building an LLM Toolkit from Scratch",
+      "title": "From Text to Token: Why I'm Building an LLM Toolkit from Scratch",
       "readingTime": "13 min",
       "publishDate": "2025-10-25",
       "blogLink": "llm-scratch-bpe-micrograd",
@@ -502,7 +502,7 @@
     },
     {
       "id": "24",
-      "title": "Seeing Through the Model`s Eyes: Visualizing Cross-Lingual Attention in Math Reasoning",
+      "title": "Seeing Through the Model's Eyes: Visualizing Cross-Lingual Attention in Math Reasoning",
       "readingTime": "1 min",
       "publishDate": "2026-01-02",
       "blogLink": "llm-scratch-attention",

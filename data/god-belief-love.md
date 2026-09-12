@@ -34,7 +34,7 @@ This one is challenging to articulate textually - it is meant to be experienced 
 
 I don't recall encountering any explicit "proof of God" within the Qur'anic commentaries I've read. However this may just reflect limitations in interpretations I've come across so far. You see - the Qur'an is believed to have been composed during the time poetry was prevalent in Arab culture. Poets often repurpose words, giving them new meanings that must be understood only in that context. For instance, _pyaar mein jalna_ (literal translation: Burning in the fire of love) doesn't involve any literal physical burning but can be easily misinterpreted to mean so. Similarly in Islam - words like "the hour" carry a much deeper significance than their common usage.
 
-## Why did I think of this today?
+## What made me think of this?
 
 I went to watch this newly released movie "Chhaava" on screen today. There was a beautiful story arc weaved around the relationship between Chhatrapati Sambhaji and his wife, Yeshu. Throughout this arc, Yeshu frequently anticipates Chhatrapati's thoughts and responds before he can even verbalize them. At a later point, Chhatrapati asks her "You know everything Yeshu; can you tell me what my mother looked like?" To which Yeshu responds "How can I know it? I reside only in your heart; so if your heart doesn't know then neither would I!"
 

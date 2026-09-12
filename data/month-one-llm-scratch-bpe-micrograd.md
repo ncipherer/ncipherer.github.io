@@ -40,7 +40,7 @@ Iteration 50, Loss: 0.014732909567027002
 Number of parameters: 41
 Final outputs: [Value(data=0.9517384049880856) Grad=(-0.09652319002382881), Value(data=-0.9510350324574308) Grad=(0.09792993508513836), Value(data=-0.931016872216683) Grad=(0.1379662555666341), Value(data=0.9275604524536586) Grad=(-0.14487909509268282)]
 
-###### 0.2 learning rate
+##### 0.2 learning rate
 
 === Single Input Training ===
 Iteration 10, Loss: 0.0005953222363061605

@@ -1,8 +1,8 @@
-### Why F.R.I.E.N.D.S?
+## Why F.R.I.E.N.D.S?
 
 Very clickbaity title I know! In my defense I'm more of a movie/book person myself and haven't watched many TV shows yet. So, this analysis should hold for many famous TV shows (barring a few solid ones I know) – "The Office (US)," for example, would follow the same pattern.
 
-### The first impression
+## The first impression
 
 In the first few episodes, you're introduced to lively characters, each with a unique personality and quirks that appear now and then. You quickly start feeling attached to these characters and their quirks, and can maybe see them resembling someone you know in real life.
 
@@ -16,7 +16,7 @@ Monica is an ambitious chef and the glue holding the group together. Her quirk? 
 
 Rachel is a rich-turned-poor girl trying to find her place, her quirk is basically being a bit snobby. Phoebe is a gypsy gal stuck in New York, I guess, whose quirk is being unintentionally blunt, snarky, and even offensive.
 
-### The second impression
+## The second impression
 
 Seasons pass, and subtly, the characters become more distant from normal people. The quirks become their entire personality, and every other dialogue is a joke. Show writers, optimizing to maintain audience interest, seem to reduce characters to just that ONE thing. They feel less human now, more performative. It starts feeling like their entire reason for living is to seek validation from an imaginary audience, who they believe will love them more if their quirks got quirkier.
 
@@ -36,12 +36,12 @@ And you can trace same character arc mistakes with,
 - Fez going from suave to candy obsessed creep in "The 70s show"
 - Boyle going from goofy person to a guy making innuendos on everything and opening a food truck (?) in Brooklyn 99
 
-### Takeaway for real life?
+## Takeaway for real life?
 
 I think there's a lesson here somewhere. From childhood, we're taught to differentiate ourselves through our uniqueness. But if we associate our entire self-worth and personality with that one unique thing, we risk becoming so different we aren't a real person anymore.
 
 I remember a guy in my school who used to say these cute one-liners to teachers "I love you" or "I am proud of you" whenever they scolded him. For first few weeks, the entire class and even teachers joined in the laughter. Then, his quirky one-liners stopped being sudden and pretty predictable for everyone (Teacher asks him to stand up > Teacher says something snarky > He blurts out a one-liner) and were met with silence now; the scolding wouldn't stop even after a witty line. He assumed he needed to lean more into his quirk, the thing that made him "special", and would make some outrageous and borderline offensive remarks. I don't think anyone ever laughed again at his one-liners.
 
-### What made me think of this?
+## What made me think of this?
 
-A friend of mine mentioned watching "Schitt's Creek" - a very funny show, they said, where characters go through an arc of annoying to lovely. They recommended we watch a couple of early episodes together and continue if I like them. This made me think of all the good shows I've seen with character arcs (HIMYM is a wonderful example) and how it took time for characters to hit a point where change clicks. So, I immediately countered that if it's as good a show as she says, I should watch at least 15-20 episodes before I can form an opinion.
+An acquaintance mentioned watching "Schitt's Creek" - a very funny show, they said, where characters go through an arc of annoying to lovely. They recommended we watch a couple of early episodes together and continue if I like them. This made me think of all the good shows I've seen with character arcs (HIMYM is a wonderful example) and how it took time for characters to hit a point where change clicks. So, I immediately countered that if it's as good a show as she says, I should watch at least 15-20 episodes before I can form an opinion.
