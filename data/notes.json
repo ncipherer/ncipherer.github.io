@@ -3,7 +3,7 @@
     {
       "id": "0",
       "title": "Failure - It's not as bad as it swims to be!",
-      "readingTime": "6 min",
+      "readingTime": "5 min",
       "publishDate": "2025-02-09",
       "blogLink": "fail-hobbies",
       "githubLink": "",
@@ -28,7 +28,7 @@
     {
       "id": "1",
       "title": "Belief: A question of God and Love!",
-      "readingTime": "8 min",
+      "readingTime": "5 min",
       "publishDate": "2025-02-22",
       "blogLink": "god-belief-love",
       "githubLink": "",
@@ -62,7 +62,7 @@
     {
       "id": "2",
       "title": "Equations and evil",
-      "readingTime": "8 min",
+      "readingTime": "6 min",
       "publishDate": "2025-03-09",
       "blogLink": "review-cease-world",
       "githubLink": "",
@@ -93,7 +93,7 @@
     {
       "id": "3",
       "title": "Soul vs Silicon",
-      "readingTime": "8 min",
+      "readingTime": "7 min",
       "publishDate": "2025-03-29",
       "blogLink": "creativity-ai",
       "githubLink": "",
@@ -130,7 +130,7 @@
     {
       "id": "4",
       "title": "The problem with F.R.I.E.N.D.S.",
-      "readingTime": "6 min",
+      "readingTime": "7 min",
       "publishDate": "2025-05-21",
       "blogLink": "tv-friends",
       "githubLink": "",
@@ -149,7 +149,7 @@
     {
       "id": "5",
       "title": "2700 sunrises!",
-      "readingTime": "8 min",
+      "readingTime": "6 min",
       "publishDate": "2025-07-25",
       "blogLink": "sunrises-left",
       "githubLink": "",
@@ -170,7 +170,7 @@
     {
       "id": "6",
       "title": "[WIP] Be better!",
-      "readingTime": "6 min",
+      "readingTime": "3 min",
       "publishDate": "2025-08-05",
       "blogLink": "vices",
       "githubLink": "",
@@ -185,7 +185,7 @@
     {
       "id": "7",
       "title": "The Rebellion {and/or} Star Wars",
-      "readingTime": "8 min",
+      "readingTime": "6 min",
       "publishDate": "2025-08-16",
       "blogLink": "andor-star-wars",
       "githubLink": "",
@@ -210,7 +210,7 @@
     {
       "id": "8",
       "title": "The first hit!",
-      "readingTime": "5 min",
+      "readingTime": "8 min",
       "publishDate": "2025-09-27",
       "blogLink": "first-hit-mma",
       "githubLink": "",
@@ -225,7 +225,7 @@
     {
       "id": "9",
       "title": "From Text to Token: Why I`m Building an LLM Toolkit from Scratch",
-      "readingTime": "4 min",
+      "readingTime": "13 min",
       "publishDate": "2025-10-25",
       "blogLink": "llm-scratch-bpe-micrograd",
       "githubLink": "",
@@ -246,7 +246,7 @@
     {
       "id": "10",
       "title": "I just wanna see!",
-      "readingTime": "4 min",
+      "readingTime": "18 min",
       "publishDate": "2025-10-03",
       "blogLink": "i-just-wanna-see",
       "githubLink": "",
@@ -279,7 +279,7 @@
     {
       "id": "11",
       "title": "AI doom may rather look like a...?!",
-      "readingTime": "4 min",
+      "readingTime": "1 min",
       "publishDate": "2025-10-22",
       "blogLink": "ai-apocalypse",
       "githubLink": "",
@@ -310,7 +310,7 @@
     {
       "id": "13",
       "title": "FIRE has changed?!",
-      "readingTime": "4 min",
+      "readingTime": "2 min",
       "publishDate": "2025-12-10",
       "blogLink": "fire-change",
       "githubLink": "",
@@ -325,7 +325,7 @@
     {
       "id": "14",
       "title": "Eureka!",
-      "readingTime": "8 min",
+      "readingTime": "1 min",
       "publishDate": "2025-08-30",
       "blogLink": "eureka",
       "githubLink": "",
@@ -365,7 +365,7 @@
     {
       "id": "16",
       "title": "If...",
-      "readingTime": "2 min",
+      "readingTime": "3 min",
       "publishDate": "2025-12-25",
       "blogLink": "if-kipling",
       "githubLink": "",
@@ -426,7 +426,7 @@
     {
       "id": "19",
       "title": "📜 Purpose",
-      "readingTime": "2 min",
+      "readingTime": "∞",
       "publishDate": "2026-01-01",
       "blogLink": "purpose",
       "githubLink": "",
@@ -471,7 +471,7 @@
     {
       "id": "22",
       "title": "📝 Paper Shelf",
-      "readingTime": "4 min",
+      "readingTime": "∞",
       "publishDate": "2026-01-01",
       "blogLink": "paper-shelf",
       "githubLink": "",
@@ -487,7 +487,7 @@
     {
       "id": "23",
       "title": "Why travel?",
-      "readingTime": "2 min",
+      "readingTime": "3 min",
       "publishDate": "2026-01-01",
       "blogLink": "why-travel",
       "githubLink": "",
@@ -503,7 +503,7 @@
     {
       "id": "24",
       "title": "Seeing Through the Model`s Eyes: Visualizing Cross-Lingual Attention in Math Reasoning",
-      "readingTime": "4 min",
+      "readingTime": "6 min",
       "publishDate": "2026-01-02",
       "blogLink": "llm-scratch-attention",
       "githubLink": "",
@@ -524,7 +524,7 @@
     {
       "id": "25",
       "title": "Hacker's Manifesto",
-      "readingTime": "1 min",
+      "readingTime": "2 min",
       "publishDate": "2026-02-07",
       "blogLink": "hackers-manifesto",
       "githubLink": "",
@@ -548,7 +548,7 @@
     {
       "id": "26",
       "title": "Programming has changed",
-      "readingTime": "2 min",
+      "readingTime": "1 min",
       "publishDate": "2026-02-22",
       "blogLink": "programming-changed",
       "githubLink": "",
@@ -563,7 +563,7 @@
     {
       "id": "27",
       "title": "The Trial by Existence",
-      "readingTime": "5 min",
+      "readingTime": "7 min",
       "publishDate": "2026-03-15",
       "blogLink": "the-trial-by-existence",
       "githubLink": "",
@@ -579,7 +579,7 @@
     {
       "id": "28",
       "title": "There is a boat on the mat!",
-      "readingTime": "7 min",
+      "readingTime": "8 min",
       "publishDate": "2026-04-21",
       "blogLink": "shiva-mma",
       "githubLink": "",
@@ -604,11 +604,11 @@
     {
       "id": "29",
       "title": "Looking back!",
-      "readingTime": "7 min",
+      "readingTime": "15 min",
       "publishDate": "2026-05-05",
       "blogLink": "looking-back",
       "githubLink": "",
-      "hidden": true,
+      "hidden": false,
       "pinned": false,
       "links": [],
       "tags": [
@@ -619,7 +619,7 @@
     {
       "id": "30",
       "title": "Don't be a cynic!",
-      "readingTime": "5 min",
+      "readingTime": "1 min",
       "publishDate": "2026-05-02",
       "blogLink": "cynic",
       "githubLink": "",
@@ -632,7 +632,7 @@
     {
       "id": "31",
       "title": "Dreams that woke me up",
-      "readingTime": "3 min",
+      "readingTime": "6 min",
       "publishDate": "2026-08-23",
       "blogLink": "dreams",
       "githubLink": "",
@@ -648,7 +648,7 @@
     {
       "id": "32",
       "title": "What's good for freefall is bad for landing!",
-      "readingTime": "8 min",
+      "readingTime": "14 min",
       "publishDate": "2026-09-05",
       "blogLink": "therapy-works-question",
       "githubLink": "",
