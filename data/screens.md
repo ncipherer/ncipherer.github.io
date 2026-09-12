@@ -201,8 +201,11 @@
 >
 > Recommendation from: Gunda recommended it.
 
-Main Vaapas Aaunga (2026) (tt37333137)
-
+[x] Main Vaapas Aaunga (2026) (tt37333137)
+> Just finished the movie, it's 4:30 AM right now. It's been a while since I cried watching a movie — even as I write this, tears are rolling down my cheeks. All I can hope is that the love I give in my life matches this. I genuinely don't expect it to be returned; I just want to be able to give it. I don't mind dying with all the pain this drop of poison in my heart brings, as long as I know the same poison once coursed through my veins and gave me the thrill of being alive — because of someone.
+> There's a very moving perspective that Pali provides — that the refugees never shared their stories because they feared it would poison the generations that followed, if they ever spoke of the horrors that happened to the women in the family. So poignant.
+> And the imagery — the earring left behind in the ruins, just in the hope that they'd come back someday to find it; never once mentioning Hindu or Muslim during the conflict but instead calling them Martians, because they can't fathom that the people around them could take this form — they have to be from some other planet. It all ties together so beautifully. And then Naseer Sahab just elevates everything with his acting, over and over. Vedant and Sharvari are excellent at capturing the feeling of young love and all the emotions that comes with it.
+> At the end of this movie, one is left hoping that no more divides tear through this world, but that's wishful thinking. The end credits shatter this illusion immediately - with a montage of events from Gaza and Syria, a quiet reminder that there is no end to this torture. Eighty years later, only the location has changed.
 > Recommendation from: It's an Imtiaz Ali film, and a colleague from a class recommended it.
 
 I Saw the Devil (2010)
