@@ -114,23 +114,28 @@ Christmas Eve | The Trans-Siberian Orchestra | https://www.youtube.com/watch?v=2
 Be Notorious | Bheeshma Parvam | https://www.youtube.com/watch?v=w4N22lhkEPg
 Chanakya | Rishabh Rikhiram | https://www.youtube.com/watch?v=KBYSpR8N6pc
 Discombobulate | Hans Zimmer | https://www.youtube.com/watch?v=vgRVJksQocM
+Conan The Destroyer | Basil Poledouris | https://www.youtube.com/watch?v=4JH00B8X4Uo
 Kantara | Rishab Rikhiram | https://www.youtube.com/watch?v=o4nJ2F7yHsM
 Kautilya | Rishab Rikhiram | https://www.youtube.com/watch?v=tCajWVFTQNs
 Raani Sa | Padmavat | https://www.youtube.com/watch?v=WPhWJBRQSWs
+Becoming a Geisha | John Williams | https://www.youtube.com/watch?v=ObNvOVJSj6o
 Shiv Kailash | Rishab Rikhiram | https://www.youtube.com/watch?v=Onb6_bRJ0Bw
 Sita Ramam Interval Block | Sita Ramam | https://www.youtube.com/watch?v=gnpFgC3VW0k
 Tumhi Dekho na | Rishab Rikhiram | https://www.youtube.com/watch?v=EK0V8Fdb9OM
+Conquest of Paradise | Vangelis | https://www.youtube.com/watch?v=7ufkMTshjz8
 Vladimir's theme | Dean Valentine | https://www.youtube.com/watch?v=fkeO8shNkf0
 Rocket Boy's theme | Achint | https://www.youtube.com/watch?v=mGsJlE4cRFE
 The Last of the Mohicans | Trevor Jones | https://www.youtube.com/watch?v=9tjdswqGGVg
 Growing Up Londinium | Daniel Pemberton | https://www.youtube.com/watch?v=e2LLS33eQvk
 F1 theme | Brian Tyler | https://www.youtube.com/watch?v=8AYy-BcjRXg
 Mella Mella | Ilaiyaraaja | https://www.youtube.com/watch?v=XmBRVTERyqg
+A New Day | Gregson-Williams Brothers | https://www.youtube.com/watch?v=CeqdfOB5kY0
 RHTDM | Harris Jayaraj | https://www.youtube.com/watch?v=AoiLOuJATos
 Finding The Bomb | The Dust Brothers | https://www.youtube.com/watch?v=z7UunxFEJ8Q
 God Mode Entry | Sai Abhyankar | https://www.youtube.com/watch?v=L3urQZ9vzMQ
 Preparation for War | Majid Entezami | https://www.youtube.com/watch?v=n2ZrQpkkWCw
 Az Soug ta Sepideh | La Daf Ensemble | https://www.youtube.com/watch?v=lEpYNVzXdOg
+From the New World | Dvořák | https://www.youtube.com/watch?v=xyCYvoOEBbw
 
 ## Ma-sufiyat
 
