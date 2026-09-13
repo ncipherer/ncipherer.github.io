@@ -6,16 +6,21 @@
 - 1 Onion, chopped
 - 1 Tomato, chopped
 - 1 tbsp Oil
-- Optional: 1 tsp Ginger-Garlic paste
+- 3 tbsp Peanuts
 - Optional: Juice of half a lemon
-- Spices: Salt, Turmeric, Red chili powder, Garam Masala
+- Spices: Salt, Turmeric, Red chili powder, Garam Masala, Puliyogare powder
+
+## Serve With
+- Ginger-Garlic paste (as a side condiment)
 
 ## Instructions
-1. **Boil the Soya** - *5-7 mins* - Put the soya chunks in enough water to submerge them fully. Add a pinch of salt and turmeric. Boil at 180°C until a thick white foam rises to the top and the chunks are soft when pressed.
-2. **Rinse and Squeeze** - *5 mins* - Strain the hot water. Run cold water over the chunks. Squeeze out all the absorbed water thoroughly using your hands or a cloth — this step is important for texture.
-3. **Fry Aromatics** - *4-5 mins* - Heat oil in a pan at 130°C. Add chopped onions and fry until soft and translucent. Add ginger-garlic paste (if using) and cook for 1 more minute before adding the chopped tomato. Cook until the tomato is completely mushy.
-4. **Add Spices** - *2 mins* - Stir in the turmeric, red chili powder, garam masala, and salt directly into the onion-tomato base. Mix well so the spices coat everything evenly.
-5. **Mix and Finish** - *3-4 mins* - Add the squeezed soya chunks into the pan. Stir everything together at 100°C for 3 to 4 minutes until the chunks are well coated and lightly browned. Finish with a squeeze of lemon juice if desired.
+1. **Boil the Water** - *5 mins* - Fill a pot with enough water to submerge the soya chunks fully. Add a pinch of salt and turmeric — this flavours the water so it sticks to the chunks later. Bring to a boil at 180°C.
+2. **Add Soya Chunks** - *3 mins* - Add the soya chunks to the boiling water and cook for 3 minutes until they are soft when pressed and a thick white foam rises to the top.
+3. **Rinse and Squeeze** - *5 mins* - Strain the hot water. Run cold water over the chunks. Squeeze out all the absorbed water thoroughly using your hands or a cloth — this step is important for texture.
+4. **Fry Aromatics** - *4-5 mins* - Heat oil in a pan at 130°C. Add chopped onions and fry until soft and translucent. Add Peanuts and cook for 1 more minute before adding the chopped tomato. Cook until the tomato is completely mushy.
+5. **Add Spices** - *2 mins* - Stir in the turmeric, red chili powder, garam masala, Puliyogare powder, and salt directly into the onion-tomato base. Mix well so the spices coat everything evenly.
+6. **Mix and Finish** - *3-4 mins* - Add the squeezed soya chunks into the pan. Stir everything together at 100°C for 3 to 4 minutes until the chunks are well coated and lightly browned. Finish with a squeeze of lemon juice if desired.
+7. **Serve** - Plate the soya chunks and serve with a small bowl of Ginger-Garlic paste on the side.
 
 
 # Chole
@@ -78,12 +83,12 @@
 - 1 Tomato, chopped (for serving)
 - 1 tbsp Oil
 - Namkeen (for serving)
-- Spices: Jeera (cumin seeds), Haldi (turmeric), Red chili powder, Dry mango powder (amchur), Salt, Kasuri Methi
+- Spices: Jeera (cumin seeds), Haldi (turmeric), Red chili powder, Dry mango powder (amchur), Salt, Kasuri Methi, Puliyogare powder
 
 ## Instructions
 1. **Wash and Soak** - *5-10 mins* - Wash 3 cups of poha thoroughly with water. Drain completely, cover, and leave to soak for 5 to 10 minutes until it is soft and pliable but not mushy.
 2. **Fry Groundnuts and Aromatics** - *3-4 mins* - Heat oil in a frying pan at 200°C. Add the groundnuts first and fry until crunchy. Then add the jeera and chopped onion to the same oil. Fry until the onion turns golden — not brown or dark, as that will make it bitter.
-3. **Bloom the Spices** - *1 min* - Add haldi, red chili powder, and dry mango powder directly into the pan. Stir quickly for about 30 seconds to bloom the spices in the oil.
+3. **Bloom the Spices** - *1 min* - Add haldi, red chili powder, dry mango powder, and Puliyogare powder directly into the pan. Stir quickly for about 30 seconds to bloom the spices in the oil.
 4. **Mix and Finish** - *2-3 mins* - Add the soaked poha into the pan. Add salt and kasuri methi. Stir everything together gently at 100°C until the poha is evenly yellow and heated through.
 5. **Serve** - *1 min* - Top with fresh raw chopped onion, chopped tomato, and a side of crunchy namkeen.
 
