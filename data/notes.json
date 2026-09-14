@@ -626,7 +626,9 @@
       "hidden": true,
       "pinned": false,
       "links": [],
-      "tags": [],
+      "tags": [
+        "philosophy"
+      ],
       "contentPath": "cynic.md"
     },
     {
