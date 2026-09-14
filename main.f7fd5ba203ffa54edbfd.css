@@ -137,6 +137,40 @@ body.note-open .nav-actions {
   position: relative;
 }
 
+/* --- Navbar sonar toggle (site-wide setting, like theme + sound) --- */
+.sonar-toggle-btn {
+  transition: opacity 0.15s ease;
+}
+
+.sonar-toggle-btn:hover {
+  opacity: 0.7;
+}
+
+.sonar-toggle-btn.active {
+  color: var(--accent-color) !important;
+}
+
+.sonar-toggle-btn.calibrating {
+  animation: sonar-calibrate 0.6s ease-in-out infinite;
+}
+
+[data-theme="y2k-cyber"] .sonar-toggle-btn {
+  border: 1px solid var(--y2k-neon-green) !important;
+  border-radius: 0 !important;
+  padding: 4px !important;
+  color: var(--y2k-neon-green) !important;
+}
+
+[data-theme="y2k-cyber"] .sonar-toggle-btn:hover {
+  background: rgba(0, 255, 65, 0.1);
+  box-shadow: 0 0 6px rgba(0, 255, 65, 0.3);
+}
+
+[data-theme="y2k-cyber"] .sonar-toggle-btn.active {
+  background: rgba(0, 255, 65, 0.15);
+  box-shadow: 0 0 10px rgba(0, 255, 65, 0.45);
+}
+
 .nav-link:hover {
   color: var(--accent-color);
 }
@@ -6433,6 +6467,16 @@ body.js-tooltips [data-tooltip]::after {
 .sonar-fab svg {
   width: 24px;
   height: 24px;
+}
+
+/* The note page's back-to-top button shares the bottom-right corner —
+   stack the two instead of overlapping when the sonar is active. */
+body.note-open .sonar-fab {
+  bottom: 7.5rem;
+}
+
+body.note-open .sonar-meter {
+  bottom: 7.5rem;
 }
 
 
