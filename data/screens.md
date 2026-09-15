@@ -386,3 +386,7 @@ A Monster Calls (2016)
 Lessons of Darkness (1992)
 
 > Recommendation from: Saw a video of a person chucking fire into oil spring. The synopsis was pretty interesting, a documentary about human self-destruction from a perspective of an alien! Wow!
+
+Millennium Actress (2001)
+
+> Recommendation from: Evidently, it's 25th anniversary of this movie and people are just raving about it, and I had never heard it, so it goes on the watchlist!

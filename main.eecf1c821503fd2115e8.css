@@ -1,3 +1,5 @@
+/* design tokens: colours, spacing, transitions, per-theme palettes (imported by styles/main.css) */
+
 :root {
   /* Default: Dark theme variables */
   --bg-primary: #000000;
@@ -67,6 +69,8 @@
   --github-icon: url("data:image/svg+xml;charset=utf-8,<svg viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path fill=\"%2300ff41\" d=\"M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z\"/></svg>");
   --label-color: #00ff41;
 }
+
+/* reset, page frame, navbar, nav links, theme selector (imported by styles/main.css) */
 
 * {
   margin: 0;
@@ -268,6 +272,8 @@ body.note-open .nav-actions {
   border-radius: 0 !important;
   color: var(--y2k-neon-green) !important;
 }
+
+/* Y2K-Cyber theme: CRT shell, chrome bevels, retro components (imported by styles/main.css) */
 
 /* ============================================
    Y2K-CYBER: AUTHENTIC RETRO OVERHAUL
@@ -1279,6 +1285,8 @@ body.note-open .nav-actions {
   text-shadow: none;
 }
 
+/* Y2K-Cyber theme: cursors, winamp controls, badges (imported by styles/main.css) */
+
 /* =============================================
    Y2K-CYBER: CURSORS, WINAMP CONTROLS,
    ACTIVE IMAGE BORDER, CROSSHAIR ACCENTS
@@ -1430,6 +1438,8 @@ body.note-open .nav-actions {
 [data-theme="y2k-cyber"] .song-card:hover {
   box-shadow: 0 0 12px rgba(0,255,65,0.25), 4px 4px 0 #000 !important;
 }
+
+/* note cards, note body typography, tables, glossary tooltips (imported by styles/main.css) */
 
 .home-page h1 {
   font-size: 3.5rem;
@@ -2103,6 +2113,8 @@ body.js-tooltips [data-tooltip]::after {
   color: var(--label-color) !important;
 }
 
+/* background music player bar and its song list (imported by styles/main.css) */
+
 /* Background Music Player */
 .music-player-bar {
   position: fixed;
@@ -2431,6 +2443,8 @@ body.js-tooltips [data-tooltip]::after {
   }
 }
 
+/* shared layout + responsive overrides (TOC, mobile queries) (imported by styles/main.css) */
+
 /* Mobile CSS */
 @media (max-width: 768px) {
   .container.with-toc {
@@ -2648,6 +2662,8 @@ body.js-tooltips [data-tooltip]::after {
 .carousel-dot.active {
   opacity: 1;
 }
+
+/* movies and songs grids (imported by styles/main.css) */
 
 /* Movies and Songs Grid Styles */
 .movie-grid {
@@ -2868,6 +2884,8 @@ body.js-tooltips [data-tooltip]::after {
   border-top: 1px solid var(--border-color);
   padding-top: 0.5rem;
 }
+
+/* movie review modal and skim controls (imported by styles/main.css) */
 
 /* Movie review indicator and modal */
 .movie-card.has-review {
@@ -3228,6 +3246,8 @@ body.js-tooltips [data-tooltip]::after {
   transition: opacity 0.3s ease;
 }
 
+/* notes page: view toggle, sticky header, pinned state (imported by styles/main.css) */
+
 /* Notes Page View Toggle */
 .notes-header {
   display: flex;
@@ -3466,6 +3486,8 @@ body.js-tooltips [data-tooltip]::after {
 
 }
 
+/* paper shelf (books) cards and pinned links (imported by styles/main.css) */
+
 /* Paper Shelf Styles */
 .paper-grid {
   display: grid;
@@ -3598,6 +3620,8 @@ body.js-tooltips [data-tooltip]::after {
   color: var(--accent-color);
   transform: translateY(-2px);
 }
+
+/* recipe layout, timeline steps and notes (imported by styles/main.css) */
 
 /* Recipe Styles */
 .recipe-card {
@@ -3983,6 +4007,8 @@ body.js-tooltips [data-tooltip]::after {
   }
 }
 
+/* 404 page and the heading anchors it ends with (imported by styles/main.css) */
+
 /* 404 Not Found Page */
 .not-found-page {
   display: flex;
@@ -4138,6 +4164,8 @@ body.js-tooltips [data-tooltip]::after {
   color: #10b981 !important;
   opacity: 1 !important;
 }
+
+/* search modal, result sections, loading placeholder (imported by styles/main.css) */
 
 /* Search Modal Styles */
 .search-overlay {
@@ -4331,6 +4359,8 @@ body.js-tooltips [data-tooltip]::after {
   font-size: 0.95rem;
   padding: 2rem 0;
 }
+
+/* bucket list grid and its modal (imported by styles/main.css) */
 
 /* ── Bucket List ─────────────────────────────────────────── */
 .bucket-progress {
@@ -4611,6 +4641,8 @@ body.js-tooltips [data-tooltip]::after {
   }
 }
 
+/* CSS bookshelf: shelf, books, covers (imported by styles/main.css) */
+
 /* ── CSS Bookshelf ─────────────────────────────────────────── */
 .bookshelf-scene {
   perspective: 800px;
@@ -4872,6 +4904,8 @@ body.js-tooltips [data-tooltip]::after {
   }
 }
 
+/* book review modal and shelf motion (imported by styles/main.css) */
+
 /* ── Book review modal ─────────────────────────────────────── */
 .shelf-modal {
   display: none;
@@ -5102,6 +5136,8 @@ body.js-tooltips [data-tooltip]::after {
 .shelf-panel-review a:hover {
   opacity: 0.7;
 }
+
+/* homepage layout and the image carousel (imported by styles/main.css) */
 
 /* ==========================================================================
    Homepage & Image Carousel Styling
@@ -5640,6 +5676,8 @@ body.js-tooltips [data-tooltip]::after {
     display: none;
   }
 }
+
+/* terminal command line (and its theme fittings) (imported by styles/main.css) */
 
 /* ==========================================================================
    Terminal Command Line — Windows Terminal aesthetic
@@ -6292,6 +6330,8 @@ body.js-tooltips [data-tooltip]::after {
   background: var(--y2k-neon-green) !important;
 }
 
+/* note modal opened from the terminal (imported by styles/main.css) */
+
 /* ==========================================================================
    Terminal Navigation Modal
    ========================================================================== */
@@ -6410,6 +6450,8 @@ body.js-tooltips [data-tooltip]::after {
 .terminal-modal .table-of-contents {
   display: none !important;
 }
+
+/* sonar scroll button and signal meter (imported by styles/main.css) */
 
 /* ═══════════════════════════════════════════════════════════════
    Sonar Scroll UI
@@ -6568,4 +6610,733 @@ body.note-open .sonar-meter {
 [data-theme="y2k-cyber"] .sonar-meter-bar.peak {
   background: #ff0;
 }
+
+/* the garden: clock, seed markers, flowers, sky (imported by styles/main.css) */
+
+/* ==========================================================================
+   The Garden — the homepage clock and the flowers it grows
+
+   Time spent on the site is the one thing this page measures: a running
+   total, kept in localStorage across every session, shown as a clock and
+   grown into flowers. Each flower opens on its own schedule and none of
+   them wilt, so the garden only ever fills in.
+   ========================================================================== */
+
+:root {
+  /* Ground */
+  --garden-sky-1: #0d1310;
+  --garden-sky-2: #060a08;
+  --garden-soil: #2f261c;
+  --garden-soil-deep: #1e1813;
+  --garden-soil-speck: #5b4a35;
+  --garden-grass: #2f4a34;
+  --garden-stem: #5f8a45;
+  --garden-stem-woody: #7d5c45;
+  --garden-leaf: #5e8d45;
+  --garden-leaf-dark: #3f6b33;
+  --garden-leaf-vein: #93b877;
+  --garden-seed: #6d5f48;
+  --garden-seed-ring: #554b3b;
+  --garden-seed-shadow: #000000;
+
+  /* Light in the sky. Dark theme: a moon, so the bed is plainly moonlit. */
+  --garden-sun-core: #d6e6d8;
+  --garden-sun-edge: #7d9483;
+  --garden-sun-glow: #9ed7ae;
+  --garden-sun-ray: #8fb79c;
+
+  /* Petals, one pair per flower (base + shadowed tone) */
+  --garden-daisy: #f7f4e7;
+  --garden-daisy-deep: #c2b99e;
+  --garden-morning-glory: #8e7bff;
+  --garden-morning-glory-deep: #56449f;
+  --garden-poppy: #e0553f;
+  --garden-poppy-deep: #a83a28;
+  --garden-iris: #9c6bd8;
+  --garden-iris-deep: #6b41a5;
+  --garden-chrys: #f0b13a;
+  --garden-chrys-deep: #bf7d16;
+  --garden-plum: #f8d2e2;
+  --garden-plum-deep: #d18fae;
+  --garden-lotus: #f291b6;
+  --garden-lotus-deep: #c95a86;
+  --garden-camellia: #e2557f;
+  --garden-camellia-deep: #a82c55;
+  --garden-camellia-alba: #f9f4f1;
+  --garden-camellia-alba-deep: #cdbcb2;
+  --garden-camellia-red: #c22b3f;
+  --garden-camellia-red-deep: #7d1425;
+  --garden-peony: #e0559a;
+  --garden-peony-deep: #a33468;
+  --garden-wisteria: #bda6ef;
+  --garden-wisteria-deep: #7c63b5;
+  --garden-moonflower: #f4f1da;
+  --garden-moonflower-deep: #c3bb92;
+  --garden-center-gold: #f0c14b;
+  --garden-center-gold-deep: #c98f1e;
+  --garden-center-light: #fdf6dd;
+  --garden-center-dark: #3a2a1c;
+}
+
+[data-theme="light"] {
+  --garden-sky-1: #f4f7f0;
+  --garden-sky-2: #e4eadc;
+  --garden-soil: #c3b096;
+  --garden-soil-deep: #a9927a;
+  --garden-soil-speck: #8d7a61;
+  --garden-grass: #93ac86;
+  --garden-stem: #56823c;
+  --garden-stem-woody: #8a6247;
+  --garden-leaf: #5b8f3d;
+  --garden-leaf-dark: #47772f;
+  --garden-leaf-vein: #d7e6c8;
+  --garden-seed: #8d7a61;
+  --garden-seed-ring: #79674f;
+  --garden-seed-shadow: #6b5a45;
+
+  /* Light theme: a real sun, warm and raved. */
+  --garden-sun-core: #fff7d4;
+  --garden-sun-edge: #f0b23c;
+  --garden-sun-glow: #ffd783;
+  --garden-sun-ray: #e6a134;
+
+  --garden-daisy-deep: #b6ad92;
+  --garden-camellia-alba-deep: #c9b8ae;
+  --garden-moonflower-deep: #bdb48c;
+}
+
+[data-theme="y2k-cyber"] {
+  --garden-sky-1: #0a0a1e;
+  --garden-sky-2: #12102c;
+  --garden-soil: #1b1b34;
+  --garden-soil-deep: #101024;
+  --garden-soil-speck: #00ff41;
+  --garden-grass: #00ff41;
+  --garden-stem: #00ff41;
+  --garden-stem-woody: #00b8d4;
+  --garden-leaf: #00ff41;
+  --garden-leaf-dark: #00c132;
+  --garden-leaf-vein: #00ffff;
+  --garden-seed: #00ff41;
+  --garden-seed-ring: #00ff41;
+  --garden-seed-shadow: #000000;
+
+  /* Y2K theme: a ringed neon planet keeping the garden alive. */
+  --garden-sun-core: #ff2d95;
+  --garden-sun-edge: #00ffff;
+  --garden-sun-glow: #ff2d95;
+  --garden-sun-ray: #00ffff;
+
+  --garden-daisy: #eafff2;
+  --garden-daisy-deep: #00ffff;
+  --garden-morning-glory: #7b6bff;
+  --garden-morning-glory-deep: #00ffff;
+  --garden-poppy: #ff2d95;
+  --garden-poppy-deep: #ff6600;
+  --garden-iris: #b06bff;
+  --garden-iris-deep: #ff2d95;
+  --garden-chrys: #ffcc00;
+  --garden-chrys-deep: #ff6600;
+  --garden-plum: #ffd6ea;
+  --garden-plum-deep: #ff2d95;
+  --garden-lotus: #ff8ec4;
+  --garden-lotus-deep: #ff2d95;
+  --garden-camellia: #ff2d95;
+  --garden-camellia-deep: #a8005c;
+  --garden-camellia-alba: #f2fffa;
+  --garden-camellia-alba-deep: #00ffff;
+  --garden-camellia-red: #ff0044;
+  --garden-camellia-red-deep: #7d0022;
+  --garden-peony: #ff5fb0;
+  --garden-peony-deep: #a8005c;
+  --garden-wisteria: #c0a6ff;
+  --garden-wisteria-deep: #00ffff;
+  --garden-moonflower: #e6ffe6;
+  --garden-moonflower-deep: #00ff41;
+}
+
+.home-garden-section {
+  width: 100%;
+  margin-bottom: 1.75rem;
+}
+
+.garden {
+  position: relative;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  background: var(--bg-secondary);
+  padding: 1.1rem 1.25rem 0.95rem;
+  /* Visible so a seed's card can sit above the bed's top edge. */
+  overflow: visible;
+}
+
+.garden-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1.75rem;
+}
+
+.garden-kicker {
+  font-size: 0.66rem;
+  font-weight: 600;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  opacity: 0.75;
+}
+
+.garden-clock {
+  font-family: "SF Mono", "Fira Code", "Cascadia Code", "JetBrains Mono", Consolas, monospace;
+  font-size: clamp(1.45rem, 4vw, 2.05rem);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  margin-top: 0.2rem;
+  color: var(--text-primary);
+  font-variant-numeric: tabular-nums;
+}
+
+.garden-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-top: 0.3rem;
+  font-size: 0.68rem;
+  color: var(--text-secondary);
+}
+
+.garden-meta-sep {
+  opacity: 0.45;
+}
+
+.garden-next {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.45rem;
+  min-width: 15rem;
+  max-width: 20rem;
+}
+
+.garden-next-label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  color: var(--text-primary);
+  text-align: right;
+}
+
+.garden-next-key {
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  opacity: 0.7;
+}
+
+.garden-next-eta {
+  color: var(--text-secondary);
+  font-size: 0.66rem;
+}
+
+.garden-bar {
+  width: 100%;
+  height: 3px;
+  border-radius: 99px;
+  background: var(--border-color);
+  overflow: hidden;
+}
+
+.garden-bar-fill {
+  display: block;
+  height: 100%;
+  width: 0;
+  border-radius: 99px;
+  background: var(--accent-color);
+  transition: width 0.7s linear, background 0.4s ease;
+}
+
+.garden-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.4rem;
+  font-size: 0.64rem;
+  color: var(--text-secondary);
+}
+
+.garden-confirm {
+  opacity: 0.85;
+}
+
+.garden-reset {
+  font-family: inherit;
+  font-size: 0.62rem;
+  letter-spacing: 0.04em;
+  color: var(--text-secondary);
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: 99px;
+  padding: 0.14rem 0.6rem;
+  cursor: pointer;
+  transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.garden-reset:hover {
+  color: var(--text-primary);
+  border-color: var(--border-color-secondary);
+}
+
+.garden-reset-yes:hover {
+  color: #e0553f;
+  border-color: #e0553f;
+}
+
+/* ── The bed ───────────────────────────────────────────────────── */
+
+.garden-stage {
+  position: relative;
+  margin-top: 0.8rem;
+}
+
+.garden-scene {
+  border-radius: 10px;
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--garden-sky-1), var(--garden-sky-2));
+}
+
+.garden-svg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.garden-caption {
+  position: absolute;
+  top: 0.6rem;
+  left: 0.85rem;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.45rem;
+  max-width: 72%;
+  pointer-events: none;
+}
+
+.garden-caption-hint {
+  font-size: 0.58rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--text-secondary);
+  opacity: 0.6;
+}
+
+.garden-caption-whisper {
+  flex-basis: 100%;
+  font-size: 0.7rem;
+  font-style: italic;
+  line-height: 1.35;
+  color: var(--text-secondary);
+  opacity: 0.9;
+}
+
+/* ── Flowers ───────────────────────────────────────────────────── */
+
+.garden-flower {
+  transition: opacity 0.3s ease;
+}
+
+.garden-sway {
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+
+/* Swaying is a desktop luxury. On touch devices (and anything with a coarse
+   pointer, usually the phone) the bed stays still: one less thing to animate
+   while scrolling, and the flowers read exactly the same. */
+@media (hover: hover) and (pointer: fine) {
+  .garden-sway {
+    animation: garden-sway 8s ease-in-out infinite;
+  }
+}
+
+@keyframes garden-sway {
+  0%,
+  100% {
+    transform: rotate(calc(var(--garden-sway, 1deg) * -1));
+  }
+  50% {
+    transform: rotate(var(--garden-sway, 1deg));
+  }
+}
+
+.garden-stem {
+  fill: none;
+  stroke-linecap: round;
+}
+
+.garden-soil {
+  fill: var(--garden-soil);
+}
+
+.garden-soil-lip {
+  fill: var(--garden-soil-deep);
+}
+
+.garden-soil-edge {
+  stroke: var(--garden-soil-speck);
+  stroke-width: 1.1;
+  stroke-opacity: 0.45;
+}
+
+/* The glow is a radial gradient (see sceneDefsMarkup) rather than a blur
+   filter — same halo, but the browser doesn't have to rasterise a blur for
+   every open flower on every frame. */
+.garden-bloom-halo {
+  transition: opacity 0.4s ease;
+}
+
+/* ── The sky ───────────────────────────────────────────────────── */
+
+.garden-sun {
+  animation: garden-drift 90s ease-in-out infinite alternate;
+}
+
+/* Rays and the ring are opt-in per theme: a moon has neither. */
+.garden-sun-rays,
+.garden-orbit {
+  display: none;
+}
+
+[data-theme="light"] .garden-sun-rays,
+[data-theme="y2k-cyber"] .garden-sun-rays {
+  display: block;
+}
+
+[data-theme="y2k-cyber"] .garden-orbit {
+  display: block;
+}
+
+@keyframes garden-drift {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-15px, 8px);
+  }
+}
+
+.garden-flower.is-hovered .garden-sway {
+  filter: brightness(1.15);
+}
+
+.garden-flower.is-hovered .garden-bloom-halo {
+  opacity: 0.6;
+}
+
+/* A flower that opened in the last few minutes says so. */
+.garden-flower.is-fresh .garden-bloom-halo {
+  animation: garden-halo 2.8s ease-out 3;
+}
+
+@keyframes garden-halo {
+  0% {
+    opacity: 0.15;
+  }
+  45% {
+    opacity: 0.65;
+  }
+  100% {
+    opacity: 0.15;
+  }
+}
+
+/* ── Seed markers ──────────────────────────────────────────────── */
+
+.garden-seed {
+  cursor: pointer;
+}
+
+.garden-seed-shadow {
+  fill: var(--garden-seed-shadow);
+  opacity: 0.45;
+}
+
+.garden-seed-ring {
+  stroke: var(--garden-seed-ring);
+  stroke-width: 1.1;
+  stroke-opacity: 0.5;
+  transition: stroke-opacity 0.25s ease, stroke-width 0.25s ease;
+}
+
+.garden-seed-body {
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+}
+
+.garden-seed.is-bloomed .garden-seed-ring {
+  stroke-opacity: 0.85;
+}
+
+.garden-seed.is-bloomed .garden-seed-body,
+.garden-seed.is-hovered .garden-seed-body {
+  opacity: 1;
+}
+
+.garden-seed.is-hovered .garden-seed-ring {
+  stroke-opacity: 1;
+  stroke-width: 1.9;
+}
+
+/* The seed whose flower opens next breathes, so the interaction is findable.
+   Animating stroke only: no layout, no filters, cheap even on a phone. */
+.garden-seed.is-next .garden-seed-ring {
+  animation: garden-seed-pulse 2.8s ease-in-out infinite;
+}
+
+@keyframes garden-seed-pulse {
+  0%,
+  100% {
+    stroke-opacity: 0.3;
+    stroke-width: 1.1;
+  }
+  50% {
+    stroke-opacity: 0.95;
+    stroke-width: 1.8;
+  }
+}
+
+/* ── The card a seed opens ─────────────────────────────────────── */
+
+.garden-card {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 5;
+  /* Sized from its content, not from where it happens to sit: an absolutely
+     positioned box that only has `left` set would otherwise squeeze itself
+     against the panel edge. */
+  width: max-content;
+  max-width: 17rem;
+  padding: 0.6rem 0.7rem 0.55rem;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  box-shadow: 0 12px 30px var(--shadow-color);
+  opacity: 0;
+  visibility: hidden;
+  transform: translate(-50%, -100%);
+  transition: opacity 0.18s ease, visibility 0.18s ease;
+  pointer-events: none;
+}
+
+.garden-card.is-visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Little arrow, aimed at the seed that owns the card. */
+.garden-card::after {
+  content: "";
+  position: absolute;
+  left: var(--garden-arrow, 50%);
+  bottom: -5px;
+  width: 8px;
+  height: 8px;
+  background: var(--bg-primary);
+  border-right: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.garden-card.is-below::after {
+  bottom: auto;
+  top: -5px;
+  border-right: none;
+  border-bottom: none;
+  border-left: 1px solid var(--border-color);
+  border-top: 1px solid var(--border-color);
+}
+
+.garden-card-head {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.garden-card-dot {
+  flex: none;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+}
+
+.garden-card-name {
+  font-size: 0.76rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.garden-card-state {
+  margin-top: 0.15rem;
+  font-size: 0.64rem;
+  font-style: italic;
+  color: var(--text-secondary);
+}
+
+.garden-card-stages {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  list-style: none;
+  margin-top: 0.45rem;
+  padding-top: 0.45rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.garden-card-stages li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.7rem;
+  font-size: 0.63rem;
+  color: var(--text-secondary);
+}
+
+.garden-card-stages li span:first-child {
+  flex: 1 1 auto;
+  color: var(--text-primary);
+  opacity: 0.8;
+}
+
+/* The stamp stays on one line; the stage name gives way first. */
+.garden-card-stages li span:last-child {
+  flex: 0 0 auto;
+  white-space: nowrap;
+}
+
+.garden-card-more span {
+  font-style: italic;
+  opacity: 0.55;
+}
+
+.garden-card-note,
+.garden-card-whisper {
+  margin-top: 0.45rem;
+  font-size: 0.64rem;
+  line-height: 1.35;
+  color: var(--text-secondary);
+}
+
+.garden-card-whisper {
+  font-style: italic;
+  opacity: 0.85;
+}
+
+/* ── Theme fittings ────────────────────────────────────────────── */
+
+[data-theme="y2k-cyber"] .garden {
+  border-radius: 0;
+  box-shadow: 4px 4px 0 #000;
+}
+
+[data-theme="y2k-cyber"] .garden-scene {
+  border-radius: 0;
+}
+
+[data-theme="y2k-cyber"] .garden-clock {
+  color: var(--y2k-neon-green);
+  text-shadow: 0 0 14px rgba(0, 255, 65, 0.35);
+}
+
+[data-theme="y2k-cyber"] .garden-bar,
+[data-theme="y2k-cyber"] .garden-bar-fill,
+[data-theme="y2k-cyber"] .garden-reset {
+  border-radius: 0;
+}
+
+[data-theme="y2k-cyber"] .garden-card {
+  border-radius: 0;
+  box-shadow: 4px 4px 0 #000;
+}
+
+[data-theme="y2k-cyber"] .garden-card::after {
+  display: none;
+}
+
+@media (max-width: 720px) {
+  .garden {
+    padding: 0.9rem 0.85rem 0.75rem;
+  }
+
+  .garden-head {
+    flex-direction: column;
+    gap: 0.85rem;
+  }
+
+  .garden-next {
+    align-items: flex-start;
+    max-width: none;
+    width: 100%;
+    min-width: 0;
+  }
+
+  .garden-next-label {
+    text-align: left;
+    flex-wrap: wrap;
+  }
+
+  .garden-actions {
+    justify-content: flex-start;
+  }
+
+  .garden-caption {
+    position: static;
+    max-width: none;
+    padding: 0 0.2rem 0.5rem;
+  }
+
+  .garden-caption {
+    padding-bottom: 0.45rem;
+  }
+
+  .garden-caption-whisper {
+    display: none;
+  }
+
+  .garden-card {
+    max-width: min(15rem, 88vw);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .garden-sway,
+  .garden-sun,
+  .garden-seed.is-next .garden-seed-ring,
+  .garden-flower.is-fresh .garden-bloom-halo {
+    animation: none;
+  }
+
+  .garden-bar-fill {
+    transition: none;
+  }
+}
+
+/* ==========================================================================
+   Stylesheet entry point.
+
+   Every rule lives in one of the partials below; this file only says which
+   order they load in. That order is the cascade, so keep it: tokens first,
+   then page frame, then themes, then components and pages roughly in the
+   order they were written, then each component's later adjustments. Moving
+   an import can change which rule wins.
+
+   css-loader resolves these imports at build time, so the site still ships
+   (and loads) a single stylesheet — no runtime @import waterfall.
+   ========================================================================== */
 
