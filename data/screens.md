@@ -382,3 +382,7 @@ It was Just an Accident (2025)
 A Monster Calls (2016)
 
 > Recommendation from: Someone wrote on internet that this breaks your heart as much as the Bridge to Terabithia! I guess I'm a sucker for movies that break my heart in a good way.
+
+Lessons of Darkness (1992)
+
+> Recommendation from: Saw a video of a person chucking fire into oil spring. The synopsis was pretty interesting, a documentary about human self-destruction from a perspective of an alien! Wow!
