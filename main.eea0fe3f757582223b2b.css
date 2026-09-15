@@ -2638,6 +2638,13 @@ body.js-tooltips [data-tooltip]::after {
 /* shared layout + responsive overrides (TOC, mobile queries) (imported by styles/main.css) */
 
 /* Mobile CSS */
+/* Touch devices: larger touch targets for small nav buttons */
+@media (pointer: coarse) {
+  .sonar-info-btn {
+    padding: 8px;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-content {
     padding: 0 1rem;
