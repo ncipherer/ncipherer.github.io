@@ -176,7 +176,7 @@ How this prevents <unk> tokens in low-resource languages
 
 #### Challenges
 
-UTF-8 Byte Splitting Is Hurting Math Symbols and not preserving Math intergrity for math sequences which are not that frequent:
+UTF-8 byte splitting is hurting math symbols: it does not preserve the integrity of math sequences that are not frequent in the corpus:
 "∫" = bytes [226, 136, 171] got split into:
 4366 = [226, 136] (incomplete)
 171 = [171] (remainder)

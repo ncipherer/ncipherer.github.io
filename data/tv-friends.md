@@ -26,7 +26,7 @@ Ross becomes just a depressed serial-divorcee. Anyone who is told they'd go thro
 
 Monica transforms from a lovely girl into an over-controlling maniac, willing to throw a frenzy and ruin her friend’s wedding because she couldn’t be in control.
 
-Phoebe went from a chill, empathetic stoner (I hope?) - who wouldn't even keep a football-phone because it wasn't hers - to a really mean person, doing vile things like telling Chandler who Monica actually went to the room for, or bringing that soul-mate guy to Monica when she was already married. Just vile.
+Phoebe went from a chill, empathetic person — the one who wouldn't even keep a football-phone because it wasn't hers — to someone who does genuinely unkind things: telling Chandler who Monica actually went to the room for, or bringing that soul-mate guy to Monica when she was already married. It's hard to watch because you liked her first.
 
 Chandler and Rachel were the only ones whose characters showed growth, I feel. But that's not the topic of this note, so I'll not go into that much.
 
@@ -40,7 +40,7 @@ And you can trace same character arc mistakes with,
 
 I think there's a lesson here somewhere. From childhood, we're taught to differentiate ourselves through our uniqueness. But if we associate our entire self-worth and personality with that one unique thing, we risk becoming so different we aren't a real person anymore.
 
-I remember a guy in my school who used to say these cute one-liners to teachers "I love you" or "I am proud of you" whenever they scolded him. For first few weeks, the entire class and even teachers joined in the laughter. Then, his quirky one-liners stopped being sudden and pretty predictable for everyone (Teacher asks him to stand up > Teacher says something snarky > He blurts out a one-liner) and were met with silence now; the scolding wouldn't stop even after a witty line. He assumed he needed to lean more into his quirk, the thing that made him "special", and would make some outrageous and borderline offensive remarks. I don't think anyone ever laughed again at his one-liners.
+I remember a guy in my school who used to say these cute one-liners to teachers — "I love you", "I am proud of you" — whenever they scolded him. For the first few weeks, the whole class and even the teachers joined in the laughter. Then the one-liners stopped being sudden and became predictable to everyone (teacher asks him to stand up > teacher says something snarky > he blurts out a one-liner), and they were met with silence; the scolding wouldn't stop even after a witty line. He read that as a sign he needed to lean harder into his quirk, and started going for outrageous remarks instead. Nobody laughed. I still feel bad about how that went for him, and I think about it every time I'm tempted to double down on the one thing I'm known for.
 
 ## What made me think of this?
 

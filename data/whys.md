@@ -1,6 +1,6 @@
-https://www.youtube.com/watch?v=u9hauSrihYQ
-To explain Rayleigh scattering which causes sky to be blue:
-Explain how blue eyes don't have blue pigment in them.
+A running list of questions I write down when I'm bored, on a long walk, or right after someone's confident explanation of something turns out to be a myth. Some I've chased to the bottom. Some are still open, which is the fun part.
+
+The two that started it: why the sky is blue (Rayleigh scattering), and why blue eyes contain no blue pigment at all.
 
 1. Why does a mirror flip left and right but not up and down?
    Dive into: It doesn’t! Mirrors reverse depth (front/back), not left/right.
@@ -57,9 +57,9 @@ Explain how blue eyes don't have blue pigment in them.
 17. Why do we use thumbs up/down for approval?
     Dive into: Roman gladiator verdict myths vs. Persian silk-trade hand signals.
 
-18. How do I know colours I see are same as you?
+18. How do I know the colours I see are the same as the ones you see?
     Dive into: Philosophy of mind (qualia), neuroscience of perception, linguistics of color categorization,
     and the physiology of cone cells.
 
-19. How did screensavers saved your screen?
+19. How did screensavers save your screen?
     CRT monitors and image frozen on screen would result in permanent impression.

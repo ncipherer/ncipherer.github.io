@@ -31,7 +31,7 @@
 
 > I think I just watched it for the sake of nostalgia for the intelligent comedy movies we used to have. Songs were known, as I remember they used to come on Doordarshan at 7 PM regional program of latest songs. Also remembered Ayesha Takia used to come in the newspaper after Wanted released.
 > 
-> Recommendation from: Entire movie is on YouTube lol
+> Recommendation from: None. The whole film is on YouTube. I hadn't seen it since school.
 
 [x] Dhurandhar: The Revenge (2026)
 
@@ -55,7 +55,7 @@
 
 > So now I need to be scared that AI may not only take my job but my life too? Nice. I liked that the movie was very predictable after a point but still they managed to make it fun. Warning: Do not watch it while eating food, as it may be a bit too gory for that lol
 > 
-> Recommendation from: Synopsis sold me.
+> Recommendation from: None. The synopsis was enough for me.
 
 [x] Prisoners (2013)
 
@@ -79,7 +79,7 @@
 
 > Not a bad movie. Some scenes were just too drawn out. The FBI person just seemed stupid honestly, flirting with the victim and not keeping sure-shot perpetrators under continuous surveillance. But it's a good time-pass watch.
 > 
-> Recommendation from: Random video showing the scene with cop ignoring masked people entering the bank. Went in expecting it to be a funny movie! Realized it is Ben Affleck's directorial!
+> Recommendation from: A random video of the scene where the cops ignore masked men walking into a bank — I went in expecting a comedy and found out it's Affleck's direction.
 
 [x] The Thinking Game (2024)
 
@@ -240,7 +240,7 @@ Three of Us (2022)
 
 Aamir (2008)
 
-> Recommendation from: I've heard about this movie for a long time so!
+> Recommendation from: I'd heard about this one for years, Jaideep in a soft role will be a treat!
 
 Kabul Express (2006)
 
@@ -296,7 +296,7 @@ Ladies First (2026) (tt34611082)
 
 Manorama Six Feet Under (2007)
 
-> Recommendation from: Some random video recommendation
+> Recommendation from: I remember hearing about this movie as a kid, so added it to the list.
 
 8x10 Tasveer (2009) (tt1105709)
 
@@ -361,7 +361,7 @@ Roman Holiday (1953)
 
 Serpico (1973)
 
-> Recommendation from: Random YouTube short. Never seen Pacino's 70s acting.
+> Found it in a random YouTube short. Never seen Pacino's 70s acting.
 
 Party (1984) (tmdb131318)
 
@@ -369,11 +369,11 @@ Party (1984) (tmdb131318)
 
 Spotlight (2015)
 
-> Recommendation from: Random YouTube short.
+> Recommendation from: Found it in a random YouTube short.
 
 Taste of Cherry (1997)
 
-> Recommendation from:  Random YouTube short. Iranian cinema is always intriguing.
+> Recommendation from: Random YouTube short. Iranian cinema is always intriguing.
 
 It was Just an Accident (2025)
 

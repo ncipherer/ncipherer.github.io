@@ -1,1 +1,0 @@
-Participated in a hackathon, no fun left.

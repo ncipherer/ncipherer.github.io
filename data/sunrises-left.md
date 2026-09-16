@@ -6,16 +6,18 @@ In the first week, he felt at peace. Almost like a load off his shoulders and mi
 
 But soon, he realized, he wasn't being fair to himself or her. Or to the thousands of people he'll meet in the future.
 
-He had always been a good, calm, kind and secure person — like a koi pond — until he entered that relationship. He dropped all his guards to give love a chance without any boundaries, and all his insecurities, vices, weaknesses, and toxic traits surfaced like dead fish in that same koi pond. This relationship showed him that he wasn't as patient, kind, or forgiving as he had thought he was.
+He had always been a good, calm, kind and secure person — like a koi pond — until he entered that relationship. He dropped all his guards to give love a chance without any boundaries, and without boundaries, his insecurities and anxieties surfaced in that same koi pond. This relationship showed him that even a calm person can lose their footing when they don't protect their own boundaries.
 
-But these flaws can't be excuses, right?
+But that can't be an excuse, right?
 
 > "[Milkhya] Every time the gravel will not be as big for people to notice it, so be such that no gravel can be an excuse.<sup><u>[1](https://www.youtube.com/watch?v=xy42tDw4k5Y)</u></sup>"
 > <cite>— Milkha Singh's coach, after Milkha got selected for the nationals despite losing a race due to a piece of gravel in his foot</cite>
 
-He too can't expect her to see the "gravels" in his life or what he was going through. That would be an excuse. He just hopes he never has an excuse in the future, and that no one ever sees this side of him again.
+He too can't expect her to see the "gravels" in his life or what he was going through. That would be an excuse. He just hopes he never has an excuse in the future, and that he stays grounded enough that outside friction doesn't knock him off balance.
 
-He hopes that some day, the definition of emotional intelligence will also include when someone’s heart is into it, even if their tools aren’t sharp yet. He was still figuring things out, learning how to untangle his survival habits. He was yet to find a language to navigate conflict between them. He liked them together for the potential, for what things would have been if everything aligned, for the softness and kindness that she showed _sometimes_. But none of it was reality, none of it was her — or so it felt from where he stood.
+He had known her well enough as an acquaintance, as a friend. But that didn't account for knowing her as a partner. Knowing someone in friendship doesn't mean knowing how you'll navigate a relationship together — the shared boundaries, conflict, and stress. That was a lesson, and one he'll keep in mind.
+
+He hopes that some day, the definition of emotional intelligence will also include when someone’s heart is into it, even if their tools aren’t sharp yet. He was still figuring things out, learning how to navigate conflict between them. He liked them together for the potential, for what things would have been if everything aligned, for the softness and kindness that she showed _sometimes_. But none of it was reality, none of it was her — or so it felt from where he stood.
 
 He believes that regret is a cruel storyteller. It rewrites the past with the wisdom of the present, convinces you that you should have known better when you actually had no way of knowing at all. So he keeps no regrets in life. He makes mistakes, and then does the work to ensure the same mistakes don't happen again on a second chance he'll get sometime with someone else in future. He forgives himself for not knowing earlier what only time could teach.
 

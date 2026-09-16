@@ -277,22 +277,6 @@
       "contentPath": "i-just-wanna-see.md"
     },
     {
-      "id": "11",
-      "title": "AI doom may rather look like a...?!",
-      "readingTime": "1 min",
-      "publishDate": "2025-10-22",
-      "blogLink": "ai-apocalypse",
-      "githubLink": "",
-      "hidden": true,
-      "pinned": false,
-      "links": [],
-      "tags": [
-        "ai",
-        "politics"
-      ],
-      "contentPath": "ai-apocalypse.md"
-    },
-    {
       "id": "12",
       "title": "Why?!",
       "readingTime": "4 min",
@@ -303,7 +287,8 @@
       "pinned": false,
       "links": [],
       "tags": [
-        ""
+        "science",
+        "curiosity"
       ],
       "contentPath": "whys.md"
     },
@@ -501,27 +486,6 @@
       "contentPath": "why-travel.md"
     },
     {
-      "id": "24",
-      "title": "Seeing Through the Model's Eyes: Visualizing Cross-Lingual Attention in Math Reasoning",
-      "readingTime": "1 min",
-      "publishDate": "2026-01-02",
-      "blogLink": "llm-scratch-attention",
-      "githubLink": "",
-      "hidden": true,
-      "pinned": false,
-      "links": [
-        {
-          "url": "https://www.youtube.com/watch?v=eMlx5fFNoYc",
-          "description": "Attention in transformers (3Blue1Brown)"
-        }
-      ],
-      "tags": [
-        "ai",
-        "learning"
-      ],
-      "contentPath": "month-two-llm-scratch-attention.md"
-    },
-    {
       "id": "25",
       "title": "Hacker's Manifesto",
       "readingTime": "2 min",
@@ -544,21 +508,6 @@
         "philosophy"
       ],
       "contentPath": "manifesto.md"
-    },
-    {
-      "id": "26",
-      "title": "Programming has changed",
-      "readingTime": "1 min",
-      "publishDate": "2026-02-22",
-      "blogLink": "programming-changed",
-      "githubLink": "",
-      "hidden": true,
-      "pinned": false,
-      "links": [],
-      "tags": [
-        "ai"
-      ],
-      "contentPath": "programming-changed.md"
     },
     {
       "id": "27",

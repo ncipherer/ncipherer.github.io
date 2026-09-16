@@ -1,4 +1,4 @@
-> I wrote this a decade ago in 2016 and it was sitting in my email drafts until today. I feel this explains why I naturally feel drawn towards solo travelling so much and how far I've come from that reserved quite kid, who used to second guess every interaction. I wanted to talk to strangers and people even then, just didn't knew how. Well now I know. Maybe this hits harder right now because I've barely travelled in past 2 years, here's to expecting that changes this year xD
+> I wrote this a decade ago in 2016 and it was sitting in my email drafts until today. I feel this explains why I naturally feel drawn towards solo travelling so much, and how far I've come from that reserved, quiet kid who used to second-guess every interaction. I wanted to talk to strangers even then — I just didn't know how. Well, now I know. Maybe this hits harder right now because I've barely travelled in past 2 years, here's to expecting that changes this year xD
 
 First, let me tell you something. I'm really bad at initiating conversations.
 

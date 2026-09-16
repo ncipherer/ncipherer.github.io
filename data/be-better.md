@@ -28,7 +28,7 @@ Wanting to know where you stand isn't the problem. How I responded when I didn't
 
 When I'm with someone I'm fully there. But in between? Nothing. No check-in texts, no random calls, no "hey how are you doing." I used to say that's just how I'm wired - depth over frequency. There's truth in that. But it was also just a convenient way to describe a choice I kept making without really examining it.
 
-The friendships that made this obvious are ones I outgrew. They weren't unlearning the shit we had been conditioned to; they were flexing their ignorance instead. So I stopped showing up. No fight, no conversation, just a slow fade. A relationship I don't feed isn't a relationship, it's a memory - and I have more of those than I want to admit.
+The friendships that made this obvious are ones I outgrew. They weren't unlearning the things we had all been conditioned into; they were doubling down on them instead. So I stopped showing up. No fight, no conversation, just a slow fade. That was the easy road and I know it. A relationship I don't feed isn't a relationship, it's a memory — which is exactly the thought I'm sitting with as I write this.
 
 ## Silence
 
