@@ -390,3 +390,7 @@ Lessons of Darkness (1992)
 Millennium Actress (2001)
 
 > Recommendation from: Evidently, it's 25th anniversary of this movie and people are just raving about it, and I had never heard it, so it goes on the watchlist!
+
+Once Upon a Time in America (1984)
+
+> Recommendation from: 4 hrs run time! Robert De Niro. How can this not be good?!

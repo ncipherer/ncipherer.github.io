@@ -1,4 +1,4 @@
-> (Quick note before I start: names are deliberately absent here. These are my sides of two stories — the people in them would tell them differently, and learning to sit with that is honestly half the point of this essay.)
+> (Quick note before I start: These are my sides of two stories — the people in them would tell them differently, and learning to sit with that is honestly half the point of this essay.)
 
 I have been through therapy twice. Both times, I walked in genuinely wanting an external perspective — not validation. I put in all the efforts. I wasn't pushing back or treating it like a debate. But what I got versus what I actually needed turned out to be very different things.
 
@@ -49,11 +49,15 @@ I lacked that empathy towards every partner. Because even though I knew their ch
 
 ## Therapy works?
 
+There's a big difference between real psychotherapy and what's basically become "therapy culture." But as standards in the field have slipped, that culture has quietly crept into actual sessions. It's gotten to the point where even licensed, practicing therapists don't seem to know the difference anymore.
+
 I've started noticing a pattern. Therapists have this incredibly sophisticated vocabulary now for toxic relationships — boundaries, trauma, narcissism, gaslighting — and they're very good at spotting when something is unhealthy. But in my experience, they often seem less equipped to help people stay in difficult but meaningful connections.
 
 There's this reflex where any serious stress gets read as evidence that a relationship is broken, when honestly, even healthy relationships generate strain. Loving people disappoint you. Friends misunderstand you. Family stresses you out. If the goal is to eliminate all of that, you're not fixing anything — you're just learning to walk away. Walking away solves one problem, but it doesn't teach you how to tolerate disappointment, repair something, or take responsibility for your own part in a mess.
 
 Therapy can be a good option if you're in freefall and need something to grab onto. It catches you. But if you never take the cast off, your muscles atrophy. You forget how to walk normally. You start protecting the leg even after it's healed.
+
+I think therapy is mostly a way to delay your life.
 
 I don't need an echo chamber when I go to therapy. I need someone who can help me understand my own blind spots. They don't need to be just a therapist to do that. Over the last year, I've gotten better at finding those people.
 
