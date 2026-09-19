@@ -163,7 +163,8 @@
       ],
       "tags": [
         "love",
-        "fiction"
+        "fiction",
+        "relationships"
       ],
       "contentPath": "sunrises-left.md"
     },
@@ -178,7 +179,8 @@
       "pinned": false,
       "links": [],
       "tags": [
-        "psychology"
+        "psychology",
+        "relationships"
       ],
       "contentPath": "be-better.md"
     },
@@ -287,8 +289,7 @@
       "pinned": false,
       "links": [],
       "tags": [
-        "science",
-        "curiosity"
+        "science"
       ],
       "contentPath": "whys.md"
     },
@@ -404,7 +405,7 @@
       "pinned": true,
       "links": [],
       "tags": [
-        "photography"
+        "cinema"
       ],
       "contentPath": "photos.md"
     },
@@ -419,7 +420,8 @@
       "pinned": false,
       "links": [],
       "tags": [
-        "philosophy"
+        "philosophy",
+        "relationships"
       ],
       "contentPath": "purpose.md"
     },
@@ -609,7 +611,8 @@
       "tags": [
         "psychology",
         "love",
-        "work"
+        "work",
+        "relationships"
       ],
       "contentPath": "therapy-works-question.md"
     }

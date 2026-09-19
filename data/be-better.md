@@ -45,4 +45,4 @@ That's a deliberate choice. Anything that's between me and someone else I'll say
 
 But I've also been running a quieter story underneath that: that the people I love already have enough on their plate - building a life, growing a family, their own weight - so mine doesn't really count. And the same people keep asking me to share because they actually want to hear it, which kind of makes the excuse fall apart. I wasn't protecting them. I was just deciding on their behalf that they couldn't hold it, which isn't fair to them or to me.
 
-I'm still working on figuring out how to honour these contrasting ideas within me.
+Keeping silent is my first thought — the old conditioning telling me to hide. Learning to speak up and trust them is my second. I'm still working on figuring out how to honour these contrasting ideas within me.
