@@ -49,6 +49,14 @@
       "checked": true
     },
     {
+      "title": "Aarakshan",
+      "year": "2011",
+      "director": "Prakash Jha",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTUwMjIxNTEyM15BMl5BanBnXkFtZTcwNjM0Njk5NQ@@._V1_SX300.jpg",
+      "imdbID": "tt1848771",
+      "checked": true
+    },
+    {
       "title": "Chasing the Moon",
       "year": "2019",
       "director": "Robert Stone",
@@ -369,6 +377,14 @@
       "checked": true
     },
     {
+      "title": "Phantom",
+      "year": "2015",
+      "director": "Kabir Khan",
+      "poster": "https://m.media-amazon.com/images/M/MV5BMTk5NDE2NDUxM15BMl5BanBnXkFtZTgwOTA3NzI1NjE@._V1_SX300.jpg",
+      "imdbID": "tt3469244",
+      "checked": true
+    },
+    {
       "title": "Primal Fear",
       "year": "1996",
       "director": "Gregory Hoblit",
@@ -641,5 +657,5 @@
       "cover": "https://covers.openlibrary.org/b/isbn/9781782276135-M.jpg"
     }
   ],
-  "generated": "2026-09-18"
+  "generated": "2026-09-19"
 }

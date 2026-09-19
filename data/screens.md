@@ -142,6 +142,27 @@
 > 
 > Recommendation from: Chal Chitra!
 
+[x] Aarakshan (2011) 
+> I ended up watching it as a part of Air India in-flight entertainment, I had nothing else to do!
+> 
+> I didn't like the movie as much as I did Prakash Jha's earlier work (Rajneeti and Gangaajal remain some of the best made movies in Bollywood).
+>
+> The movie tries to do a LOT without much set up. Cast based discrimination is a very loaded topic, and to be fair the early half of the movie really does justice to the sensitivity of the topic. The debates, the dialogue, and the questions raised were so sensitive and sharp that they actually made me rethink a lot.
+> 
+> Then for some reason, and I still don't understand why, the movie does a sudden 180 and pivots into coaching mafia and commercialisation of education. It just doesn't make sense. Deepika is so under utilised, no depth to role, just trying to manage emotions of all the men in the movie and vice versa.
+> 
+> This could have been a really great attempt at breaching a sensitive subject, but what a miss!
+> Recommendation from: After the Jantar Mantar protests, post education minister resignation, a small group of people started protesting against reservation. Since the topic was in the news, and I saw the movie title in the library available in flight, I decided to watch it.
+
+[x] Phantom (2015)
+> I watched it while on a 102 fever, nothing else to do!
+> 
+> I'm surprised this didn't do well commercially. The story is very tight, an absolute banger of a soundtrack (Pritam!), Saif and his action is top notch. And of course anything which soothes the wounds of 26/11 even fictionally, is bound to be enjoyable.
+> 
+> Kabir Khan loses the screenplay at quite a few points though. Saif's character missed strong emotional motivation. Katrina's character was underwritten. And a RAW chief running a massive international operation completely without government clearance just makes no sense.
+> Recommendation from: Kept hearing how this is such an underrated gem. Then I heard nachda song and added this to watchlist.
+
+
 [x] Obsession (2026) (tt37287335)
 
 > Strange movie, honestly. Recommended by someone I met on the trek - I only finished it because we watched it together.
@@ -202,7 +223,7 @@
 > Recommendation from: Gunda recommended it.
 
 [x] Main Vaapas Aaunga (2026) (tt37333137)
-> Just finished the movie, it's 4:30 AM right now. It's been a while since I cried watching a movie — even as I write this, tears are rolling down my cheeks. All I can hope is that the love I give in my life matches this. I genuinely don't expect it to be returned; I just want to be able to give it. I don't mind dying with all the pain this drop of poison in my heart brings, as long as I know the same poison once coursed through my veins and gave me the thrill of being alive — because of someone.
+> Just finished the movie, it's 4:30 AM right now. Diljit has already made me cry twice while watching a movie this year — even as I write this, tears are rolling down my cheeks. All I can hope is that the love I give in my life matches this. I genuinely don't expect it to be returned; I just want to be able to give it. I don't mind dying with all the pain this drop of poison in my heart brings, as long as I know the same poison once coursed through my veins and gave me the thrill of being alive — because of someone.
 > There's a very moving perspective that Pali provides — that the refugees never shared their stories because they feared it would poison the generations that followed, if they ever spoke of the horrors that happened to the women in the family. So poignant.
 > And the imagery — the earring left behind in the ruins, just in the hope that they'd come back someday to find it; never once mentioning Hindu or Muslim during the conflict but instead calling them Martians, because they can't fathom that the people around them could take this form — they have to be from some other planet. It all ties together so beautifully. And then Naseer Sahab just elevates everything with his acting, over and over. Vedant and Sharvari are excellent at capturing the feeling of young love and all the emotions that comes with it.
 > At the end of this movie, one is left hoping that no more divides tear through this world, but that's wishful thinking. The end credits shatter this illusion immediately - with a montage of events from Gaza and Syria, a quiet reminder that there is no end to this torture. Eighty years later, only the location has changed.
