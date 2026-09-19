@@ -240,7 +240,7 @@
 > Recommendation from: It's an Imtiaz Ali film, and a colleague from a class recommended it.
 
 [x] The Island with Bear Grylls (2015) (tt3725394)
-> I only watched the second season. Producers accepted that they intentionally left out pigs on the island (likely sedated ones on woman island), and that kind of tainted the experience for me.
+> I only watched the second season. I knew from the start, based on internet theories, that pigs and crocodiles were left out on the island to emulate an actual wilderness situation on an island they could get middle of nowhere. And honestly, I am more than okay with that because the men island actually taught me a few things. But the women island felt too "resourced" - likely sedated pigs, so many coconuts just lying there, a random man just giving out a fish - and that kind of tainted the experience for me; I skipped most of those episodes.
 > 
 > I really love how deeply this show explores raw human behavior, looking at the tough decisions people have to make, pecking order which allows things to move along and what kind of behavior helps and hinders in survival situations - even exploring themes like classism in British societies, how the only class which matters is the survival class in these situations. A good example of this is Vic — he was an absolutely resourceful guy and definitely someone you would like around for his personality and helpful nature, the leadership.
 >
