@@ -47,6 +47,11 @@ Now I realize the real issue wasn't the topics we were fighting about — it was
 Only now I have someone who is making me start to realize that one of my biggest blind spots in relationships has been patience. I know only now that every partner needs to understand the pattern of why the person in front of them is the way they are. Almost like an origin story of their partner.
 I lacked that empathy towards every partner. Because even though I knew their childhood, I had no idea why they would get annoyed at certain topics, why their reaction to certain small things was such a knee jerk response. I assumed that knowing them as a friend for years meant knowing them as a partner. That was false.
 
+> “It’s dark because you are trying too hard. Lightly child, lightly. Learn to do everything lightly. Yes, feel lightly even though you’re feeling deeply. Just lightly let things happen and lightly cope with them. Lightly, lightly – it’s the best advice ever given me. So throw away your baggage and go forward. There are quicksands all about you, sucking at your feet, trying to suck you down into fear and self-pity and despair. That’s why you must walk so lightly. Lightly my darling.”
+> <cite>— Aldous Huxley</cite>
+
+Instead of clenching my fists, overanalyzing every discrepancy, or demanding clarity the moment uncertainty hits, I am trying to hold things lightly. Patience isn't about apathy; it's about giving someone the time and space to unravel at their own pace without letting your own anxieties drag you both down into the quicksand.
+
 ## Therapy works?
 
 There's a big difference between real psychotherapy and what's basically become "therapy culture." But as standards in the field have slipped, that culture has quietly crept into actual sessions. It's gotten to the point where even licensed, practicing therapists don't seem to know the difference anymore.
