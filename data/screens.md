@@ -239,6 +239,17 @@
 > At the end of this movie, one is left hoping that no more divides tear through this world, but that's wishful thinking. The end credits shatter this illusion immediately - with a montage of events from Gaza and Syria, a quiet reminder that there is no end to this torture. Eighty years later, only the location has changed.
 > Recommendation from: It's an Imtiaz Ali film, and a colleague from a class recommended it.
 
+[x] The Island with Bear Grylls (2015) (tt3725394)
+> I only watched the second season. I ended up skipping most of the women’s episodes because they eventually started feeling like a waste of time, but the men's side was excellent.
+> 
+> I really love how deeply this show explores raw human behavior, looking at the tough decisions people have to make and what kind of behavior helps and hinders in survival situations. A good example of this is Vic—he was an absolutely resourceful guy and definitely someone you would like around for his personality and helpful nature, though he struggled with leadership.
+>
+> "That's the problem with intelligent people. They think they are cleverer than the people they are doing the job for. They think that they can out-think them even in things which don't require much thinking. So they end up being a negative contribution in all the manual work" - Vic
+>
+> The absolute best part is the commentary from Bear Grylls. His insights are incredibly helpful because he breaks down exactly why people are doing what they are doing, clearly explaining both the good and the bad aspects of their choices. It’s a great watch.
+> 
+> Recommendation from: Randomly came across this show in some random edit video about men vs women from season 2, so decided to watch the season 2.
+
 I Saw the Devil (2010)
 
 > Recommendation from: The director's quote that the idea of having a revenge without destroying yourself is impossible. Evidently the most honest revenge movie. I thought I should give it a shot!
