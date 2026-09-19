@@ -21,6 +21,7 @@
 [x] Mahaan (2022)
 
 > The movie is close to 3 hours of runtime but I think that's still too little for the storytelling it attempts to achieve. This depth and essence of characters is a pretty new thing in Indian cinema, with somewhat Tarantino vibes.
+> 
 > On one side we're seeing all the usual gang stuff. But then there's the other side which is exploring all the philosophical stuff - Where is the fine line between belief and morality? Is the extreme of a moral ideology moral too? Are you truly moral or suppressing desire because you never got a chance to act on it? How do you know if your ideals are fragile (that a single statement from a beggar can disrupt them)?
 > (We already know enough controversial stuff written about Gandhi himself and his extreme explorations around these conflicts)
 > Well, you can enjoy the fight choreography and great music too! :)
@@ -89,7 +90,8 @@
 
 [x] A Class Divided (tt0257489)
 
-> Genius documentary! I fully knew what was going to happen in this based on the short clip I saw of it, but even then it left me speechless. There is something very powerful about good teachers and sadly this world doesn't have enough of them. I don't think anyone would ever see this, but here's the <a href="https://www.youtube.com/watch?v=1mcCLm_LwpE">LINK</a>.
+> Genius documentary! I fully knew what was going to happen in this based on the short clip I saw of it, but even then it left me speechless. There is something very powerful about good teachers and sadly this world doesn't have enough of them. I don't think anyone would ever see this on my recommendation, but here's the <a href="https://www.youtube.com/watch?v=1mcCLm_LwpE">LINK</a>.
+> 
 > Actually, you know what, drop me a text/mail with the title "Hasta la vista, maybe" if you read this; I'd be most delighted to realize someone out there actually saw my recommendations!
 > 
 > Recommendation from: A now-deleted Reddit post which shared a small snippet of this episode
@@ -108,6 +110,7 @@
 [x] The Big Short (2015)
 
 > A good reminder of what lengths rich people would go to to ruin this world. For some reason I felt like garbage myself after watching this, even though I was like 10 years old when all this happened. Why did I feel like this? I better keep it to myself.
+> 
 > Love the cameos to explain complex financial lingo because I knew nothing of it otherwise!
 > 
 > Recommendation from: Been on my mind for quite some time now, finally watched it.
@@ -160,6 +163,7 @@
 > I'm surprised this didn't do well commercially. The story is very tight, an absolute banger of a soundtrack (Pritam!), Saif and his action is top notch. And of course anything which soothes the wounds of 26/11 even fictionally, is bound to be enjoyable.
 > 
 > Kabir Khan loses the screenplay at quite a few points though. Saif's character missed strong emotional motivation. Katrina's character was underwritten. And a RAW chief running a massive international operation completely without government clearance just makes no sense.
+> 
 > Recommendation from: Kept hearing how this is such an underrated gem. Then I heard nachda song and added this to watchlist.
 
 
@@ -206,16 +210,19 @@
 
 
 [x] DC (2026)
-> I really love Lokesh as a director, and discovering him as an actor is a delight too. Just like in the movies he directs, you see a nod to international influences in a way that still feels distinctly Indian.
-> Wamiqa is breathtaking in her role—the emotions and madness are portrayed so convincingly.
+> I really love Lokesh as a director, and discovering him as an actor is a delight too. Just like in the movies he directs, you see a nod to international influences in a way that still feels distinctly Indian. Wamiqa is breathtaking in her role—the emotions and madness are portrayed so convincingly.
+>
 > The first impression anyone would have is that this is just another South Indian movie glorifying violence and gangs, but it actually offers a fresh perspective on the grief that drives it.
+> 
 > The movie is pretty long, but you really don't feel bored at any point. The score carries the movie throughout, almost acting as a protagonist. I think some scenes you've seen in a hundred times in other gangster movies are really enjoyable because they are amped up by the music.
 >
 > Recommendation from: Newly released movie.
 
 [x] Operation Safed Sagar (2026)
 > This is such a great production. Basically, everything that Fighter wanted to be — supposedly India's answer to Top Gun — this one comes very close to it. The tactics, the jugaads. I was aware of most of the details, but even for me, a lot of it was new, and I was surprised to learn that it was actually fact and not something they spun up for the fiction.
+> 
 > It also shows how much weight good leadership carries in such moments. Vajpayee's call to keep the Air Force from crossing the LOC was such forward thinking, knowing fully well that the enemy would try to push the LOC marker using that in international forums as an excuse, and you see the same thing was tried with the captured soldiers.
+> 
 > I really love the aerial action shots — they are genuinely stunning and feel very real, really amped up the quality, and that obviously improves the experience while watching it.
 > Some parts of the movie might be a little too much emotionally, since India has a history of being the good guy and being punished for that.
 > A fantastic work of art!
@@ -224,8 +231,11 @@
 
 [x] Main Vaapas Aaunga (2026) (tt37333137)
 > Just finished the movie, it's 4:30 AM right now. Diljit has already made me cry twice while watching a movie this year — even as I write this, tears are rolling down my cheeks. All I can hope is that the love I give in my life matches this. I genuinely don't expect it to be returned; I just want to be able to give it. I don't mind dying with all the pain this drop of poison in my heart brings, as long as I know the same poison once coursed through my veins and gave me the thrill of being alive — because of someone.
+> 
 > There's a very moving perspective that Pali provides — that the refugees never shared their stories because they feared it would poison the generations that followed, if they ever spoke of the horrors that happened to the women in the family. So poignant.
+> 
 > And the imagery — the earring left behind in the ruins, just in the hope that they'd come back someday to find it; never once mentioning Hindu or Muslim during the conflict but instead calling them Martians, because they can't fathom that the people around them could take this form — they have to be from some other planet. It all ties together so beautifully. And then Naseer Sahab just elevates everything with his acting, over and over. Vedant and Sharvari are excellent at capturing the feeling of young love and all the emotions that comes with it.
+> 
 > At the end of this movie, one is left hoping that no more divides tear through this world, but that's wishful thinking. The end credits shatter this illusion immediately - with a montage of events from Gaza and Syria, a quiet reminder that there is no end to this torture. Eighty years later, only the location has changed.
 > Recommendation from: It's an Imtiaz Ali film, and a colleague from a class recommended it.
 
