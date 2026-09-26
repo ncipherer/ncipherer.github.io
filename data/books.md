@@ -27,4 +27,6 @@ Anxious People (978-1501160837)
 
 > Recommendation from: Someone I met on the trek.
 
-The Back of the Napkin (978-1591841999)
+The Lessons of History (978-0671413330)
+
+> Recommendation from: Heard about this from the Shopify CEO, and I love history!
