@@ -164,6 +164,7 @@ Kuch Khwaab Thay Mere | Sahir Ali Bagga | https://www.youtube.com/watch?v=9Bw_gw
 Deewana Deewana | A R Rahman | https://www.youtube.com/watch?v=dcvlA3u3POM
 Madno | Chinmayi Sripada | https://www.youtube.com/watch?v=UydToKtwyx4
 Zindagi Ye | Rahat Fateh Ali Khan | https://www.youtube.com/watch?v=ReizYckQ9d8
+Alvida Alvida | Nabeel Shaukat Ali | https://www.youtube.com/watch?v=KaUESRM2nt4
 
 ## TrAMce
 
@@ -422,3 +423,4 @@ Tum Ho Mera Pyar | KK | https://www.youtube.com/watch?v=Pcy1hfY6egc
 Nazrein Karam | KK, Shreya Ghoshal | https://www.youtube.com/watch?v=VWbnpjhLVAU
 Shart | Sonu Nigam | https://www.youtube.com/watch?v=w75QN-8qiI0
 Naina Ashq Na Ho | Arijit Singh | https://www.youtube.com/watch?v=hWJxJhsVWio
+Jao na | Sohail Sen, Javed Akhtar | https://www.youtube.com/watch?v=HBv2ifhPzi0

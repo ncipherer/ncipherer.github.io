@@ -201,6 +201,14 @@
       "checked": true
     },
     {
+      "title": "Jaane Bhi Do Yaaro",
+      "year": "1983",
+      "director": "Kundan Shah",
+      "poster": "https://m.media-amazon.com/images/M/MV5BNzhhN2NlZmQtZDFmMi00ODA3LThjNTQtMmFhMzViZDcxZWFkXkEyXkFqcGc@._V1_QL75_UY562_CR24,0,380,562_.jpg",
+      "imdbID": "tt0085743",
+      "checked": true
+    },
+    {
       "title": "Kabhi Kabhie",
       "year": "1976",
       "director": "Yash Chopra",
@@ -647,6 +655,12 @@
       "cover": "https://covers.openlibrary.org/b/isbn/9781797113050-M.jpg"
     },
     {
+      "title": "The Back of the Napkin",
+      "isbn": "9781591841999",
+      "author": "Dan Roam",
+      "cover": "https://covers.openlibrary.org/b/isbn/9781591841999-M.jpg"
+    },
+    {
       "title": "The Last Queen",
       "isbn": "9789354894152",
       "author": "Chitra Banerjee Divakaruni",
@@ -665,5 +679,5 @@
       "cover": "https://covers.openlibrary.org/b/isbn/9781782276135-M.jpg"
     }
   ],
-  "generated": "2026-09-19"
+  "generated": "2026-09-26"
 }

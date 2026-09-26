@@ -26,3 +26,5 @@ Is this Anything? (978-1797113050)
 Anxious People (978-1501160837)
 
 > Recommendation from: Someone I met on the trek.
+
+The Back of the Napkin (978-1591841999)
