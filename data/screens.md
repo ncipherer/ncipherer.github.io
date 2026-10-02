@@ -237,7 +237,7 @@
 > And the imagery — the earring left behind in the ruins, just in the hope that they'd come back someday to find it; never once mentioning Hindu or Muslim during the conflict but instead calling them Martians, because they can't fathom that the people around them could take this form — they have to be from some other planet. It all ties together so beautifully. And then Naseer Sahab just elevates everything with his acting, over and over. Vedant and Sharvari are excellent at capturing the feeling of young love and all the emotions that comes with it.
 > 
 > At the end of this movie, one is left hoping that no more divides tear through this world, but that's wishful thinking. The end credits shatter this illusion immediately - with a montage of events from Gaza and Syria, a quiet reminder that there is no end to this torture. Eighty years later, only the location has changed.
-> Recommendation from: It's an Imtiaz Ali film, and a colleague from a class recommended it.
+> Recommendation from: It's an Imtiaz Ali film!
 
 [x] The Island with Bear Grylls (2015) (tt3725394)
 > I only watched the second season. I knew from the start, based on internet theories, that pigs and crocodiles were left out on the island to emulate an actual wilderness situation on an island they could get middle of nowhere. And honestly, I am more than okay with that because the men island actually taught me a few things. But the women island felt too "resourced" - likely sedated pigs, so many coconuts just lying there, a random man just giving out a fish - and that kind of tainted the experience for me; I skipped most of those episodes.
@@ -440,3 +440,7 @@ Once Upon a Time in America (1984)
 Jaane Bhi Do Yaaro (1983) (tt0085743)
 
 > Recommendation from: I keep hearing how this is the gold standard for the satire in Bollywood, about time I added to the list :)
+
+Mehrunisa V Lub U (2017) (tt7063130)
+
+> Recommendation from: Heard a song from the movie sung by Sukhwinder and written by Gulzar and read the synopsis and seems like a good comfort watch!

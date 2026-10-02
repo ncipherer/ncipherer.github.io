@@ -79,12 +79,12 @@ Punjab | Gurdas Maan | https://www.youtube.com/watch?v=GppbYq3Lw8w
 
 Aanewala Pal | Kishore | https://www.youtube.com/watch?v=4xcZvqCh-ic
 Jeena Yahan | Mukesh | https://www.youtube.com/watch?v=e31rwfmp-Zs
-Kucch toh Log Kahenge | Kishore | https://www.youtube.com/watch?v=56I2rxRPRLY
+Kucch toh Log Kahenge | Kishore | https://www.youtube.com/watch?v=VATfbq_116I
 Main Zindagi ka Saath | Rafi | https://www.youtube.com/watch?v=_l7UvpgK-Xc
 Meherbano Qadardano | Kishore | https://www.youtube.com/watch?v=9fM4WBY-zik
 Neki Tere Saath | Mahendra | https://www.youtube.com/watch?v=fGSU4B3bObI
 Ruk Jaana Nahin | Kishore | https://www.youtube.com/watch?v=9XhkhCMHU7I
-Zindagi ka Safar | Kishore | https://www.youtube.com/watch?v=9XOnMlK5WBY
+Zindagi ka Safar | Kishore | https://www.youtube.com/watch?v=n4pv_OGaTHQ
 
 ## Filmo-sophy
 
@@ -127,7 +127,7 @@ Tumhi Dekho na | Rishab Rikhiram | https://www.youtube.com/watch?v=EK0V8Fdb9OM
 Conquest of Paradise | Vangelis | https://www.youtube.com/watch?v=7ufkMTshjz8
 Vladimir's Theme | Dean Valentine | https://www.youtube.com/watch?v=fkeO8shNkf0
 Rocket Boy's Theme | Achint | https://www.youtube.com/watch?v=mGsJlE4cRFE
-Kartikalan's Valour | A R Rahman | https://www.youtube.com/watch?v=V12x4zN062M
+Kartikalan's Valour | A R Rahman | https://www.youtube.com/watch?v=-tCLz84TjlM
 The Last of the Mohicans | Trevor Jones | https://www.youtube.com/watch?v=9tjdswqGGVg
 Growing Up Londinium | Daniel Pemberton | https://www.youtube.com/watch?v=e2LLS33eQvk
 F1 Theme | Brian Tyler | https://www.youtube.com/watch?v=8AYy-BcjRXg
@@ -237,6 +237,7 @@ Freedom | Pharrell Williams | https://www.youtube.com/watch?v=LlY90lG_Fuw
 Sholon Si | Vishal Dadlani, Sunidhi Chauhan | https://www.youtube.com/watch?v=IX7h0-7wC_0
 Udi Teri Aankhon Se | Sunidhi Chauhan | https://www.youtube.com/watch?v=hbP3vLetsnM
 Yeh Dooriyaan | Himesh Reshammiya | https://www.youtube.com/watch?v=Ep09LLwmvMw
+Khamakhaan | Neeti Mohan, Raghu Dixit | https://www.youtube.com/watch?v=kH2uh44Kndo
 
 ## Saxo-sphere
 
@@ -279,10 +280,10 @@ Raat ke Dhai Baje | Sunidhi Chauhan, Kunal Ganjawala | https://www.youtube.com/w
 Gumm Summ Gumm | Ilaiyaraaja | https://www.youtube.com/watch?v=ESQJh7dFmc8
 Daiya Daiya | Alka Yagnik | https://www.youtube.com/watch?v=Z1MfoBdWAZE
 Ji Huzoori | Mithoon | https://www.youtube.com/watch?v=CXAFlpHeKWg
-Jabse Mere Dil Ko Uff | Sonu Nigam, Sunidhi | https://www.youtube.com/watch?v=EnknoPysiK8
+Jabse Mere Dil Ko Uff | Sonu Nigam, Sunidhi | https://www.youtube.com/watch?v=y5EtDkOh2CM
 Gustakh Dil Tere Liye | Sonu Nigam | https://www.youtube.com/watch?v=AMU_v2badYY
 Dil Dhakda hai | Adnan Sami | https://www.youtube.com/watch?v=FjHDUPryH1w
-Pam Ra Ra | Shreya Ghoshal | https://www.youtube.com/watch?v=wo0Gf7gmKiA
+Pam Ra Ra | Shreya Ghoshal | https://www.youtube.com/watch?v=IOpKjNrzRow
 Pareshan | Amit Trivedi | https://www.youtube.com/watch?v=k5TRnHHQ57U
 Yaaram | Sunidhi | https://www.youtube.com/watch?v=mbGNF4QXaEE
 Dua | Arijit | https://www.youtube.com/watch?v=M_V8FLrll9w
@@ -338,31 +339,32 @@ Tapkey Masti | Shankar Ehsaan Loy | https://www.youtube.com/watch?v=lyXoANcWBzo
 Garda | Daler Mehndi | https://www.youtube.com/watch?v=8lUmJuPvfnw
 Ziddi Piddi | Amit Trivedi | https://www.youtube.com/watch?v=10sQHmxyVXc
 Ek Kalsa | Himesh Reshammiya | https://www.youtube.com/watch?v=V7z4SSIVX-o
+Junoon Hai | Saaj Bhatt, Brijesh Shandilya | https://www.youtube.com/watch?v=FhnoKFych6U
 
 ## G-old
 
 Saagar Jaisi Aankhowali  | Kishore | https://www.youtube.com/watch?v=XplipPG6bD4
 Kiska Rasta Dekhe | Kishore | https://www.youtube.com/watch?v=WTPaes9Ofbc
 Khwab ho tum ya | Kishore | https://www.youtube.com/watch?v=Jw4wLVnFJ-E
-Isharon Isharon mein | Rafi | https://www.youtube.com/watch?v=zNsNuCitZys
-Jeevan se Bhari | Kishore | https://www.youtube.com/watch?v=v_nkcw1mD_8
-Hum hain raahi Pyaar ke | Kishore | https://www.youtube.com/watch?v=CpGGMvcYh3A
-Pyaar Diwana Hota hai | Kishore | https://www.youtube.com/watch?v=wtfRQ76-I7k
+Isharon Isharon mein | Rafi | https://www.youtube.com/watch?v=muZQ11iEzPg
+Jeevan se Bhari | Kishore | https://www.youtube.com/watch?v=kZYSy93iDZo
+Hum hain raahi Pyaar ke | Kishore | https://www.youtube.com/watch?v=oZv1lMFDwfE
+Pyaar Diwana Hota hai | Kishore | https://www.youtube.com/watch?v=9UVS7Xrbdeg
 Tumne Mujhe Dekha Ho Kar Meherbaan | Rafi | https://www.youtube.com/watch?v=9B-bo1cW2L4
 Yeh Mulakat Ek Bahana Hai | Lata | https://www.youtube.com/watch?v=8MyV8AE9nLE
-Aap Kyun Roye | Lata | https://www.youtube.com/watch?v=CoYKUSvbmac
+Aap Kyun Roye | Lata | https://www.youtube.com/watch?v=etgUhXkrpx4
 Tum Agar Saath Dene Ka | Mahendra | https://www.youtube.com/watch?v=4WjVdrzRbA4
 Abhi Na Jao Chhod Kar | Asha Bhosle | https://www.youtube.com/watch?v=mfEQgoVi7P4
 Ek Radha Ek Meera | Lata | https://www.youtube.com/watch?v=zSjr2bF7Iao
 Chalo Ek Baar Phir Se | Mahendra | https://www.youtube.com/watch?v=GxdKkMeLuUA
-Mere Mehboob Tujhe Meri Mohabbat | Rafi | https://www.youtube.com/watch?v=dA8y4dQuq3c
+Mere Mehboob Tujhe Meri Mohabbat | Rafi | https://www.youtube.com/watch?v=nDExKLoQN7Y
 Unse Mili Nazar | Lata | https://www.youtube.com/watch?v=fhC0qYArZd4
-Aapki Ankhon Mein Kuch | Kishore, Lata | https://www.youtube.com/watch?v=daxuKHBWiKE
-Kis Tarah | Rafi | https://www.youtube.com/watch?v=iom0JI3ZAME
+Aapki Ankhon Mein Kuch | Kishore, Lata | https://www.youtube.com/watch?v=dmm5lM9BR8o
+Kis Tarah | Rafi | https://www.youtube.com/watch?v=_65XcMXNhSc
 Bhanwara | Asha | https://www.youtube.com/watch?v=3bXW9_29vwU
-Aate Jaate | Kishore | https://www.youtube.com/watch?v=PDoXHOVmdfM
+Aate Jaate | Kishore | https://www.youtube.com/watch?v=4hM6MqHZw9U
 Sun Ja Dil Ki Dastan | Hemant | https://www.youtube.com/watch?v=-6I1JahC6VE
-Aankhon Mein Kya Jee | Asha, Kishore | https://www.youtube.com/watch?v=oKKoqLQ6dOE
+Aankhon Mein Kya Jee | Asha, Kishore | https://www.youtube.com/watch?v=7uWtHheX1Bw
 Bahon Mein Chale Aao | Lata | https://www.youtube.com/watch?v=ikW8pNIEWaE
 Yeh Duniya Yeh Mehfil | Rafi | https://www.youtube.com/watch?v=Ddvu7dY0YXY
 
@@ -401,7 +403,7 @@ Tur Kalleyan | Shadab Faridi | https://www.youtube.com/watch?v=fgUqudEc3T8
 Pyaar ke liye | Shankar Mahadevan | https://www.youtube.com/watch?v=sjeR_uVP_y0
 Main Kya hoon | KK | https://www.youtube.com/watch?v=0-JLjASqWZg
 Chali Kahani | Sukhwinder Singh | https://www.youtube.com/watch?v=WAQr-HeSp_0
-Cry Cry | Raashid Ali | https://www.youtube.com/watch?v=R38Cx-ohilE
+Cry Cry | Raashid Ali | https://www.youtube.com/watch?v=h_iJKCr7XXA
 Paigaam | Shaan, Kavitha | https://www.youtube.com/watch?v=AWL0J03aGIg
 Raat Akeli | Arijit | https://www.youtube.com/watch?v=1EK4-g_GfNw
 Khudaya | Vishal Shekhar, Nilesh Misra | https://www.youtube.com/watch?v=frsQGgzZZ-8
