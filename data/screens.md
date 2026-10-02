@@ -2,7 +2,7 @@
 
 [x] The Great Shamsuddin Family (2025)
 
-> First Saturday ritual of the year deserved a wholesome movie, and this one perfectly delivers. We definitely need movies that talk about small things happening behind all the usual things—like the things people are forced to think about when they read the news, for me.
+> First Saturday ritual of the year deserved a wholesome movie, and this one perfectly delivers. We definitely need movies that talk about small things happening behind all the usual things — like the things people are forced to think about when they read what is standard news for me.
 >
 > Recommendation from: Teen Taal Tau!
 
